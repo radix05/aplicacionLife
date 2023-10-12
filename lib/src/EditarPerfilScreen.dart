@@ -41,6 +41,7 @@ class _EditarPerfilScreenState extends State<EditarPerfilScreen> {
     await prefs.setString('nombre', nuevoNombre);
     await prefs.setInt(
         'edad', edad); // Guarda la nueva variable 'edad' en SharedPreferences
+    print("Edad guardada: $edad"); // Agregar una impresión aquí
 
     Navigator.pop(context, {'nombre': nuevoNombre, 'edad': edad.toString()});
   }
@@ -62,6 +63,7 @@ class _EditarPerfilScreenState extends State<EditarPerfilScreen> {
                   onTap: () {
                     setState(() {
                       edad = nuevaEdad; // Actualiza la nueva variable 'edad'
+                      print("Nueva edad seleccionada: $nuevaEdad");
                     });
                     Navigator.pop(context);
                   },

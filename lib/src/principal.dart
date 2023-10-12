@@ -86,12 +86,12 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
                     DivConTexto(
                       texto: 'Estilo de Vida',
                       imagePath: 'images/estilo-de-vida.png',
-                      navigateTo: estilovidaScreen(),
+                      navigateTo: EstiloVidaScreen(),
                     ),
                     DivConTexto(
                       texto: 'Tratamientos',
                       imagePath: 'images/tratamientos.png',
-                      navigateTo: tratamientosScreen(),
+                      navigateTo: TratamientosScreen(),
                     ),
                   ],
                 ),
@@ -193,7 +193,7 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const tratamientosScreen(),
+                    builder: (context) => const TratamientosScreen(),
                   ),
                 );
               },
@@ -213,7 +213,7 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const estilovidaScreen(),
+                    builder: (context) => const EstiloVidaScreen(),
                   ),
                 );
               },

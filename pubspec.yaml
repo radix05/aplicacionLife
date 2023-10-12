@@ -82,6 +82,10 @@ flutter:
      -  images/tratamientos.png
      -  images/cuidados.png
      -  images/logo_png.png
+     -  images/salud-mental.png
+     -  images/saludEmocional.png
+     -  images/saludFisica.png
+     -  images/saludSexual.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
