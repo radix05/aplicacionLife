@@ -69,9 +69,9 @@ class _MovePageState extends State<Move> {
                     opacity: _isVisible ? 1.0 : 0.0,
                     duration: const Duration(milliseconds: 1000),
                     child: const Text(
-                      'Bienvenida ➔',
+                      'Toca para Continuar',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Color.fromARGB(191, 255, 255, 255),
                         fontSize: 50.0,
                       ),
                     ),

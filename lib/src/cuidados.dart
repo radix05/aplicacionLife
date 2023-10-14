@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'PerfiSexual.dart';
+import 'PeriEmocional.dart';
+import 'PeriFisica.dart';
+import 'PeriMental.dart';
 import 'edadProvider.dart';
+import 'Emocional.dart';
+import 'Fisica.dart';
+import 'Sexual.dart';
+import 'Mental.dart';
+import 'PostFisica.dart';
+import 'PostEmocional.dart';
+import 'PostMental.dart';
+import 'PostSexual.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CuidadosScreen extends StatefulWidget {
@@ -88,12 +100,10 @@ class Peri extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(15.0), // Espacio alrededor del GridView
+        padding: const EdgeInsets.all(15.0),
         child: Center(
-          // Centrar horizontal y verticalmente
           child: Column(
-            mainAxisAlignment:
-                MainAxisAlignment.center, // Centrar verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 20),
               const Text(
@@ -102,14 +112,32 @@ class Peri extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               GridView.count(
-                crossAxisCount: 2, // 2 columnas
-                shrinkWrap: true, // Hace que se adapte al contenido
+                crossAxisCount: 2,
+                shrinkWrap: true,
                 children: [
-                  _buildGridItem('images/saludFisica.png', 'Salud Fisica'),
-                  _buildGridItem('images/salud-mental.png', 'Salud Mental'),
-                  _buildGridItem('images/saludSexual.png', 'Salud Sexual'),
                   _buildGridItem(
-                      'images/saludEmocional.png', 'Salud Emocional'),
+                      context, 'images/saludFisica.png', 'Salud Fisica', () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => PeriFisica()));
+                  }),
+                  _buildGridItem(
+                      context, 'images/salud-mental.png', 'Salud Mental', () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => PeriMental()));
+                  }),
+                  _buildGridItem(
+                      context, 'images/saludSexual.png', 'Salud Sexual', () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => PeriSexual()));
+                  }),
+                  _buildGridItem(
+                      context, 'images/saludEmocional.png', 'Salud Emocional',
+                      () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PeriEmocional()));
+                  }),
                 ],
               ),
             ],
@@ -119,40 +147,44 @@ class Peri extends StatelessWidget {
     );
   }
 
-  Widget _buildGridItem(String imagePath, String text) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15.0), // Bordeado de 15.0
-        gradient: const LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color.fromARGB(255, 255, 255, 255), // Color verde azulado
-            Color.fromARGB(197, 255, 255, 255), // Color azul
-            Color.fromARGB(121, 255, 255, 255),
+  Widget _buildGridItem(
+      BuildContext context, String imagePath, String text, Function() onTap) {
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(197, 255, 255, 255),
+              Color.fromARGB(121, 255, 255, 255),
+            ],
+          ),
+        ),
+        width: 100,
+        height: 100,
+        margin: const EdgeInsets.all(10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              imagePath,
+              width: 50,
+              height: 50,
+            ),
+            const SizedBox(height: 10),
+            Text(
+              text,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 14.0,
+              ),
+            ),
           ],
         ),
-      ),
-      width: 100, // Ajusta el tamaño según tus necesidades
-      height: 100, // Ajusta el tamaño según tus necesidades
-      margin: const EdgeInsets.all(10), // Espacio entre los contenedores
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            imagePath,
-            width: 50, // Tamaño de la imagen
-            height: 50, // Tamaño de la imagen
-          ),
-          const SizedBox(height: 10),
-          Text(
-            text,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 14.0,
-            ),
-          ),
-        ],
       ),
     );
   }
@@ -175,12 +207,10 @@ class Meno extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(15.0), // Espacio alrededor del GridView
+        padding: const EdgeInsets.all(15.0),
         child: Center(
-          // Centrar horizontal y verticalmente
           child: Column(
-            mainAxisAlignment:
-                MainAxisAlignment.center, // Centrar verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 20),
               const Text(
@@ -189,14 +219,30 @@ class Meno extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               GridView.count(
-                crossAxisCount: 2, // 2 columnas
-                shrinkWrap: true, // Hace que se adapte al contenido
+                crossAxisCount: 2,
+                shrinkWrap: true,
                 children: [
-                  _buildGridItem('images/saludFisica.png', 'Salud Fisica'),
-                  _buildGridItem('images/salud-mental.png', 'Salud Mental'),
-                  _buildGridItem('images/saludSexual.png', 'Salud Sexual'),
                   _buildGridItem(
-                      'images/saludEmocional.png', 'Salud Emocional'),
+                      context, 'images/saludFisica.png', 'Salud Fisica', () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Fisica()));
+                  }),
+                  _buildGridItem(
+                      context, 'images/salud-mental.png', 'Salud Mental', () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Mental()));
+                  }),
+                  _buildGridItem(
+                      context, 'images/saludSexual.png', 'Salud Sexual', () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Sexual()));
+                  }),
+                  _buildGridItem(
+                      context, 'images/saludEmocional.png', 'Salud Emocional',
+                      () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Emocional()));
+                  }),
                 ],
               ),
             ],
@@ -206,32 +252,44 @@ class Meno extends StatelessWidget {
     );
   }
 
-  Widget _buildGridItem(String imagePath, String text) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15.0), // Bordeado de 15.0
-      ),
-      width: 100, // Ajusta el tamaño según tus necesidades
-      height: 100, // Ajusta el tamaño según tus necesidades
-      margin: const EdgeInsets.all(10), // Espacio entre los contenedores
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            imagePath,
-            width: 50, // Tamaño de la imagen
-            height: 50, // Tamaño de la imagen
+  Widget _buildGridItem(
+      BuildContext context, String imagePath, String text, Function() onTap) {
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(197, 255, 255, 255),
+              Color.fromARGB(121, 255, 255, 255),
+            ],
           ),
-          const SizedBox(height: 10),
-          Text(
-            text,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 14.0,
+        ),
+        width: 100,
+        height: 100,
+        margin: const EdgeInsets.all(10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              imagePath,
+              width: 50,
+              height: 50,
             ),
-          ),
-        ],
+            const SizedBox(height: 10),
+            Text(
+              text,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 14.0,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -254,12 +312,10 @@ class Post extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(15.0), // Espacio alrededor del GridView
+        padding: const EdgeInsets.all(15.0),
         child: Center(
-          // Centrar horizontal y verticalmente
           child: Column(
-            mainAxisAlignment:
-                MainAxisAlignment.center, // Centrar verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 20),
               const Text(
@@ -268,14 +324,32 @@ class Post extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               GridView.count(
-                crossAxisCount: 2, // 2 columnas
-                shrinkWrap: true, // Hace que se adapte al contenido
+                crossAxisCount: 2,
+                shrinkWrap: true,
                 children: [
-                  _buildGridItem('images/saludFisica.png', 'Salud Fisica'),
-                  _buildGridItem('images/salud-mental.png', 'Salud Mental'),
-                  _buildGridItem('images/saludSexual.png', 'Salud Sexual'),
                   _buildGridItem(
-                      'images/saludEmocional.png', 'Salud Emocional'),
+                      context, 'images/saludFisica.png', 'Salud Fisica', () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => PostFisica()));
+                  }),
+                  _buildGridItem(
+                      context, 'images/salud-mental.png', 'Salud Mental', () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => PostMental()));
+                  }),
+                  _buildGridItem(
+                      context, 'images/saludSexual.png', 'Salud Sexual', () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => PostSexual()));
+                  }),
+                  _buildGridItem(
+                      context, 'images/saludEmocional.png', 'Salud Emocional',
+                      () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PostEmocional()));
+                  }),
                 ],
               ),
             ],
@@ -285,32 +359,44 @@ class Post extends StatelessWidget {
     );
   }
 
-  Widget _buildGridItem(String imagePath, String text) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15.0), // Bordeado de 15.0
-      ),
-      width: 100, // Ajusta el tamaño según tus necesidades
-      height: 100, // Ajusta el tamaño según tus necesidades
-      margin: const EdgeInsets.all(10), // Espacio entre los contenedores
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            imagePath,
-            width: 50, // Tamaño de la imagen
-            height: 50, // Tamaño de la imagen
+  Widget _buildGridItem(
+      BuildContext context, String imagePath, String text, Function() onTap) {
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(197, 255, 255, 255),
+              Color.fromARGB(121, 255, 255, 255),
+            ],
           ),
-          const SizedBox(height: 10),
-          Text(
-            text,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 14.0,
+        ),
+        width: 100,
+        height: 100,
+        margin: const EdgeInsets.all(10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              imagePath,
+              width: 50,
+              height: 50,
             ),
-          ),
-        ],
+            const SizedBox(height: 10),
+            Text(
+              text,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 14.0,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
