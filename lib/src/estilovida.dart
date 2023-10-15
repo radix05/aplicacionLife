@@ -1,5 +1,17 @@
+import 'package:aplicacion_principal/src/PostNutricion.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'PeriDescanso.dart';
+import 'PeriEjercicio.dart';
+import 'PeriEstres.dart';
+import 'PeriNutricion.dart';
+import 'PostDescanso.dart';
+import 'PostEjercicio.dart';
+import 'PostEstres.dart';
+import 'Descanso.dart';
+import 'Ejercicio.dart';
+import 'Estres.dart';
+import 'Nutricion.dart';
 import 'edadProvider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -81,7 +93,6 @@ class Peri extends StatelessWidget {
           end: Alignment.bottomCenter,
           colors: [
             Colors.white,
-            Color.fromRGBO(255, 190, 242, 1),
             Color.fromARGB(255, 255, 140, 240),
             Color.fromARGB(255, 251, 83, 139),
           ],
@@ -95,7 +106,7 @@ class Peri extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
               const Text(
-                'Perimenopausia',
+                'PeriMenopausia',
                 style: TextStyle(fontSize: 18.0, color: Colors.black),
               ),
               const SizedBox(height: 20),
@@ -103,11 +114,14 @@ class Peri extends StatelessWidget {
                 crossAxisCount: 2,
                 shrinkWrap: true,
                 children: [
-                  _buildGridItem('images/saludFisica.png', 'Salud Fisica'),
-                  _buildGridItem('images/salud-mental.png', 'Salud Mental'),
-                  _buildGridItem('images/saludSexual.png', 'Salud Sexual'),
-                  _buildGridItem(
-                      'images/saludEmocional.png', 'Salud Emocional'),
+                  _buildGridItem(context, 'images/Nutricion.png', 'Nutrición',
+                      PeriNutricion()),
+                  _buildGridItem(context, 'images/Ejercicio.png', 'Ejercicio',
+                      PeriEjercicio()),
+                  _buildGridItem(context, 'images/manejo-del-estres.png',
+                      'Manejo de Estrés', PeriEstres()),
+                  _buildGridItem(context, 'images/Sueño.png',
+                      'Hábitos de Descanso', PeriDescanso()),
                 ],
               ),
             ],
@@ -117,32 +131,47 @@ class Peri extends StatelessWidget {
     );
   }
 
-  Widget _buildGridItem(String imagePath, String text) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15.0),
-      ),
-      width: 100,
-      height: 100,
-      margin: const EdgeInsets.all(10),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            imagePath,
-            width: 50,
-            height: 50,
+  Widget _buildGridItem(
+      BuildContext context, String imagePath, String text, Widget destination) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => destination));
+      },
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(197, 255, 255, 255),
+              Color.fromARGB(121, 255, 255, 255),
+            ],
           ),
-          const SizedBox(height: 10),
-          Text(
-            text,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 14.0,
+        ),
+        width: 100,
+        height: 100,
+        margin: const EdgeInsets.all(10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              imagePath,
+              width: 50,
+              height: 50,
             ),
-          ),
-        ],
+            const SizedBox(height: 10),
+            Text(
+              text,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 14.0,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -179,11 +208,14 @@ class Meno extends StatelessWidget {
                 crossAxisCount: 2,
                 shrinkWrap: true,
                 children: [
-                  _buildGridItem('images/saludFisica.png', 'Salud Fisica'),
-                  _buildGridItem('images/salud-mental.png', 'Salud Mental'),
-                  _buildGridItem('images/saludSexual.png', 'Salud Sexual'),
-                  _buildGridItem(
-                      'images/saludEmocional.png', 'Salud Emocional'),
+                  _buildGridItem(context, 'images/Nutricion.png', 'Nutrición',
+                      Nutricion()),
+                  _buildGridItem(context, 'images/Ejercicio.png', 'Ejercicio',
+                      Ejercicio()),
+                  _buildGridItem(context, 'images/manejo-del-estres.png',
+                      'Manejo de Estrés', Estres()),
+                  _buildGridItem(context, 'images/Sueño.png',
+                      'Hábitos de Descanso', Descanso()),
                 ],
               ),
             ],
@@ -193,32 +225,47 @@ class Meno extends StatelessWidget {
     );
   }
 
-  Widget _buildGridItem(String imagePath, String text) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15.0),
-      ),
-      width: 100,
-      height: 100,
-      margin: const EdgeInsets.all(10),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            imagePath,
-            width: 50,
-            height: 50,
+  Widget _buildGridItem(
+      BuildContext context, String imagePath, String text, Widget destination) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => destination));
+      },
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(197, 255, 255, 255),
+              Color.fromARGB(121, 255, 255, 255),
+            ],
           ),
-          const SizedBox(height: 10),
-          Text(
-            text,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 14.0,
+        ),
+        width: 100,
+        height: 100,
+        margin: const EdgeInsets.all(10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              imagePath,
+              width: 50,
+              height: 50,
             ),
-          ),
-        ],
+            const SizedBox(height: 10),
+            Text(
+              text,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 14.0,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -255,11 +302,14 @@ class Post extends StatelessWidget {
                 crossAxisCount: 2,
                 shrinkWrap: true,
                 children: [
-                  _buildGridItem('images/saludFisica.png', 'Salud Fisica'),
-                  _buildGridItem('images/salud-mental.png', 'Salud Mental'),
-                  _buildGridItem('images/saludSexual.png', 'Salud Sexual'),
-                  _buildGridItem(
-                      'images/saludEmocional.png', 'Salud Emocional'),
+                  _buildGridItem(context, 'images/Nutricion.png', 'Nutrición',
+                      PostNutricion()),
+                  _buildGridItem(context, 'images/Ejercicio.png', 'Ejercicio',
+                      PostEjercicio()),
+                  _buildGridItem(context, 'images/manejo-del-estres.png',
+                      'Manejo de Estrés', PostEstres()),
+                  _buildGridItem(context, 'images/Sueño.png',
+                      'Hábitos de Descanso', PostDescanso()),
                 ],
               ),
             ],
@@ -269,32 +319,47 @@ class Post extends StatelessWidget {
     );
   }
 
-  Widget _buildGridItem(String imagePath, String text) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15.0),
-      ),
-      width: 100,
-      height: 100,
-      margin: const EdgeInsets.all(10),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            imagePath,
-            width: 50,
-            height: 50,
+  Widget _buildGridItem(
+      BuildContext context, String imagePath, String text, Widget destination) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => destination));
+      },
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(197, 255, 255, 255),
+              Color.fromARGB(121, 255, 255, 255),
+            ],
           ),
-          const SizedBox(height: 10),
-          Text(
-            text,
-            style: const TextStyle(
-              color: Colors.black,
-              fontSize: 14.0,
+        ),
+        width: 100,
+        height: 100,
+        margin: const EdgeInsets.all(10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              imagePath,
+              width: 50,
+              height: 50,
             ),
-          ),
-        ],
+            const SizedBox(height: 10),
+            Text(
+              text,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 14.0,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

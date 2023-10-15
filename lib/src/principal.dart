@@ -281,8 +281,16 @@ class DivConTexto extends StatelessWidget {
         height: 200,
         padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
-          color: const Color.fromARGB(255, 255, 255, 255),
           borderRadius: BorderRadius.circular(15.0),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(197, 255, 255, 255),
+              Color.fromARGB(121, 255, 255, 255),
+            ],
+          ),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
