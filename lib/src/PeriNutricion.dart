@@ -797,7 +797,7 @@ class principal2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Hidrataciom',
+              'Hidratacion',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,

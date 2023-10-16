@@ -8,16 +8,55 @@ class Ejercicio extends StatefulWidget {
 }
 
 class _Ejercicio extends State<Ejercicio> {
-  // Define the title of the screen as an instance variable
-  String title = 'Ejercicio';
+  final PageController _pageController = PageController();
+  int _currentPage = 0;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _pageController.addListener(() {
+      int next = _pageController.page!.round();
+      if (next != _currentPage) {
+        setState(() {
+          _currentPage = next;
+        });
+      }
+    });
+  }
+
+  Widget buildPageIndicator(int pageCount, int currentPage) {
+    List<Widget> indicators = [];
+
+    for (int i = 0; i < pageCount; i++) {
+      indicators.add(
+        Container(
+          width: 15.0,
+          height: 15.0,
+          margin: const EdgeInsets.symmetric(horizontal: 5.0),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: i == currentPage
+                ? const Color.fromARGB(255, 255, 0, 162)
+                : const Color.fromARGB(255, 255, 152, 234),
+          ),
+        ),
+      );
+    }
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: indicators,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 255, 165, 231),
+        backgroundColor: const Color.fromARGB(255, 255, 162, 218),
         title: const Text('Ejercicio'),
-        centerTitle: true, // Centra el título en la AppBar
+        centerTitle: true,
       ),
       extendBody: true,
       body: SafeArea(
@@ -29,55 +68,1149 @@ class _Ejercicio extends State<Ejercicio> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.white,
-                Color.fromRGBO(255, 190, 242, 1),
+                Color.fromARGB(255, 255, 140, 213),
                 Color.fromARGB(255, 255, 140, 240),
-                Color.fromARGB(255, 251, 83, 139),
+                Color.fromRGBO(255, 190, 242, 1),
+                Color.fromARGB(255, 255, 255, 255),
               ],
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: ListView(
-              children: <Widget>[
-                const SizedBox(height: 20),
-                Center(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.transparent, // Transparent background
-                      borderRadius:
-                          BorderRadius.circular(15.0), // Rounded borders
-                      border: Border.all(
-                        color: const Color.fromARGB(
-                            255, 251, 83, 139), // Pink color
-                      ),
-                    ),
-                    padding:
-                        const EdgeInsets.all(16), // Space inside the container
-                    child: Text(
-                      title,
-                      style: const TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.black,
-                      ),
-                    ),
+          child: PageView(
+            controller: _pageController,
+            scrollDirection: Axis.horizontal,
+            children: <Widget>[
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: ListView(
+                    children: <Widget>[
+                      principal(),
+                      principalcontenido(),
+                      primer(),
+                      primercontenido(),
+                      segundo(),
+                      segundocontenido(),
+                      tercero(),
+                      tercerocontenido(),
+                      cuarto(),
+                      cuartocontenido(),
+                      quinto(),
+                      quintocontenido(),
+                      sexto(),
+                      sextocontenido(),
+                      extra(),
+                    ],
                   ),
                 ),
-                const SizedBox(height: 20),
-                // const primero(),
-                // const segundo(),
-                // const tercero(),
-                // const cuarto(),
-                // const quinto(),
-                // const sexto(),
-                // const septimo(),
-                // const octavo(),
-                // const noveno(),
-                // const decimo(),
-              ],
-            ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: ListView(
+                  children: <Widget>[
+                    principal2(),
+                    principalcontenido2(),
+                    primer2(),
+                    primercontenido2(),
+                    segundo2(),
+                    segundocontenido2(),
+                    tercero2(),
+                    tercerocontenido2(),
+                    cuarto2(),
+                    cuartocontenido2(),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
+      ),
+      bottomNavigationBar: buildPageIndicator(2, _currentPage),
+    );
+  }
+}
+
+class principal extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 70,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Color.fromRGBO(255, 255, 255, 1),
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Ejercicio',
+              style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class principalcontenido extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 170,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'El ejercicio es fundamental durante la menopausia para mantener una buena salud, controlar el peso y aliviar algunos de los síntomas asociados. Aquí tienes algunos consejos de ejercicio para una mujer que está pasando por la menopausia',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class primer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Aeróbicos',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class primercontenido extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 340,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Los ejercicios aeróbicos, también conocidos como cardio, son esenciales para mejorar la salud cardiovascular, controlar el peso y mantener la resistencia. Durante la menopausia, los ejercicios aeróbicos pueden ayudar a reducir la probabilidad de aumentar de peso y mantener un corazón saludable. Algunas opciones incluyen caminar, nadar, andar en bicicleta, correr o bailar. Intenta realizar al menos 150 minutos de ejercicio aeróbico de intensidad moderada, como caminar rápido, cada semana o 75 minutos de ejercicio vigoroso, como correr o nadar.',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class segundo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Ejercicios de Resistencia',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class segundocontenido extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 280,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              ' Los ejercicios de resistencia, como el levantamiento de pesas o el entrenamiento con bandas de resistencia, son fundamentales para mantener la masa muscular y la densidad ósea. La pérdida de masa muscular y la disminución de la densidad ósea son preocupaciones comunes durante la menopausia. Realizar ejercicios de resistencia puede ayudar a prevenir estos problemas y mantener un metabolismo saludable.',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class tercero extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Ejercicios de Flexibilidad',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class tercerocontenido extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 240,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Los estiramientos y ejercicios de flexibilidad son importantes para mantener la amplitud de movimiento en las articulaciones, prevenir la rigidez muscular y reducir el riesgo de lesiones. Practicar yoga o pilates son excelentes formas de mejorar la flexibilidad y aliviar la tensión muscular. Estos ejercicios también pueden ayudar a reducir el estrés y mejorar la postura.',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class cuarto extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Ejercicios de Equilibrio',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class cuartocontenido extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 220,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Los ejercicios que mejoran el equilibrio son particularmente importantes durante la menopausia, ya que pueden ayudar a prevenir caídas y lesiones. El tai chi y el yoga son ejemplos de actividades que enfatizan el equilibrio y la coordinación. Estos ejercicios pueden ser beneficiosos para mantener la estabilidad a medida que envejeces.',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class quinto extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Variación',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class quintocontenido extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 240,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'La variación en tu rutina de ejercicios es clave para evitar el aburrimiento y evitar lesiones por sobreuso. Cambiar de actividad regularmente también puede ayudar a trabajar diferentes grupos musculares y mejorar la eficacia del entrenamiento. Por ejemplo, puedes alternar entre ejercicios aeróbicos, de resistencia, de flexibilidad y de equilibrio a lo largo de la semana.',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class sexto extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Escoge Actividades que Disfrutes',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class sextocontenido extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 220,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'La clave para mantener la consistencia en el ejercicio durante la menopausia es encontrar actividades que te gusten. Cuando disfrutas del ejercicio, es más probable que lo integres de manera regular en tu rutina. Puedes probar diferentes actividades, como baile, senderismo, ciclismo o clases grupales, para descubrir cuáles son tus favoritas.',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class extra extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 220,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Recuerda que la seguridad es fundamental. Siempre consulta a un profesional de la salud o un entrenador personal antes de comenzar un nuevo programa de ejercicios, especialmente si tienes afecciones médicas preexistentes. Además, escucha a tu cuerpo y adapta tu rutina de ejercicios según tus necesidades y límites individuales',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class principal2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 70,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Color.fromRGBO(255, 255, 255, 1),
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Consulta a un Profesional',
+              style: TextStyle(
+                fontSize: 30.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class principalcontenido2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 240,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              ' Esta es una recomendación crítica cuando se trata de ejercicios durante la menopausia. Consultar a un profesional de la salud o un entrenador personal que tenga experiencia en trabajar con mujeres en esta etapa de la vida puede marcar una gran diferencia en tu éxito y seguridad en tu rutina de ejercicios. Aquí hay algunas razones por las cuales la consulta con un profesional es valiosa',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class primer2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Evaluación Personalizada',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class primercontenido2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 160,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Un profesional puede realizar una evaluación de tu salud actual, nivel de condición física y objetivos personales. Esto es importante porque las necesidades de ejercicio pueden variar ampliamente de una persona a otra.',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class segundo2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Diseño de Programa Personalizado',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class segundocontenido2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 180,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Basándose en la evaluación, un profesional puede diseñar un programa de ejercicios personalizado que sea seguro y efectivo para ti. Esto puede incluir recomendaciones específicas sobre ejercicios de aeróbicos, resistencia, flexibilidad y equilibrio.',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class tercero2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Prevención de Lesiones',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class tercerocontenido2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 160,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Un profesional puede enseñarte la técnica adecuada para los ejercicios, lo que ayuda a prevenir lesiones. También puede ajustar tu programa de ejercicios si experimentas molestias o dolor.',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class cuarto2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 60,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Supervisión',
+              style: TextStyle(
+                fontSize: 22.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class cuartocontenido2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      height: 170,
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          colors: [
+            Colors.white,
+            Color.fromARGB(197, 255, 255, 255),
+            Color.fromARGB(121, 255, 255, 255),
+          ],
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
+        color: Colors.white,
+        borderRadius:
+            BorderRadius.circular(15), // Establece el radio del borde en 15
+      ),
+      padding: const EdgeInsets.all(16),
+      child: const Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            flex: 3,
+            child: Text(
+              'Durante las primeras etapas de tu programa de ejercicios, puede ser beneficioso trabajar bajo la supervisión de un profesional. Esto te permite recibir retroalimentación inmediata y asegurarte de que estás realizando los ejercicios correctamente',
+              style: TextStyle(
+                fontSize: 20.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
