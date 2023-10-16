@@ -8,16 +8,55 @@ class Nutricion extends StatefulWidget {
 }
 
 class _Nutricion extends State<Nutricion> {
-  // Define the title of the screen as an instance variable
-  String title = 'Nutricion';
+  final PageController _pageController = PageController();
+  int _currentPage = 0;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _pageController.addListener(() {
+      int next = _pageController.page!.round();
+      if (next != _currentPage) {
+        setState(() {
+          _currentPage = next;
+        });
+      }
+    });
+  }
+
+  Widget buildPageIndicator(int pageCount, int currentPage) {
+    List<Widget> indicators = [];
+
+    for (int i = 0; i < pageCount; i++) {
+      indicators.add(
+        Container(
+          width: 15.0,
+          height: 15.0,
+          margin: const EdgeInsets.symmetric(horizontal: 5.0),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: i == currentPage
+                ? const Color.fromARGB(255, 255, 0, 162)
+                : const Color.fromARGB(255, 255, 152, 234),
+          ),
+        ),
+      );
+    }
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: indicators,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 255, 165, 231),
+        backgroundColor: const Color.fromARGB(255, 255, 162, 218),
         title: const Text('Nutricion'),
-        centerTitle: true, // Centra el título en la AppBar
+        centerTitle: true,
       ),
       extendBody: true,
       body: SafeArea(
@@ -29,56 +68,50 @@ class _Nutricion extends State<Nutricion> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.white,
-                Color.fromRGBO(255, 190, 242, 1),
+                Color.fromARGB(255, 255, 140, 213),
                 Color.fromARGB(255, 255, 140, 240),
-                Color.fromARGB(255, 251, 83, 139),
+                Color.fromRGBO(255, 190, 242, 1),
+                Color.fromARGB(255, 255, 255, 255),
               ],
             ),
           ),
-          child: Padding(
-            padding: const EdgeInsets.all(15.0),
-            child: ListView(
-              children: <Widget>[
-                const SizedBox(height: 20),
-                Center(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Colors.transparent, // Transparent background
-                      borderRadius:
-                          BorderRadius.circular(15.0), // Rounded borders
-                      border: Border.all(
-                        color: const Color.fromARGB(
-                            255, 251, 83, 139), // Pink color
-                      ),
-                    ),
-                    padding:
-                        const EdgeInsets.all(16), // Space inside the container
-                    child: Text(
-                      title,
-                      style: const TextStyle(
-                        fontSize: 18.0,
-                        color: Colors.black,
-                      ),
-                    ),
+          child: PageView(
+            controller: _pageController,
+            scrollDirection: Axis.horizontal,
+            children: <Widget>[
+              Container(
+                child: Padding(
+                  padding: const EdgeInsets.all(15.0),
+                  child: ListView(
+                    children: <Widget>[
+                      //
+                    ],
                   ),
                 ),
-                const SizedBox(height: 20),
-                // const primero(),
-                // const segundo(),
-                // const tercero(),
-                // const cuarto(),
-                // const quinto(),
-                // const sexto(),
-                // const septimo(),
-                // const octavo(),
-                // const noveno(),
-                // const decimo(),
-              ],
-            ),
+              ),
+              // Segunda pantalla
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: ListView(
+                  children: <Widget>[
+                    //
+                  ],
+                ),
+              ),
+              //tercera pantalla
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: ListView(
+                  children: <Widget>[
+                    //
+                  ],
+                ),
+              )
+            ],
           ),
         ),
       ),
+      bottomNavigationBar: buildPageIndicator(3, _currentPage),
     );
   }
 }

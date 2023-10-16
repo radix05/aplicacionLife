@@ -9,12 +9,52 @@ class PeriNutricion extends StatefulWidget {
 
 class _PeriNutricion extends State<PeriNutricion> {
   final PageController _pageController = PageController();
+  int _currentPage = 0;
+
+  @override
+  void initState() {
+    super.initState();
+
+    _pageController.addListener(() {
+      int next = _pageController.page!.round();
+      if (next != _currentPage) {
+        setState(() {
+          _currentPage = next;
+        });
+      }
+    });
+  }
+
+  Widget buildPageIndicator(int pageCount, int currentPage) {
+    List<Widget> indicators = [];
+
+    for (int i = 0; i < pageCount; i++) {
+      indicators.add(
+        Container(
+          width: 15.0,
+          height: 15.0,
+          margin: const EdgeInsets.symmetric(horizontal: 5.0),
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: i == currentPage
+                ? const Color.fromARGB(255, 255, 0, 162)
+                : const Color.fromARGB(255, 255, 152, 234),
+          ),
+        ),
+      );
+    }
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: indicators,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 255, 165, 231),
+        backgroundColor: const Color.fromARGB(255, 255, 162, 218),
         title: const Text('Nutricion'),
         centerTitle: true,
       ),
@@ -28,10 +68,10 @@ class _PeriNutricion extends State<PeriNutricion> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Colors.white,
-                Color.fromRGBO(255, 190, 242, 1),
+                Color.fromARGB(255, 255, 140, 213),
                 Color.fromARGB(255, 255, 140, 240),
-                Color.fromARGB(255, 251, 83, 139),
+                Color.fromRGBO(255, 190, 242, 1),
+                Color.fromARGB(255, 255, 255, 255),
               ],
             ),
           ),
@@ -157,8 +197,7 @@ class _PeriNutricion extends State<PeriNutricion> {
                           ),
                           Expanded(
                             child: Container(
-                              margin: const EdgeInsets.only(
-                                  left: 8), // Agrega margen a la izquierda
+                              margin: const EdgeInsets.only(left: 8),
                               height: 200,
                               decoration: const BoxDecoration(
                                 gradient: LinearGradient(
@@ -244,6 +283,7 @@ class _PeriNutricion extends State<PeriNutricion> {
           ),
         ),
       ),
+      bottomNavigationBar: buildPageIndicator(3, _currentPage),
     );
   }
 }
