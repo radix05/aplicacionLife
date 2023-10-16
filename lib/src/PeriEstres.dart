@@ -407,7 +407,7 @@ class segundo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Apoyo Socia',
+              'Apoyo Social',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,

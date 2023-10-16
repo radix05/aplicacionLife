@@ -127,7 +127,6 @@ class _PostNutricion extends State<PostNutricion> {
                   ],
                 ),
               ),
-              //tercera pantalla
             ],
           ),
         ),
