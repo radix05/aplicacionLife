@@ -1,3 +1,4 @@
+import 'package:aplicacion_principal/src/Informacion.dart';
 import 'package:flutter/material.dart';
 import 'perfil.dart';
 import 'sintomas.dart';
@@ -73,6 +74,8 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
                   spacing: 10.0,
                   runSpacing: 10.0,
                   children: <Widget>[
+                    DivConTextoSmall(
+                        texto: 'Definiciones', navigateTo: InfoScreen()),
                     DivConTexto(
                       texto: 'Síntomas',
                       imagePath: 'images/sintomas.png',
@@ -310,6 +313,58 @@ class DivConTexto extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class DivConTextoSmall extends StatelessWidget {
+  final String texto;
+  final Widget navigateTo;
+
+  const DivConTextoSmall({
+    Key? key,
+    required this.texto,
+    required this.navigateTo,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => navigateTo,
+          ),
+        );
+      },
+      child: Container(
+        width: 410,
+        height: 100,
+        padding: const EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15.0),
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(197, 255, 255, 255),
+              Color.fromARGB(121, 255, 255, 255),
+            ],
+          ),
+        ),
+        child: Center(
+          // Centro el contenido verticalmente
+          child: Text(
+            texto,
+            style: const TextStyle(
+              color: Color.fromARGB(255, 0, 0, 0),
+              fontSize: 25.0,
+            ),
+          ),
         ),
       ),
     );

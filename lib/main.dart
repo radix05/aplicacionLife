@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Simula una espera de 2 segundos (ajusta el tiempo según sea necesario)
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(seconds: 1), () {
       // Navega a la ruta 'move' cuando termine la SplashScreen
       Navigator.pushReplacement(
         context,
