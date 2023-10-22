@@ -1,6 +1,7 @@
 import 'package:aplicacion_principal/src/Informacion.dart';
 import 'package:flutter/material.dart';
 import 'perfil.dart';
+import 'botchat.dart';
 import 'sintomas.dart';
 import 'estilovida.dart';
 import 'tratamientos.dart';
@@ -61,41 +62,43 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
             ],
           ),
         ),
-        child: const Scaffold(
+        child: Scaffold(
           backgroundColor: Colors.transparent,
           resizeToAvoidBottomInset: false,
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Wrap(
                   alignment: WrapAlignment.start,
                   spacing: 10.0,
                   runSpacing: 10.0,
                   children: <Widget>[
-                    DivConTextoSmall(
+                    const DivConTextoSmall(
                         texto: 'Definiciones', navigateTo: InfoScreen()),
-                    DivConTexto(
+                    const DivConTexto(
                       texto: 'Síntomas',
                       imagePath: 'images/sintomas.png',
                       navigateTo: SintomasScreen(),
                     ),
-                    DivConTexto(
+                    const DivConTexto(
                       texto: 'Cuidados',
                       imagePath: 'images/cuidados.png',
                       navigateTo: CuidadosScreen(),
                     ),
-                    DivConTexto(
+                    const DivConTexto(
                       texto: 'Estilo de Vida',
                       imagePath: 'images/estilo-de-vida.png',
                       navigateTo: EstiloVidaScreen(),
                     ),
-                    DivConTexto(
+                    const DivConTexto(
                       texto: 'Tratamientos',
                       imagePath: 'images/tratamientos.png',
                       navigateTo: TratamientosScreen(),
                     ),
+                    DivConTextoSmall(
+                        texto: 'Preguntas Comunes', navigateTo: BotChatPage()),
                   ],
                 ),
               ],
@@ -342,10 +345,10 @@ class DivConTextoSmall extends StatelessWidget {
       },
       child: Container(
         width: 410,
-        height: 100,
+        height: 70,
         padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15.0),
+          borderRadius: BorderRadius.circular(50.0),
           gradient: const LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
