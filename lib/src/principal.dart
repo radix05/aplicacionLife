@@ -7,6 +7,7 @@ import 'estilovida.dart';
 import 'tratamientos.dart';
 import 'cuidados.dart';
 import 'contacto.dart';
+import 'calendario.dart';
 
 class PrincipalScreen extends StatefulWidget {
   PrincipalScreen({Key? key}) : super(key: key);
@@ -23,6 +24,8 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 255, 165, 231),
@@ -57,6 +60,7 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
+              Color.fromRGBO(255, 190, 242, 1),
               Colors.white,
               Color.fromRGBO(255, 190, 242, 1),
             ],
@@ -66,42 +70,59 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
           backgroundColor: Colors.transparent,
           resizeToAvoidBottomInset: false,
           body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const SizedBox(height: 20),
-                Wrap(
-                  alignment: WrapAlignment.start,
-                  spacing: 10.0,
-                  runSpacing: 10.0,
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: SingleChildScrollView(
+                child: Wrap(
+                  alignment: WrapAlignment.center,
+                  spacing: 20.0,
+                  runSpacing: 20.0,
                   children: <Widget>[
                     const DivConTextoSmall(
-                        texto: 'Definiciones', navigateTo: InfoScreen()),
-                    const DivConTexto(
-                      texto: 'Síntomas',
-                      imagePath: 'images/sintomas.png',
-                      navigateTo: SintomasScreen(),
+                      texto: 'Definiciones',
+                      navigateTo: InfoScreen(),
                     ),
-                    const DivConTexto(
-                      texto: 'Cuidados',
-                      imagePath: 'images/cuidados.png',
-                      navigateTo: CuidadosScreen(),
+                    DivConTextoGroup(
+                      screenWidth: screenWidth,
+                      items: const [
+                        DivConTexto(
+                          texto: 'Síntomas',
+                          imagePath: 'images/sintomas.png',
+                          navigateTo: SintomasScreen(),
+                        ),
+                        DivConTexto(
+                          texto: 'Cuidados',
+                          imagePath: 'images/cuidados.png',
+                          navigateTo: CuidadosScreen(),
+                        ),
+                      ],
                     ),
-                    const DivConTexto(
-                      texto: 'Estilo de Vida',
-                      imagePath: 'images/estilo-de-vida.png',
-                      navigateTo: EstiloVidaScreen(),
-                    ),
-                    const DivConTexto(
-                      texto: 'Tratamientos',
-                      imagePath: 'images/tratamientos.png',
-                      navigateTo: TratamientosScreen(),
+                    DivConTextoGroup(
+                      screenWidth: screenWidth,
+                      items: const [
+                        DivConTexto(
+                          texto: 'Estilo de Vida',
+                          imagePath: 'images/estilo-de-vida.png',
+                          navigateTo: EstiloVidaScreen(),
+                        ),
+                        DivConTexto(
+                          texto: 'Tratamientos',
+                          imagePath: 'images/tratamientos.png',
+                          navigateTo: TratamientosScreen(),
+                        ),
+                      ],
                     ),
                     DivConTextoSmall(
-                        texto: 'Preguntas Comunes', navigateTo: BotChatPage()),
+                      texto: 'Preguntas Comunes',
+                      navigateTo: BotChatPage(),
+                    ),
+                    DivConTextoSmall(
+                      texto: 'Calendario',
+                      navigateTo: Calendario(),
+                    ),
                   ],
                 ),
-              ],
+              ),
             ),
           ),
         ),
@@ -246,7 +267,7 @@ class _PrincipalScreenState extends State<PrincipalScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const contactameScreen(),
+                      builder: (context) => const ContactameScreen(),
                     ),
                   );
                 },
@@ -302,10 +323,12 @@ class DivConTexto extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            // Ajusta la propiedad fit aquí
             Image.asset(
               imagePath,
               width: 80,
               height: 80,
+              fit: BoxFit.contain, // O ajusta a tus necesidades
             ),
             const SizedBox(height: 10),
             Text(
@@ -360,7 +383,6 @@ class DivConTextoSmall extends StatelessWidget {
           ),
         ),
         child: Center(
-          // Centro el contenido verticalmente
           child: Text(
             texto,
             style: const TextStyle(
@@ -370,6 +392,35 @@ class DivConTextoSmall extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class DivConTextoGroup extends StatelessWidget {
+  final double screenWidth;
+  final List<Widget> items;
+
+  const DivConTextoGroup({
+    Key? key,
+    required this.screenWidth,
+    required this.items,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    double spacing = 20.0; // Espacio entre elementos
+
+    // Calcula el número de elementos que caben en la pantalla
+    int itemCount = (screenWidth / (200 + spacing)).floor();
+
+    // Calcula el espacio adicional para distribuir entre los elementos
+    double additionalSpace = (screenWidth - itemCount * 200) / (itemCount - 1);
+
+    return Wrap(
+      alignment: WrapAlignment.center,
+      spacing: additionalSpace,
+      runSpacing: spacing,
+      children: items,
     );
   }
 }

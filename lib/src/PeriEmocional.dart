@@ -97,6 +97,12 @@ class _primerItemState extends State<primer> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded
+        ? 180
+        : 60; // Ajusta la altura según si está expandido o no
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -125,22 +131,21 @@ class _primerItemState extends State<primer> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 180 : 60, // Aumenta la altura
+          height: getContainerHeight(), // Usa la altura dinámica
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Educación y comprensión',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -174,6 +179,12 @@ class _segundoItemState extends State<segundo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded
+        ? 180
+        : 60; // Ajusta la altura según si está expandido o no
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -202,22 +213,21 @@ class _segundoItemState extends State<segundo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 180 : 60, // Aumenta la altura
+          height: getContainerHeight(), // Usa la altura dinámica
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Comunicación abierta',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -241,10 +251,10 @@ class tercero extends StatefulWidget {
   const tercero({Key? key});
 
   @override
-  _terceroItemState createState() => _terceroItemState();
+  _tercerItemState createState() => _tercerItemState();
 }
 
-class _terceroItemState extends State<tercero> {
+class _tercerItemState extends State<tercero> {
   bool isExpanded = false;
 
   final customPinkColor =
@@ -279,22 +289,21 @@ class _terceroItemState extends State<tercero> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 190 : 60, // Aumenta la altura
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Terapia de apoyo',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -328,6 +337,12 @@ class _cuartoItemState extends State<cuarto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded
+        ? 190
+        : 60; // Ajusta la altura según si está expandido o no
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -356,22 +371,21 @@ class _cuartoItemState extends State<cuarto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 190 : 60, // Aumenta la altura
+          height: getContainerHeight(), // Usa la altura dinámica
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Técnicas de manejo del estrés',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -405,6 +419,12 @@ class _quintoItemState extends State<quinto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded
+        ? 170
+        : 60; // Ajusta la altura según si está expandido o no
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -433,22 +453,21 @@ class _quintoItemState extends State<quinto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 170 : 60, // Aumenta la altura
+          height: getContainerHeight(), // Usa la altura dinámica
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Hábitos de sueño saludables',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -482,6 +501,12 @@ class _sextoItemState extends State<sexto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded
+        ? 170
+        : 60; // Ajusta la altura según si está expandido o no
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -510,22 +535,21 @@ class _sextoItemState extends State<sexto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 170 : 60, // Aumenta la altura
+          height: getContainerHeight(), // Usa la altura dinámica
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Ejercicio físico',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -559,6 +583,12 @@ class _septimoItemState extends State<septimo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded
+        ? 190
+        : 60; // Ajusta la altura según si está expandido o no
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -587,22 +617,21 @@ class _septimoItemState extends State<septimo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 190 : 60, // Aumenta la altura
+          height: getContainerHeight(), // Usa la altura dinámica
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Alimentación saludable',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -636,6 +665,12 @@ class _octavoItemState extends State<octavo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded
+        ? 190
+        : 60; // Ajusta la altura según si está expandido o no
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -664,22 +699,21 @@ class _octavoItemState extends State<octavo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 190 : 60, // Aumenta la altura
+          height: getContainerHeight(), // Usa la altura dinámica
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Cuidado de la salud reproductiva',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -713,6 +747,12 @@ class _novenoItemState extends State<noveno> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded
+        ? 190
+        : 60; // Ajusta la altura según si está expandido o no
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -741,22 +781,21 @@ class _novenoItemState extends State<noveno> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 190 : 60, // Aumenta la altura
+          height: getContainerHeight(), // Usa la altura dinámica
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Tiempo para ti misma',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -790,6 +829,12 @@ class _decimoItemState extends State<decimo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded
+        ? 190
+        : 60; // Ajusta la altura según si está expandido o no
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -818,22 +863,21 @@ class _decimoItemState extends State<decimo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 190 : 60, // Aumenta la altura
+          height: getContainerHeight(), // Usa la altura dinámica
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Consultas médicas regulares',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(

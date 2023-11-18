@@ -97,6 +97,10 @@ class _primeroItemState extends State<primero> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 200 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -125,22 +129,21 @@ class _primeroItemState extends State<primero> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 200 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Apoyo de grupos',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -174,6 +177,10 @@ class _segundoItemState extends State<segundo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 180 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -202,22 +209,21 @@ class _segundoItemState extends State<segundo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 180 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Práctica de la gratitud',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -251,6 +257,10 @@ class _terceroItemState extends State<tercero> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 180 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -279,22 +289,21 @@ class _terceroItemState extends State<tercero> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 180 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Desarrollo de nuevas habilidades ',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -328,6 +337,10 @@ class _cuartoItemState extends State<cuarto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 170 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -356,22 +369,21 @@ class _cuartoItemState extends State<cuarto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 170 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Aceptación y autoaceptación',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -405,6 +417,10 @@ class _quintoItemState extends State<quinto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 200 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -433,22 +449,21 @@ class _quintoItemState extends State<quinto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 200 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Búsqueda de pasiones',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -482,6 +497,10 @@ class _sextoItemState extends State<sexto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 170 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -510,22 +529,21 @@ class _sextoItemState extends State<sexto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 170 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Celebración de logros',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -559,6 +577,10 @@ class _septimoItemState extends State<septimo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 150 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -587,26 +609,25 @@ class _septimoItemState extends State<septimo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 150 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Conexión con la naturaleza',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Pasa tiempo al aire libre y en la naturaleza para reducir el estrés y promover la relajación.',
+                      'Pasa tiempo al aire libre y en la naturaleza para reducir el estrés y promover la relajación.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -636,6 +657,10 @@ class _octavoItemState extends State<octavo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 170 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -664,22 +689,21 @@ class _octavoItemState extends State<octavo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 170 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Servicio voluntario',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -713,6 +737,10 @@ class _novenoItemState extends State<noveno> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 150 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -741,22 +769,21 @@ class _novenoItemState extends State<noveno> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 150 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Creatividad',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -790,6 +817,10 @@ class _decimoItemState extends State<decimo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 140 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -818,24 +849,23 @@ class _decimoItemState extends State<decimo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 140 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Reconexión con la espiritualidad',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     Text(
                       'Explora prácticas espirituales o religiosas que te brinden consuelo y una sensación de propósito.',
                       style: TextStyle(

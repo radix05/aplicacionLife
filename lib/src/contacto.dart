@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class contactameScreen extends StatelessWidget {
-  const contactameScreen({Key? key}) : super(key: key);
+class ContactameScreen extends StatelessWidget {
+  const ContactameScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 255, 165, 231),
-        title: const Text('contactame'),
+        title: const Text('Contáctame'),
       ),
       extendBody: true,
       body: SafeArea(
@@ -25,21 +25,76 @@ class contactameScreen extends StatelessWidget {
               ],
             ),
           ),
-          child: ListView(
-            padding: const EdgeInsets.all(16.0),
-            children: [
-              // Aquí puedes agregar el contenido específico de la pantalla
-              // utilizando la lista "contenido"
-            ],
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Para más información puedes buscarme en:',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    _buildCircularImage(' Facebook:\n Jhonatan Jose Rodas Ruiz',
+                        'images/Face.png'),
+                    const SizedBox(width: 20), // Espacio entre las imágenes
+                    _buildCircularImage2(
+                        '\n Correo Electrónico:\n rodasruiz05@gmail.com',
+                        'images/correo.png'),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
     );
   }
-}
 
-void main() {
-  runApp(MaterialApp(
-    home: contactameScreen(),
-  ));
+  Widget _buildCircularImage(String label, String imagePath) {
+    return Column(
+      children: [
+        ClipOval(
+          child: Image.asset(
+            imagePath,
+            width: 210, // Ajusta el tamaño de la imagen según sea necesario
+            height: 210,
+            fit: BoxFit.cover, // Asegura que la imagen cubra todo el círculo
+          ),
+        ),
+        const SizedBox(height: 10),
+        Text(
+          label,
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          textAlign: TextAlign.center, // Centra el texto
+        ),
+      ],
+    );
+  }
+
+  Widget _buildCircularImage2(String label, String imagePath) {
+    return Column(
+      children: [
+        ClipOval(
+          child: Image.asset(
+            imagePath,
+            width: 180, // Ajusta el tamaño de la imagen según sea necesario
+            height: 180,
+            fit: BoxFit.cover, // Asegura que la imagen cubra todo el círculo
+          ),
+        ),
+        const SizedBox(height: 10),
+        Text(
+          label,
+          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+          textAlign: TextAlign.center, // Centra el texto
+        ),
+      ],
+    );
+  }
 }

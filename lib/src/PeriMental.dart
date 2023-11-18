@@ -75,6 +75,7 @@ class _PeriMental extends State<PeriMental> {
                 septimo(),
                 octavo(),
                 noveno(),
+                decimo(),
               ],
             ),
           ),
@@ -208,7 +209,7 @@ class _segundoItemState extends State<segundo> {
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               Text(
-                'Habla con alguien:',
+                'Habla con alguien',
                 style: const TextStyle(
                   fontSize: 22.0, // Aumenta el tamaño de la fuente
                   fontWeight: FontWeight.bold, // Pone en negrita
@@ -280,22 +281,21 @@ class _tercerItemState extends State<tercer> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 200 : 60, // Aumenta la altura
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 'Terapia de apoyo',
                 style: const TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: const [
                     SizedBox(height: 10),
                     Text(
@@ -593,7 +593,7 @@ class _septimoItemState extends State<septimo> {
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               Text(
-                'Alimentación saludable',
+                'Alimentacion saludable',
                 style: const TextStyle(
                   fontSize: 22.0, // Aumenta el tamaño de la fuente
                   fontWeight: FontWeight.bold, // Pone en negrita
@@ -607,7 +607,7 @@ class _septimoItemState extends State<septimo> {
                   children: const [
                     SizedBox(height: 10),
                     Text(
-                      'Una dieta equilibrada rica en alimentos ricos en nutrientes puede respaldar la salud mental. Evita el exceso de azúcares refinados y cafeína, ya que pueden afectar negativamente el estado de ánimo.',
+                      'Una dieta equilibrada puede tener un impacto positivo en tu bienestar emocional. Intenta consumir alimentos nutritivos y mantener una hidratación adecuada.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -670,7 +670,7 @@ class _octavoItemState extends State<octavo> {
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               Text(
-                'Tiempo para ti misma',
+                'Cuida tu salud física',
                 style: const TextStyle(
                   fontSize: 22.0, // Aumenta el tamaño de la fuente
                   fontWeight: FontWeight.bold, // Pone en negrita
@@ -684,7 +684,7 @@ class _octavoItemState extends State<octavo> {
                   children: const [
                     SizedBox(height: 10),
                     Text(
-                      'Reserva tiempo para actividades que disfrutes, como pasatiempos, lectura, o simplemente relajarte. El autocuidado es fundamental para la salud mental',
+                      'Realiza chequeos regulares y cuida de tu salud física. Las preocupaciones sobre la salud pueden afectar tu bienestar emocional, así que asegúrate de abordar cualquier inquietud con un profesional de la salud.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -742,12 +742,12 @@ class _novenoItemState extends State<noveno> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: isExpanded ? 200 : 60, // Aumenta la altura
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               Text(
-                'terapia hormonal',
+                'Conéctate con otros',
                 style: const TextStyle(
                   fontSize: 22.0, // Aumenta el tamaño de la fuente
                   fontWeight: FontWeight.bold, // Pone en negrita
@@ -761,7 +761,84 @@ class _novenoItemState extends State<noveno> {
                   children: const [
                     SizedBox(height: 10),
                     Text(
-                      'Si los síntomas emocionales son graves, puedes hablar con tu médico sobre la posibilidad de terapia de reemplazo hormonal. Esto puede ayudar a estabilizar las fluctuaciones hormonales y mejorar el bienestar emocional.',
+                      'Mantén conexiones sociales. Hablar con amigos, familiares o participar en actividades grupales puede proporcionar apoyo emocional y reducir el sentimiento de aislamiento.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class decimo extends StatefulWidget {
+  const decimo({Key? key});
+
+  @override
+  _decimoItemState createState() => _decimoItemState();
+}
+
+class _decimoItemState extends State<decimo> {
+  bool isExpanded = false;
+
+  final customPinkColor =
+      Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
+  final whiteColor = Colors.white; // Color blanco
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          isExpanded = !isExpanded;
+        });
+      },
+      child: Container(
+        margin: const EdgeInsets.symmetric(
+          vertical: 10,
+        ),
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                isExpanded ? whiteColor : customPinkColor,
+                Color.fromARGB(197, 255, 255, 255),
+                Color.fromARGB(121, 255, 255, 255),
+              ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+            color: isExpanded ? customPinkColor : whiteColor,
+            borderRadius: BorderRadius.circular(15.0),
+          ),
+          padding: const EdgeInsets.all(16),
+          height: isExpanded ? 200 : 60, // Aumenta la altura
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            children: [
+              Text(
+                'Haz lo que disfrutas',
+                style: const TextStyle(
+                  fontSize: 22.0, // Aumenta el tamaño de la fuente
+                  fontWeight: FontWeight.bold, // Pone en negrita
+                  color: Colors.black,
+                ),
+              ),
+              if (isExpanded)
+                Column(
+                  mainAxisAlignment:
+                      MainAxisAlignment.center, // Centro verticalmente
+                  children: const [
+                    SizedBox(height: 10),
+                    Text(
+                      'Dedica tiempo a actividades que disfrutas y que te brinden satisfacción. Ya sea leer, practicar un hobby o pasar tiempo al aire libre, hacer cosas que te gustan puede mejorar tu bienestar emocional.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,

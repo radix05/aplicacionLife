@@ -142,8 +142,6 @@ class Principal extends StatelessWidget {
       margin: const EdgeInsets.symmetric(
         vertical: 10,
       ),
-      width: double.infinity,
-      height: 280,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -155,15 +153,12 @@ class Principal extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
-      padding: const EdgeInsets.all(16),
-      child: const Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: const Column(
         children: [
-          Flexible(
-            flex: 3,
+          Padding(
+            padding: EdgeInsets.all(16),
             child: Text(
               'Los síntomas de la perimenopausia, menopausia y postmenopausia suceden debido a los cambios hormonales que experimenta el cuerpo, la mayoría de los síntomas de la menopausia y las etapas relacionadas son el resultado de cambios hormonales, en particular la disminución de los niveles de estrógeno y progesterona en el cuerpo.',
               style: TextStyle(
@@ -185,53 +180,6 @@ class Principal2 extends StatelessWidget {
       margin: const EdgeInsets.symmetric(
         vertical: 10,
       ),
-      width: double.infinity,
-      height: 200,
-      decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [
-            Colors.white,
-            Color.fromARGB(197, 255, 255, 255),
-            Color.fromARGB(121, 255, 255, 255),
-          ],
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-        ),
-        color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
-      ),
-      padding: const EdgeInsets.all(16),
-      child: const Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Recuerda que  cada cuerpo es diferente, los síntomas varían de persona a persona. Hay quienes tienen síntomas más intensos y quienes tienen síntomas muy leves.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-//----------------------------------------------------------------------------------------------
-
-class Sofoco extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(
-        vertical: 10,
-      ),
-      width: double.infinity,
-      height: 350,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -245,25 +193,12 @@ class Sofoco extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(15),
       ),
-      padding: const EdgeInsets.all(16),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: const Column(
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Sofocos',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
-            ),
-          ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Los sofocos son uno de los síntomas más notorios, Se manifiestan como oleadas súbitas de calor que comienzan en el pecho y se extienden hacia la cabeza y el cuello. Durante un sofoco, la piel puede enrojecerse y calentarse significativamente. Estos episodios suelen ir acompañados de sudoración profusa y, en ocasiones, de palpitaciones cardíacas',
+          Padding(
+            padding: EdgeInsets.all(16),
+            child: Text(
+              'Recuerda que cada cuerpo es diferente, los síntomas varían de persona a persona. Hay quienes tienen síntomas más intensos y quienes tienen síntomas muy leves.',
               style: TextStyle(
                 fontSize: 22.0,
                 color: Colors.black,
@@ -271,6 +206,64 @@ class Sofoco extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+//----------------------------------------------------------------------------------------------
+
+class Sofoco extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(
+        vertical: 10,
+      ),
+      width: double.infinity,
+      child: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: const LinearGradient(
+              colors: [
+                Colors.white,
+                Color.fromARGB(197, 255, 255, 255),
+                Color.fromARGB(121, 255, 255, 255),
+              ],
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+            ),
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(15),
+          ),
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                // Primer contenedor (div)
+                child: const Text(
+                  'Sofocos',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 50), // Espacio entre los contenedores
+              Container(
+                // Segundo contenedor (div)
+                child: const Text(
+                  'Los sofocos son uno de los síntomas más notorios, Se manifiestan como oleadas súbitas de calor que comienzan en el pecho y se extienden hacia la cabeza y el cuello. Durante un sofoco, la piel puede enrojecerse y calentarse significativamente. Estos episodios suelen ir acompañados de sudoración profusa y, en ocasiones, de palpitaciones cardíacas',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
@@ -284,7 +277,6 @@ class Cambiosenelciclo extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 430,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -303,7 +295,6 @@ class Cambiosenelciclo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            // Primer contenedor (div)
             child: const Text(
               'Cambios en el Ciclo Menstrual',
               style: TextStyle(
@@ -312,9 +303,8 @@ class Cambiosenelciclo extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20),
           Container(
-            // Segundo contenedor (div)
             child: const Text(
               'Los cambios en el ciclo menstrual son una característica distintiva de la perimenopausia y la menopausia. Durante la perimenopausia, que es la etapa de transición hacia la menopausia, las mujeres pueden experimentar alteraciones significativas en su ciclo menstrual. Estos cambios son principalmente el resultado de fluctuaciones hormonales, en particular una disminución en los niveles de estrógeno.',
               style: TextStyle(
@@ -337,7 +327,6 @@ class Cambiosanimo extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 400,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -356,7 +345,6 @@ class Cambiosanimo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            // Primer contenedor (div)
             child: const Text(
               'Cambios en el estado de ánimo.',
               style: TextStyle(
@@ -365,9 +353,8 @@ class Cambiosanimo extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20),
           Container(
-            // Segundo contenedor (div)
             child: const Text(
               'Los cambios en el estado de ánimo son otro síntoma común en la perimenopausia, la menopausia y la postmenopausia. Estos cambios pueden ser atribuidos a fluctuaciones hormonales, en particular la disminución de los niveles de estrógeno, que afecta el equilibrio químico en el cerebro. Aquí tienes una descripción más detallada',
               style: TextStyle(
@@ -390,7 +377,6 @@ class ProblemasDormir extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 500,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -409,7 +395,6 @@ class ProblemasDormir extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            // Primer contenedor (div)
             child: const Text(
               'Problemas para dormir.',
               style: TextStyle(
@@ -418,9 +403,8 @@ class ProblemasDormir extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20),
           Container(
-            // Segundo contenedor (div)
             child: const Text(
               'Los problemas para dormir, incluido el insomnio, son síntomas frecuentes en la perimenopausia, la menopausia y la postmenopausia. Estos problemas pueden estar relacionados con los cambios hormonales, los sofocos nocturnos y otros factores, La falta de sueño de calidad puede tener un impacto significativo en la salud y el bienestar general, lo que incluye fatiga, cambios en el estado de ánimo, dificultades cognitivas y un mayor riesgo de problemas de salud a largo plazo',
               style: TextStyle(
@@ -443,7 +427,6 @@ class Sequedad extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 350,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -462,7 +445,6 @@ class Sequedad extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            // Primer contenedor (div)
             child: const Text(
               'Sequedad Vaginal.',
               style: TextStyle(
@@ -471,9 +453,8 @@ class Sequedad extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20),
           Container(
-            // Segundo contenedor (div)
             child: const Text(
               'La sequedad vaginal es un síntoma común en la menopausia y puede ser causa de incomodidad y dolor durante las relaciones sexuales. Este síntoma se produce debido a la disminución de los niveles de estrógeno, que afecta la lubricación natural',
               style: TextStyle(
@@ -496,7 +477,6 @@ class AumentoPeso extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 350,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -515,20 +495,18 @@ class AumentoPeso extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            // Primer contenedor (div)
             child: const Text(
-              'Aumento de peso.',
+              'Aumento de Peso.',
               style: TextStyle(
                 fontSize: 22.0,
                 color: Colors.black,
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20),
           Container(
-            // Segundo contenedor (div)
             child: const Text(
-              'El aumento de peso es un síntoma común durante la menopausia, aunque no todas las mujeres lo experimentan de la misma manera. Los cambios hormonales, como la disminución de los niveles de estrógeno, pueden contribuir a la redistribución de la grasa y a la pérdida de masa muscular, lo que a menudo lleva a un aumento de peso',
+              'Muchas mujeres experimentan un aumento de peso durante la perimenopausia y la menopausia. Este aumento de peso puede deberse a una variedad de factores, incluidos los cambios hormonales, la disminución de la masa muscular, la disminución de la actividad física y los cambios en el metabolismo. La redistribución de la grasa corporal también es común durante esta etapa, con un aumento en la grasa abdominal',
               style: TextStyle(
                 fontSize: 22.0,
                 color: Colors.black,
@@ -549,7 +527,6 @@ class Nicturia extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 350,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -577,7 +554,7 @@ class Nicturia extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20), // Espacio entre los contenedores
           Container(
             // Segundo contenedor (div)
             child: const Text(
@@ -602,7 +579,6 @@ class Piel extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 600,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -630,7 +606,7 @@ class Piel extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20), // Espacio entre los contenedores
           Container(
             // Segundo contenedor (div)
             child: const Text(
@@ -655,7 +631,6 @@ class Sudores extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 520,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -683,7 +658,7 @@ class Sudores extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20), // Espacio entre los contenedores
           Container(
             // Segundo contenedor (div)
             child: const Text(
@@ -708,7 +683,6 @@ class Fatiga extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 520,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -736,7 +710,7 @@ class Fatiga extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20), // Espacio entre los contenedores
           Container(
             // Segundo contenedor (div)
             child: const Text(
@@ -761,7 +735,6 @@ class Vello extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 600,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -789,7 +762,7 @@ class Vello extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20), // Espacio entre los contenedores
           Container(
             // Segundo contenedor (div)
             child: const Text(
@@ -814,7 +787,6 @@ class Gusto extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 600,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -842,7 +814,7 @@ class Gusto extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20), // Espacio entre los contenedores
           Container(
             // Segundo contenedor (div)
             child: const Text(
@@ -867,7 +839,6 @@ class Olor extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 600,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -895,7 +866,7 @@ class Olor extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
+          const SizedBox(height: 20), // Espacio entre los contenedores
           Container(
             // Segundo contenedor (div)
             child: const Text(
@@ -920,7 +891,6 @@ class Presion extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 520,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -973,7 +943,6 @@ class Dental extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 670,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1026,7 +995,6 @@ class Equilibrio extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 550,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1079,7 +1047,6 @@ class Tiroides extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 550,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1132,7 +1099,6 @@ class Musculares extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 700,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1185,7 +1151,6 @@ class Migranas extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 600,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1200,28 +1165,23 @@ class Migranas extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Migrañas o dolores de cabeza más frecuentes',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Migrañas o dolores de cabeza más frecuentes',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Durante la menopausia, algunas mujeres pueden experimentar migrañas o dolores de cabeza más frecuentes, Las migrañas son un tipo de dolor de cabeza intenso que a menudo se acompaña de síntomas adicionales, como náuseas, vómitos y sensibilidad a la luz y al ruido. Algunas mujeres pueden notar que sus migrañas se vuelven más frecuentes o intensas durante la menopausia, Los dolores de cabeza tensionales son otra forma común de dolor de cabeza. Pueden ser causados por el estrés, la tensión muscular y los cambios hormonales que ocurren durante la menopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20),
+          Text(
+            'Durante la menopausia, algunas mujeres pueden experimentar migrañas o dolores de cabeza más frecuentes, Las migrañas son un tipo de dolor de cabeza intenso que a menudo se acompaña de síntomas adicionales, como náuseas, vómitos y sensibilidad a la luz y al ruido. Algunas mujeres pueden notar que sus migrañas se vuelven más frecuentes o intensas durante la menopausia, Los dolores de cabeza tensionales son otra forma común de dolor de cabeza. Pueden ser causados por el estrés, la tensión muscular y los cambios hormonales que ocurren durante la menopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1238,7 +1198,6 @@ class Mareos extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 500,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1253,28 +1212,23 @@ class Mareos extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Mareos o vértigo',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Mareos o vértigo',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Durante la menopausia, algunas mujeres pueden experimentar episodios de mareos o vértigo, aunque no es uno de los síntomas más comunes, El vértigo es una forma más extrema de mareo que puede sentirse como si la habitación estuviera girando o moviéndose. Puede ser causado por problemas en el oído interno o desequilibrios en el sistema vestibular, Los cambios hormonales, la disminución de la circulación sanguínea y la fluctuación de la presión arterial pueden contribuir a los episodios de mareos o vértigo durante la menopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20),
+          Text(
+            'Durante la menopausia, algunas mujeres pueden experimentar episodios de mareos o vértigo, aunque no es uno de los síntomas más comunes, El vértigo es una forma más extrema de mareo que puede sentirse como si la habitación estuviera girando o moviéndose. Puede ser causado por problemas en el oído interno o desequilibrios en el sistema vestibular, Los cambios hormonales, la disminución de la circulación sanguínea y la fluctuación de la presión arterial pueden contribuir a los episodios de mareos o vértigo durante la menopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1291,7 +1245,6 @@ class Cambiospiel extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 500,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1306,28 +1259,23 @@ class Cambiospiel extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Cambios en la textura de la piel',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios en la textura de la piel',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Durante la menopausia, muchas mujeres experimentan cambios en la textura de la piel debido a la disminución de los niveles de estrógeno y otros factores relacionados con el envejecimiento, La piel tiende a volverse más seca durante la menopausia, lo que puede causar picazón, descamación y sensibilidad. La falta de estrógeno afecta la producción de aceites naturales de la piel, lo que conduce a la resequedad, La piel puede perder su elasticidad natural a medida que disminuyen los niveles de colágeno y elastina. Esto puede resultar en la aparición de arrugas y flacidez.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20),
+          Text(
+            'Durante la menopausia, muchas mujeres experimentan cambios en la textura de la piel debido a la disminución de los niveles de estrógeno y otros factores relacionados con el envejecimiento, La piel tiende a volverse más seca durante la menopausia, lo que puede causar picazón, descamación y sensibilidad. La falta de estrógeno afecta la producción de aceites naturales de la piel, lo que conduce a la resequedad, La piel puede perder su elasticidad natural a medida que disminuyen los niveles de colágeno y elastina. Esto puede resultar en la aparición de arrugas y flacidez.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1344,7 +1292,6 @@ class Alergias extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 600,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1359,28 +1306,23 @@ class Alergias extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Alergias o sensibilidades alimentarias',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Alergias o sensibilidades alimentarias',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Durante la menopausia, algunas mujeres pueden experimentar alergias o sensibilidades alimentarias, aunque no es uno de los síntomas más comunes, as alergias alimentarias son reacciones adversas del sistema inmunológico a ciertos alimentos. Pueden causar una variedad de síntomas, desde leves a graves, como erupciones cutáneas, hinchazón, dificultad para respirar y, en casos extremos, anafilaxia, Las sensibilidades alimentarias, a diferencia de las alergias, no involucran una respuesta inmunológica. En cambio, pueden provocar síntomas digestivos como hinchazón, gases, diarrea o estreñimiento después de consumir ciertos alimentos.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20),
+          Text(
+            'Durante la menopausia, algunas mujeres pueden experimentar alergias o sensibilidades alimentarias, aunque no es uno de los síntomas más comunes, as alergias alimentarias son reacciones adversas del sistema inmunológico a ciertos alimentos. Pueden causar una variedad de síntomas, desde leves a graves, como erupciones cutáneas, hinchazón, dificultad para respirar y, en casos extremos, anafilaxia, Las sensibilidades alimentarias, a diferencia de las alergias, no involucran una respuesta inmunológica. En cambio, pueden provocar síntomas digestivos como hinchazón, gases, diarrea o estreñimiento después de consumir ciertos alimentos.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1397,7 +1339,6 @@ class Apetito extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 620,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1412,28 +1353,23 @@ class Apetito extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Cambios en el apetito',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios en el apetito',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Durante la menopausia, algunas mujeres experimentan cambios en el apetito, que pueden manifestarse de diversas maneras, Algunas mujeres pueden notar un aumento en su apetito durante la menopausia. Esto puede estar relacionado con cambios hormonales y emocionales, lo que lleva a un mayor consumo de alimentos, Otras mujeres pueden experimentar una disminución en su apetito. Pueden sentirse menos interesadas en la comida o pueden experimentar síntomas como náuseas, lo que puede reducir su deseo de comer, es común experimentar antojos de alimentos específicos, a veces alimentos ricos en azúcar o carbohidratos. Estos antojos pueden estar relacionados con cambios hormonales y emocionales.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20),
+          Text(
+            'Durante la menopausia, algunas mujeres experimentan cambios en el apetito, que pueden manifestarse de diversas maneras, Algunas mujeres pueden notar un aumento en su apetito durante la menopausia. Esto puede estar relacionado con cambios hormonales y emocionales, lo que lleva a un mayor consumo de alimentos, Otras mujeres pueden experimentar una disminución en su apetito. Pueden sentirse menos interesadas en la comida o pueden experimentar síntomas como náuseas, lo que puede reducir su deseo de comer, es común experimentar antojos de alimentos específicos, a veces alimentos ricos en azúcar o carbohidratos. Estos antojos pueden estar relacionados con cambios hormonales y emocionales.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1450,7 +1386,6 @@ class Cuerpo extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 570,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1465,28 +1400,23 @@ class Cuerpo extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Cambios en la forma del cuerpo',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios en la forma del cuerpo',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Durante la menopausia, muchas mujeres experimentan cambios en la forma de su cuerpo, que a menudo están relacionados con la redistribución de la grasa y la pérdida de masa muscular,  La menopausia a menudo conlleva a la redistribución de la grasa corporal. Las mujeres pueden notar un aumento de la grasa en la zona abdominal, lo que lleva a una figura más "forma de manzana" en lugar de una figura más "forma de pera" que se observa típicamente en la juventud, La pérdida de masa muscular es común durante la menopausia. La disminución de los niveles de estrógeno puede contribuir a una menor densidad ósea y muscular.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20), // Espacio entre los contenedores
+          Text(
+            'Durante la menopausia, muchas mujeres experimentan cambios en la forma de su cuerpo, que a menudo están relacionados con la redistribución de la grasa y la pérdida de masa muscular,  La menopausia a menudo conlleva a la redistribución de la grasa corporal. Las mujeres pueden notar un aumento de la grasa en la zona abdominal, lo que lleva a una figura más "forma de manzana" en lugar de una figura más "forma de pera" que se observa típicamente en la juventud, La pérdida de masa muscular es común durante la menopausia. La disminución de los niveles de estrógeno puede contribuir a una menor densidad ósea y muscular.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1503,7 +1433,6 @@ class Senos extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 590,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1518,28 +1447,23 @@ class Senos extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Cambios en la sensibilidad en los senos',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios en la sensibilidad en los senos',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Los cambios en la sensibilidad en los senos son comunes durante la menopausia y pueden manifestarse de varias maneras, Algunas mujeres pueden experimentar un aumento en la sensibilidad de los senos durante la menopausia. Esto puede incluir dolor o molestias en los senos, lo que a menudo se denomina "mastalgia", Durante la menopausia, es posible que notes cambios en el tamaño y la forma de tus senos. Pueden volverse más pequeños o perder firmeza debido a la disminución de los niveles de estrógeno, Es importante destacar que estos cambios en la sensibilidad en los senos son en gran medida hormonales y parte del proceso natural de envejecimiento.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20), // Espacio entre los contenedores
+          Text(
+            'Los cambios en la sensibilidad en los senos son comunes durante la menopausia y pueden manifestarse de varias maneras, Algunas mujeres pueden experimentar un aumento en la sensibilidad de los senos durante la menopausia. Esto puede incluir dolor o molestias en los senos, lo que a menudo se denomina "mastalgia", Durante la menopausia, es posible que notes cambios en el tamaño y la forma de tus senos. Pueden volverse más pequeños o perder firmeza debido a la disminución de los niveles de estrógeno, Es importante destacar que estos cambios en la sensibilidad en los senos son en gran medida hormonales y parte del proceso natural de envejecimiento.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1556,7 +1480,6 @@ class Urinarias extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 590,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1571,28 +1494,23 @@ class Urinarias extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Infecciones urinarias',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Infecciones urinarias',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Las infecciones urinarias son una preocupación común para muchas mujeres durante la menopausia, urante la menopausia, la disminución de los niveles de estrógeno puede llevar a cambios en el tracto urinario que hacen que las mujeres sean más susceptibles a las infecciones urinarias, Las infecciones urinarias pueden provocar síntomas como dolor o ardor al orinar, necesidad frecuente de orinar, orina turbia o con mal olor, presión en la pelvis y fiebre baja en casos graves, La atrofia vaginal, que es común durante la menopausia, puede hacer que la uretra sea más vulnerable a las infecciones urinarias debido a la sequedad y adelgazamiento de los tejidos.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20), // Espacio entre los contenedores
+          Text(
+            'Las infecciones urinarias son una preocupación común para muchas mujeres durante la menopausia, urante la menopausia, la disminución de los niveles de estrógeno puede llevar a cambios en el tracto urinario que hacen que las mujeres sean más susceptibles a las infecciones urinarias, Las infecciones urinarias pueden provocar síntomas como dolor o ardor al orinar, necesidad frecuente de orinar, orina turbia o con mal olor, presión en la pelvis y fiebre baja en casos graves, La atrofia vaginal, que es común durante la menopausia, puede hacer que la uretra sea más vulnerable a las infecciones urinarias debido a la sequedad y adelgazamiento de los tejidos.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1609,7 +1527,6 @@ class Palpitaciones extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 640,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1624,28 +1541,23 @@ class Palpitaciones extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Palpitaciones cardíacas',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Palpitaciones cardíacas',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Las palpitaciones cardíacas se refieren a la sensación de latidos del corazón que una persona puede experimentar de manera consciente, a menudo como latidos acelerados, fuertes o irregulares. Durante la menopausia, algunas mujeres pueden experimentar palpitaciones cardíacas debido a cambios hormonales y otros factores, Durante la menopausia, la disminución de los niveles de estrógeno puede afectar el sistema cardiovascular y causar palpitaciones. Además, la sudoración excesiva y los sofocos pueden aumentar la frecuencia cardíaca, Las palpitaciones pueden ir acompañadas de otros síntomas, como mareos, sudoración excesiva, debilidad o ansiedad, El estrés, la cafeína, el alcohol y los alimentos picantes a menudo se asocian con un aumento en las palpitaciones.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20), // Espacio entre los contenedores
+          Text(
+            'Las palpitaciones cardíacas se refieren a la sensación de latidos del corazón que una persona puede experimentar de manera consciente, a menudo como latidos acelerados, fuertes o irregulares. Durante la menopausia, algunas mujeres pueden experimentar palpitaciones cardíacas debido a cambios hormonales y otros factores, Durante la menopausia, la disminución de los niveles de estrógeno puede afectar el sistema cardiovascular y causar palpitaciones. Además, la sudoración excesiva y los sofocos pueden aumentar la frecuencia cardíaca, Las palpitaciones pueden ir acompañadas de otros síntomas, como mareos, sudoración excesiva, debilidad o ansiedad, El estrés, la cafeína, el alcohol y los alimentos picantes a menudo se asocian con un aumento en las palpitaciones.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1662,7 +1574,6 @@ class Sueno extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 500,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1677,28 +1588,23 @@ class Sueno extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Cambios en el patrón de sueño',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios en el patrón de sueño',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'El insomnio es uno de los problemas de sueño más comunes durante la menopausia. Puedes tener dificultad para conciliar el sueño, despertarte durante la noche y tener dificultad para volver a dormir, Los sofocos nocturnos, que son oleadas repentinas de calor, pueden interrumpir tu sueño y hacerte despertar sudando, a menopausia puede alterar tu reloj biológico, lo que a menudo lleva a cambios en tus hábitos de sueño. Puedes sentirte más despierta por la noche y más somnolienta durante el día.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20), // Espacio entre los contenedores
+          Text(
+            'El insomnio es uno de los problemas de sueño más comunes durante la menopausia. Puedes tener dificultad para conciliar el sueño, despertarte durante la noche y tener dificultad para volver a dormir, Los sofocos nocturnos, que son oleadas repentinas de calor, pueden interrumpir tu sueño y hacerte despertar sudando, a menopausia puede alterar tu reloj biológico, lo que a menudo lleva a cambios en tus hábitos de sueño. Puedes sentirte más despierta por la noche y más somnolienta durante el día.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1715,7 +1621,6 @@ class Libido extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 480,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1730,28 +1635,23 @@ class Libido extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Cambios en la libido',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios en la libido',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Una disminución en los niveles de estrógeno durante la menopausia puede llevar a una reducción del deseo sexual en algunas mujeres. La sequedad vaginal y los cambios hormonales pueden hacer que el sexo sea incómodo, lo que a su vez puede disminuir el interés en la actividad sexual, Algunas mujeres pueden experimentar cambios en la respuesta sexual, como una menor excitación o dificultad para alcanzar el orgasmo.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20), // Espacio entre los contenedores
+          Text(
+            'Una disminución en los niveles de estrógeno durante la menopausia puede llevar a una reducción del deseo sexual en algunas mujeres. La sequedad vaginal y los cambios hormonales pueden hacer que el sexo sea incómodo, lo que a su vez puede disminuir el interés en la actividad sexual, Algunas mujeres pueden experimentar cambios en la respuesta sexual, como una menor excitación o dificultad para alcanzar el orgasmo.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1768,7 +1668,6 @@ class Peroidos extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 620,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1783,28 +1682,23 @@ class Peroidos extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            // Primer contenedor (div)
-            child: const Text(
-              'Periodos irregulares',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Periodos irregulares',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
-          const SizedBox(height: 50), // Espacio entre los contenedores
-          Container(
-            // Segundo contenedor (div)
-            child: const Text(
-              'Durante la perimenopausia, que es la fase de transición hacia la menopausia, es común experimentar periodos irregulares, Durante esta etapa, es posible que experimentes periodos menstruales más frecuentes o menos frecuentes de lo que estabas acostumbrada. Pueden producirse ciclos más cortos o más largos, lo que a veces puede ser impredecible, La cantidad y la duración del flujo menstrual también pueden variar. Algunas mujeres pueden tener menstruaciones más ligeras, mientras que otras pueden experimentar sangrado más abundante, Los periodos irregulares pueden ir acompañados de síntomas como cambios en el estado de ánimo, sofocos, sudores nocturnos y cambios en el patrón de sueño.',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          SizedBox(height: 20), // Espacio entre los contenedores
+          Text(
+            'Durante la perimenopausia, que es la fase de transición hacia la menopausia, es común experimentar periodos irregulares, Durante esta etapa, es posible que experimentes periodos menstruales más frecuentes o menos frecuentes de lo que estabas acostumbrada. Pueden producirse ciclos más cortos o más largos, lo que a veces puede ser impredecible, La cantidad y la duración del flujo menstrual también pueden variar. Algunas mujeres pueden tener menstruaciones más ligeras, mientras que otras pueden experimentar sangrado más abundante, Los periodos irregulares pueden ir acompañados de síntomas como cambios en el estado de ánimo, sofocos, sudores nocturnos y cambios en el patrón de sueño.',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1836,7 +1730,7 @@ final List<SymptomInfo> symptomWidgets = [
   SymptomInfo('Cambios en el Sentido del Olfato', Olor()),
   SymptomInfo('Cambios en la Presion Arterial', Presion()),
   SymptomInfo('Cambios en la Salud Dental y Bucal', Dental()),
-  SymptomInfo('Cambios en el Equilibrio y la Coordinación.', Equilibrio()),
+  SymptomInfo('Cambios de Equilibrio y la Coordinación.', Equilibrio()),
   SymptomInfo('Cambios en la función de la tiroides', Tiroides()),
   SymptomInfo('Dolores Articulares y Musculares', Musculares()),
   SymptomInfo('Dolores de Cabeza más Frecuentes', Migranas()),

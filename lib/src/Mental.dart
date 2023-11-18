@@ -95,6 +95,10 @@ class _primerItemState extends State<primer> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 200 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -123,26 +127,25 @@ class _primerItemState extends State<primer> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 200 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Mantener una red de apoyo social',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Mantener relaciones cercanas con amigos y familiares te brinda un sistema de apoyo emocional que te ayudará a afrontar desafíos emocionales y proporcionará un sentido de pertenencia y conexión',
+                      'Mantener relaciones cercanas con amigos y familiares te brinda un sistema de apoyo emocional que te ayudará a afrontar desafíos emocionales y proporcionará un sentido de pertenencia y conexión.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -172,6 +175,10 @@ class _segundoItemState extends State<segundo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -200,22 +207,21 @@ class _segundoItemState extends State<segundo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Ejercicio regular',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -249,6 +255,10 @@ class _terceroItemState extends State<tercero> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -277,22 +287,21 @@ class _terceroItemState extends State<tercero> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Alimentación equilibrada',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -326,6 +335,10 @@ class _cuartoItemState extends State<cuarto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -354,22 +367,21 @@ class _cuartoItemState extends State<cuarto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Descanso adecuado',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -403,6 +415,10 @@ class _quintoItemState extends State<quinto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -431,22 +447,21 @@ class _quintoItemState extends State<quinto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Técnicas de manejo del estrés',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -480,6 +495,10 @@ class _sextoItemState extends State<sexto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -508,22 +527,21 @@ class _sextoItemState extends State<sexto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               const Text(
                 'Comunicación abierta',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -557,6 +575,10 @@ class _septimaItemState extends State<septima> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -585,22 +607,21 @@ class _septimaItemState extends State<septima> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               const Text(
                 'Tiempo para el autocuidado',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -634,6 +655,10 @@ class _octavoItemState extends State<octavo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -662,22 +687,21 @@ class _octavoItemState extends State<octavo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               const Text(
                 'Búsqueda de ayuda profesional',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(

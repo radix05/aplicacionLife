@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'perfil.dart';
 import 'principal.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -81,7 +82,7 @@ class _ModulosPageState extends State<ModulosPage> {
                 children: <Widget>[
                   buildPage(
                     Colors.red,
-                    '¡Bienvenida a LifeTransition! Esta aplicación está diseñada especialmente para acompañarte en tu viaje a través de la menopausia. Estamos aquí para brindarte apoyo y recursos útiles mientras navegas por esta etapa de tu vida. ¡Comencemos juntas!',
+                    '¡Bienvenida a LifeTransition! Esta aplicación está diseñada especialmente para acompañarte en tu viaje a través de la menopausia...',
                     [
                       const Color.fromARGB(255, 251, 83, 139),
                       const Color.fromARGB(255, 255, 140, 240),
@@ -91,7 +92,7 @@ class _ModulosPageState extends State<ModulosPage> {
                   ),
                   buildPage(
                     Colors.blue,
-                    'En LifeTransition, puedes llevar un control completo de tu menopausia. Registra tus síntomas, seguimiento de tu ciclo y accede a información confiable sobre la menopausia. Nuestra misión es proporcionarte las herramientas necesarias para tomar el control de tu salud durante este periodo de transición.',
+                    'En LifeTransition, puedes llevar un control completo de tu menopausia. Registra tus síntomas, seguimiento de tu ciclo y accede a información confiable sobre la menopausia...',
                     [
                       const Color.fromARGB(255, 251, 83, 139),
                       const Color.fromARGB(255, 255, 140, 240),
@@ -101,7 +102,17 @@ class _ModulosPageState extends State<ModulosPage> {
                   ),
                   buildPage(
                     Colors.green,
-                    'Agradecemos que confíes en LifeTransition para tu viaje a través de la menopausia. Esperamos que esta aplicación te sea de gran ayuda y que tengas una experiencia positiva. Siempre estamos aquí para ti. ¡Deseamos que tengas una experiencia increíble mientras cuidas de ti misma durante la menopausia!',
+                    'Agradecemos que confíes en LifeTransition. Esperamos que esta aplicación te sea de gran ayuda y que tengas una experiencia positiva...',
+                    [
+                      const Color.fromARGB(255, 251, 83, 139),
+                      const Color.fromARGB(255, 255, 140, 240),
+                      const Color.fromRGBO(255, 190, 242, 1),
+                      Colors.white,
+                    ],
+                  ),
+                  buildPage(
+                    Colors.purple, // Nueva página al final
+                    'por ultimo, solo nos queda ir a configurar tu nombre y edad, asi la aplicacion puede darte un mejor seguimiento y tratamiento de algunos sintomas',
                     [
                       const Color.fromARGB(255, 251, 83, 139),
                       const Color.fromARGB(255, 255, 140, 240),
@@ -113,7 +124,7 @@ class _ModulosPageState extends State<ModulosPage> {
                 onPageChanged: (index) {
                   setState(() {
                     _currentPage = index;
-                    if (_currentPage == 2) {
+                    if (_currentPage == 3) {
                       _showWelcomeButton = false;
                       _startTimerToShowButton();
                     } else {
@@ -123,11 +134,17 @@ class _ModulosPageState extends State<ModulosPage> {
                 },
               ),
             ),
-            if (_showWelcomeButton)
+            if (_showWelcomeButton && _currentPage == 3)
               GestureDetector(
                 onTap: () {
-                  _markWelcomeScreensAsShown(); // Marca las pantallas como mostradas
-                  _navigateToPrincipalScreen(); // Dirige al usuario a la pantalla principal
+                  _markWelcomeScreensAsShown();
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          PerfilScreen(), // Ahora redirige a PerfilScreen
+                    ),
+                  );
                 },
                 child: Container(
                   padding: const EdgeInsets.all(16.0),
@@ -183,7 +200,7 @@ class _ModulosPageState extends State<ModulosPage> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          for (int i = 0; i < 3; i++) // Cambia 3 al número total de páginas
+          for (int i = 0; i < 4; i++) // Cambia 3 al número total de páginas
             Container(
               width: 10.0,
               height: 50.0,

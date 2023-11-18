@@ -71,9 +71,7 @@ class _Sexual extends State<Sexual> {
                 const quinto(),
                 const sexto(),
                 const septimo(),
-                const octavo(),
                 const noveno(),
-                const decimo(),
               ],
             ),
           ),
@@ -96,6 +94,10 @@ class _primeroItemState extends State<primero> {
   final customPinkColor =
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
+
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -125,7 +127,7 @@ class _primeroItemState extends State<primero> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
@@ -174,6 +176,10 @@ class _segundaItemState extends State<segunda> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -202,7 +208,7 @@ class _segundaItemState extends State<segunda> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
@@ -251,6 +257,10 @@ class _terceroItemState extends State<tercero> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -279,7 +289,7 @@ class _terceroItemState extends State<tercero> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
@@ -328,6 +338,10 @@ class _cuartoItemState extends State<cuarto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -356,7 +370,7 @@ class _cuartoItemState extends State<cuarto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
@@ -405,6 +419,10 @@ class _quintoItemState extends State<quinto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -433,7 +451,7 @@ class _quintoItemState extends State<quinto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
@@ -482,6 +500,10 @@ class _sextoItemState extends State<sexto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -501,7 +523,8 @@ class _sextoItemState extends State<sexto> {
               colors: [
                 isExpanded ? whiteColor : customPinkColor,
                 const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
+                const Color.fromARGB(
+                    121, 255, 255, 255), // Corregido el error aquí
               ],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
@@ -510,7 +533,7 @@ class _sextoItemState extends State<sexto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
@@ -571,128 +594,47 @@ class _septimoItemState extends State<septimo> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
-            children: [
-              const Text(
-                'Consulta con un especialista',
-                style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
-                  color: Colors.black,
-                ),
-              ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      ' Si experimentas cambios significativos en la libido, disfunción sexual u otros problemas relacionados con la menopausia, considera la consulta con un ginecólogo, terapeuta sexual o consejero de pareja especializado en salud sexual en la menopausia.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
+        width: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              isExpanded ? whiteColor : customPinkColor,
+              const Color.fromARGB(197, 255, 255, 255),
+              const Color.fromARGB(121, 255, 255, 255),
             ],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
           ),
+          color: isExpanded ? customPinkColor : whiteColor,
+          borderRadius: BorderRadius.circular(15.0),
         ),
-      ),
-    );
-  }
-}
-
-class octavo extends StatefulWidget {
-  const octavo({Key? key});
-
-  @override
-  _octavoItemState createState() => _octavoItemState();
-}
-
-class _octavoItemState extends State<octavo> {
-  bool isExpanded = false;
-
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isExpanded = !isExpanded;
-        });
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 10,
-        ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
-            children: [
-              const Text(
-                'Mantenimiento de la salud ginecológica',
-                style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
-                  color: Colors.black,
-                ),
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+          children: [
+            const Text(
+              'Consulta con un especialista',
+              style: TextStyle(
+                fontSize: 22.0, // Aumenta el tamaño de la fuente
+                fontWeight: FontWeight.bold, // Pone en negrita
+                color: Colors.black,
               ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Continúa programando exámenes ginecológicos regulares para monitorear la salud vaginal y discute cualquier problema con tu médico.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
+            ),
+            if (isExpanded)
+              const Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(height: 10),
+                  Text(
+                    ' Si experimentas cambios significativos en la libido, disfunción sexual u otros problemas relacionados con la menopausia, considera la consulta con un ginecólogo, terapeuta sexual o consejero de pareja especializado en salud sexual en la menopausia.',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.black,
                     ),
-                  ],
-                ),
-            ],
-          ),
+                  ),
+                ],
+              ),
+          ],
         ),
       ),
     );
@@ -752,11 +694,11 @@ class _novenoItemState extends State<noveno> {
                   fontWeight: FontWeight.bold, // Pone en negrita
                   color: Colors.black,
                 ),
+                textAlign: TextAlign.center, // Alinea el texto al centro
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -765,83 +707,7 @@ class _novenoItemState extends State<noveno> {
                         fontSize: 20.0,
                         color: Colors.black,
                       ),
-                    ),
-                  ],
-                ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class decimo extends StatefulWidget {
-  const decimo({Key? key});
-
-  @override
-  _decimoItemState createState() => _decimoItemState();
-}
-
-class _decimoItemState extends State<decimo> {
-  bool isExpanded = false;
-
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isExpanded = !isExpanded;
-        });
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 10,
-        ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
-            children: [
-              const Text(
-                'Cuidado de la salud mental',
-                style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
-                  color: Colors.black,
-                ),
-              ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'La salud mental también desempeña un papel importante en la salud sexual. Si experimentas problemas emocionales o estrés, busca apoyo y tratamiento para mantener un bienestar emocional que influya positivamente en tu vida sexual durante la menopausia.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
+                      textAlign: TextAlign.center, // Alinea el texto al centro
                     ),
                   ],
                 ),

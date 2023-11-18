@@ -214,8 +214,6 @@ class Peri1 extends StatelessWidget {
       margin: const EdgeInsets.symmetric(
         vertical: 10,
       ),
-      width: double.infinity,
-      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -227,17 +225,15 @@ class Peri1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-            flex: 3,
             child: Text(
-              'La perimenopausia significa "alrededor de la menopausia" y se refiere al tiempo durante el cual el cuerpo produce la natural transición a la menopausia marca el final de los años reproductivos. La perimenopausia también se llama la transición menopáusica.',
+              'La perimenopausia significa "alrededor de la menopausia" y se refiere al tiempo durante el cual el cuerpo produce la transición natural a la menopausia marca el final de los años reproductivos. La perimenopausia también se llama la transición menopáusica.',
               style: TextStyle(
                 fontSize: 22.0,
                 color: Colors.black,
@@ -257,8 +253,6 @@ class Peri2 extends StatelessWidget {
       margin: const EdgeInsets.symmetric(
         vertical: 10,
       ),
-      width: double.infinity,
-      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -270,15 +264,13 @@ class Peri2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-            flex: 3,
             child: Text(
               'Las mujeres desde la perimenopausia diferentes edades. Usted puede notar signos de progresión hacia la menopausia, tales como irregularidad menstrual, en algún momento en su 40s. Pero algunas mujeres notan cambios tan pronto como mediados de los años 30.',
               style: TextStyle(
@@ -344,8 +336,6 @@ class Meno1 extends StatelessWidget {
       margin: const EdgeInsets.symmetric(
         vertical: 10,
       ),
-      width: double.infinity,
-      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -357,15 +347,13 @@ class Meno1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-            flex: 3,
             child: Text(
               'La menopausia es la época de la vida de una mujer en la cual deja de tener menstruaciones. Suele ocurrir naturalmente, con mayor frecuencia después de los 45 años. La menopausia se produce porque los ovarios de la mujer dejan de producir las hormonas estrógeno y progesterona.',
               style: TextStyle(
@@ -387,8 +375,6 @@ class Meno2 extends StatelessWidget {
       margin: const EdgeInsets.symmetric(
         vertical: 10,
       ),
-      width: double.infinity,
-      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -400,17 +386,15 @@ class Meno2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-            flex: 3,
             child: Text(
-              'Una mujer llega a la menopausia cuando no tiene un período menstrual durante un año. Los cambios y los síntomas pueden empezar varios años antes. Éstos incluyen:',
+              'Una mujer llega a la menopausia cuando no tiene un período menstrual durante un año. Los cambios y los síntomas pueden empezar varios años antes.',
               style: TextStyle(
                 fontSize: 22.0,
                 color: Colors.black,
@@ -474,8 +458,6 @@ class POST1 extends StatelessWidget {
       margin: const EdgeInsets.symmetric(
         vertical: 10,
       ),
-      width: double.infinity,
-      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -487,15 +469,13 @@ class POST1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-            flex: 3,
             child: Text(
               'La postmenopausia es la fase que comprende varios años después de la menopausia, es decir, del cese de la regla. Esta etapa comienza en diferentes momentos según cada mujer y dura hasta los 65 años aproximadamente.',
               style: TextStyle(
@@ -517,8 +497,6 @@ class POST2 extends StatelessWidget {
       margin: const EdgeInsets.symmetric(
         vertical: 10,
       ),
-      width: double.infinity,
-      height: 280,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -530,15 +508,13 @@ class POST2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Flexible(
-            flex: 3,
             child: Text(
               'Sin embargo, la duración de la postmenopausia también depende del momento en el que llega la menopausia, por lo que hay variaciones entre mujeres. Por ejemplo, si el cese de la regla ocurre a los 50 años, el periodo de perimenopausia durará 15 años. En cambio, si la menopausia llega a los 55 años, la duración de la postmenopausia será de 10 años.',
               style: TextStyle(

@@ -32,6 +32,7 @@ class _MovePageState extends State<Move> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
+        fit: StackFit.expand,
         children: <Widget>[
           // Fondo con degradado
           Container(
@@ -53,23 +54,33 @@ class _MovePageState extends State<Move> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                // Espacio vacío para separación entre la parte superior y el CircleAvatar
-                const SizedBox(height: 100.0),
-
+                // CircleAvatar con la imagen
+                const FittedBox(
+                  fit: BoxFit.contain,
+                  child: CircleAvatar(
+                    radius: 150.0,
+                    backgroundColor: Colors.transparent,
+                    backgroundImage: AssetImage('images/logo_png.png'),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ), // Espacio entre la imagen y el texto
                 // Texto que parpadea
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const ModulosPage()),
+                        builder: (context) => const ModulosPage(),
+                      ),
                     );
                   },
                   child: AnimatedOpacity(
                     opacity: _isVisible ? 1.0 : 0.0,
                     duration: const Duration(milliseconds: 1000),
                     child: const Text(
-                      'Toca para Continuar',
+                      'Continuar',
                       style: TextStyle(
                         color: Color.fromARGB(191, 255, 255, 255),
                         fontSize: 50.0,
@@ -78,19 +89,6 @@ class _MovePageState extends State<Move> {
                   ),
                 ),
               ],
-            ),
-          ),
-          // CircleAvatar con la imagen, posicionado en la parte superior
-          const Positioned(
-            top: 100,
-            left: 0,
-            right: 0,
-            child: Center(
-              child: CircleAvatar(
-                radius: 150.0,
-                backgroundColor: Colors.transparent,
-                backgroundImage: AssetImage('images/logo_png.png'),
-              ),
             ),
           ),
         ],

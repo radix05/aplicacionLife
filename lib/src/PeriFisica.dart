@@ -10,7 +10,6 @@ class PeriFisica extends StatefulWidget {
 }
 
 class _PeriFisica extends State<PeriFisica> {
-  // Define the title of the screen as an instance variable
   String title = 'Salud Física';
 
   @override
@@ -19,7 +18,7 @@ class _PeriFisica extends State<PeriFisica> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 255, 165, 231),
         title: const Text('Salud Física'),
-        centerTitle: true, // Centra el título en la AppBar
+        centerTitle: true,
       ),
       extendBody: true,
       body: SafeArea(
@@ -46,16 +45,13 @@ class _PeriFisica extends State<PeriFisica> {
                 Center(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.transparent, // Transparent background
-                      borderRadius:
-                          BorderRadius.circular(15.0), // Rounded borders
+                      color: Colors.transparent,
+                      borderRadius: BorderRadius.circular(15.0),
                       border: Border.all(
-                        color: const Color.fromARGB(
-                            255, 251, 83, 139), // Pink color
+                        color: const Color.fromARGB(255, 251, 83, 139),
                       ),
                     ),
-                    padding:
-                        const EdgeInsets.all(16), // Space inside the container
+                    padding: const EdgeInsets.all(16),
                     child: Text(
                       title,
                       style: const TextStyle(
@@ -66,13 +62,13 @@ class _PeriFisica extends State<PeriFisica> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                primer(),
-                segundo(),
+                Primer(),
+                Segundo(),
                 Tercero(),
-                cuarto(),
-                quinto(),
-                sexto(),
-                septimo(),
+                Cuarto(),
+                Quinto(),
+                Sexto(),
+                Septimo(),
               ],
             ),
           ),
@@ -82,19 +78,18 @@ class _PeriFisica extends State<PeriFisica> {
   }
 }
 
-class primer extends StatefulWidget {
-  const primer({Key? key});
+class Primer extends StatefulWidget {
+  const Primer({Key? key});
 
   @override
-  _primerItemState createState() => _primerItemState();
+  _PrimerItemState createState() => _PrimerItemState();
 }
 
-class _primerItemState extends State<primer> {
+class _PrimerItemState extends State<Primer> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   @override
   Widget build(BuildContext context) {
@@ -124,22 +119,20 @@ class _primerItemState extends State<primer> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 260 : 60, // Aumenta la altura
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 'Mantener una dieta equilibrada',
                 style: const TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     SizedBox(height: 10),
                     Text(
@@ -175,19 +168,18 @@ class _primerItemState extends State<primer> {
   }
 }
 
-class segundo extends StatefulWidget {
-  const segundo({Key? key}) : super(key: key);
+class Segundo extends StatefulWidget {
+  const Segundo({Key? key}) : super(key: key);
 
   @override
-  _segundo createState() => _segundo();
+  _Segundo createState() => _Segundo();
 }
 
-class _segundo extends State<segundo> {
+class _Segundo extends State<Segundo> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   @override
   Widget build(BuildContext context) {
@@ -217,22 +209,20 @@ class _segundo extends State<segundo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 260 : 60, // Aumenta la altura
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
                 'Ejercicio regular',
                 style: const TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: const [
                     SizedBox(height: 10),
                     Text(
@@ -270,9 +260,8 @@ class Tercero extends StatefulWidget {
 class _TerceroState extends State<Tercero> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   @override
   Widget build(BuildContext context) {
@@ -302,14 +291,13 @@ class _TerceroState extends State<Tercero> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 205 : 60,
           child: Column(
             children: [
               Text(
                 'Mantenimiento de un peso saludable',
                 style: const TextStyle(
                   fontSize: 22.0,
-                  fontWeight: FontWeight.bold, // Poner en negrita
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
@@ -320,7 +308,7 @@ class _TerceroState extends State<Tercero> {
                     Text(
                       'Controla tu peso a través de una dieta balanceada y ejercicio regular.',
                       style: TextStyle(
-                        fontSize: 20.0, // Tamaño de fuente 20
+                        fontSize: 20.0,
                         color: Colors.black,
                       ),
                     ),
@@ -328,7 +316,7 @@ class _TerceroState extends State<Tercero> {
                     Text(
                       'Evita el aumento de peso excesivo, ya que esto puede aumentar la grasa abdominal y el riesgo de problemas de salud.',
                       style: TextStyle(
-                        fontSize: 20.0, // Tamaño de fuente 20
+                        fontSize: 20.0,
                         color: Colors.black,
                       ),
                     ),
@@ -342,96 +330,14 @@ class _TerceroState extends State<Tercero> {
   }
 }
 
-class cuarto extends StatefulWidget {
-  const cuarto({Key? key}) : super(key: key);
+class Cuarto extends StatefulWidget {
+  const Cuarto({Key? key}) : super(key: key);
 
   @override
-  _cuartoState createState() => _cuartoState();
+  _CuartoState createState() => _CuartoState();
 }
 
-class _cuartoState extends State<cuarto> {
-  bool isExpanded = false;
-
-  final customPinkColor =
-      Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isExpanded = !isExpanded;
-        });
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 10,
-        ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                Color.fromARGB(197, 255, 255, 255),
-                Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 220 : 60,
-          child: Column(
-            children: [
-              Text(
-                'Salud ósea',
-                style: const TextStyle(
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold, // Poner en negrita
-                  color: Colors.black,
-                ),
-              ),
-              if (isExpanded)
-                Column(
-                  children: const [
-                    SizedBox(height: 10),
-                    Text(
-                      'Asegúrate de obtener suficiente calcio y vitamina D a través de la dieta o suplementos si es necesario.',
-                      style: TextStyle(
-                        fontSize: 20.0, // Tamaño de fuente 20
-                        color: Colors.black,
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Text(
-                      'Considera una densitometría ósea para evaluar la salud de tus huesos y discute medidas preventivas con tu médico.',
-                      style: TextStyle(
-                        fontSize: 20.0, // Tamaño de fuente 20
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class quinto extends StatefulWidget {
-  const quinto({Key? key}) : super(key: key);
-
-  @override
-  _quintoState createState() => _quintoState();
-}
-
-class _quintoState extends State<quinto> {
+class _CuartoState extends State<Cuarto> {
   bool isExpanded = false;
 
   final customPinkColor = Color.fromARGB(255, 250, 250, 250);
@@ -465,11 +371,89 @@ class _quintoState extends State<quinto> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 225 : 85,
+          child: Column(
+            children: [
+              Text(
+                'Salud ósea',
+                style: const TextStyle(
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              if (isExpanded)
+                Column(
+                  children: const [
+                    SizedBox(height: 10),
+                    Text(
+                      'Asegúrate de obtener suficiente calcio y vitamina D a través de la dieta o suplementos si es necesario.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Considera una densitometría ósea para evaluar la salud de tus huesos y discute medidas preventivas con tu médico.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class Quinto extends StatefulWidget {
+  const Quinto({Key? key}) : super(key: key);
+
+  @override
+  _QuintoState createState() => _QuintoState();
+}
+
+class _QuintoState extends State<Quinto> {
+  bool isExpanded = false;
+
+  final customPinkColor = Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          isExpanded = !isExpanded;
+        });
+      },
+      child: Container(
+        margin: const EdgeInsets.symmetric(
+          vertical: 10,
+        ),
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                isExpanded ? whiteColor : customPinkColor,
+                Color.fromARGB(197, 255, 255, 255),
+                Color.fromARGB(121, 255, 255, 255),
+              ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+            color: isExpanded ? customPinkColor : whiteColor,
+            borderRadius: BorderRadius.circular(15.0),
+          ),
+          padding: const EdgeInsets.all(16),
           child: Column(
             children: [
               Center(
-                // Centra verticalmente
                 child: Text(
                   'Presión arterial y el colesterol',
                   style: const TextStyle(
@@ -508,19 +492,18 @@ class _quintoState extends State<quinto> {
   }
 }
 
-class sexto extends StatefulWidget {
-  const sexto({Key? key}) : super(key: key);
+class Sexto extends StatefulWidget {
+  const Sexto({Key? key}) : super(key: key);
 
   @override
-  _sextoState createState() => _sextoState();
+  _SextoState createState() => _SextoState();
 }
 
-class _sextoState extends State<sexto> {
+class _SextoState extends State<Sexto> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   @override
   Widget build(BuildContext context) {
@@ -535,54 +518,60 @@ class _sextoState extends State<sexto> {
           vertical: 10,
         ),
         child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                Color.fromARGB(197, 255, 255, 255),
-                Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
+          margin: const EdgeInsets.symmetric(
+            vertical: 10,
           ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 170 : 60,
-          child: Column(
-            children: [
-              Text(
-                'Hábitos saludables:',
-                style: const TextStyle(
-                  fontSize: 22.0, // Tamaño de fuente 22
-                  fontWeight: FontWeight.bold, // Poner en negrita
-                  color: Colors.black,
-                ),
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  isExpanded ? whiteColor : customPinkColor,
+                  Color.fromARGB(197, 255, 255, 255),
+                  Color.fromARGB(121, 255, 255, 255),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
-              if (isExpanded)
-                Column(
-                  children: const [
-                    SizedBox(height: 10),
-                    Text(
-                      'Evita el consumo de tabaco y reduce el consumo de alcohol si es necesario.',
-                      style: TextStyle(
-                        fontSize: 20.0, // Tamaño de fuente 20
-                        color: Colors.black,
-                      ),
+              color: isExpanded ? customPinkColor : whiteColor,
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              children: [
+                Center(
+                  child: Text(
+                    'Manejo del estrés',
+                    style: const TextStyle(
+                      fontSize: 22.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
                     ),
-                    SizedBox(height: 10),
-                    Text(
-                      'Limita el estrés a través de técnicas de relajación como la meditación o el yoga.',
-                      style: TextStyle(
-                        fontSize: 20.0, // Tamaño de fuente 20
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
-            ],
+                if (isExpanded)
+                  Column(
+                    children: const [
+                      SizedBox(height: 10),
+                      Text(
+                        'Encuentra formas saludables de manejar el estrés, como la meditación, el yoga o la práctica de actividades que disfrutes.',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        'El estrés crónico puede afectar negativamente la salud física, así que es importante encontrar formas de reducirlo.',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -590,14 +579,14 @@ class _sextoState extends State<sexto> {
   }
 }
 
-class septimo extends StatefulWidget {
-  const septimo({Key? key}) : super(key: key);
+class Septimo extends StatefulWidget {
+  const Septimo({Key? key}) : super(key: key);
 
   @override
-  _septimoState createState() => _septimoState();
+  _SeptimoState createState() => _SeptimoState();
 }
 
-class _septimoState extends State<septimo> {
+class _SeptimoState extends State<Septimo> {
   bool isExpanded = false;
 
   final customPinkColor = Color.fromARGB(255, 250, 250, 250);
@@ -631,15 +620,16 @@ class _septimoState extends State<septimo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 170 : 60,
           child: Column(
             children: [
-              Text(
-                'Mantén una rutina de sueño regular',
-                style: const TextStyle(
-                  fontSize: 22.0, // Tamaño de fuente 22
-                  fontWeight: FontWeight.bold, // Poner en negrita
-                  color: Colors.black,
+              Center(
+                child: Text(
+                  'Descanso adecuado',
+                  style: const TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
               ),
               if (isExpanded)
@@ -647,17 +637,17 @@ class _septimoState extends State<septimo> {
                   children: const [
                     SizedBox(height: 10),
                     Text(
-                      'Establece horarios regulares para acostarte y despertarte.',
+                      'Asegúrate de dormir lo suficiente cada noche para permitir que tu cuerpo se recupere y se repare.',
                       style: TextStyle(
-                        fontSize: 20.0, // Tamaño de fuente 20
+                        fontSize: 20.0,
                         color: Colors.black,
                       ),
                     ),
                     SizedBox(height: 10),
                     Text(
-                      'Evita la cafeína y la exposición a pantallas electrónicas antes de dormir.',
+                      'Establece una rutina de sueño regular y crea un ambiente propicio para el descanso.',
                       style: TextStyle(
-                        fontSize: 20.0, // Tamaño de fuente 20
+                        fontSize: 20.0,
                         color: Colors.black,
                       ),
                     ),

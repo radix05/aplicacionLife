@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'EditarPerfilScreen.dart';
+import 'principal.dart';
 
 class PerfilScreen extends StatefulWidget {
   const PerfilScreen({Key? key}) : super(key: key);
@@ -112,7 +113,13 @@ class _PerfilScreenState extends State<PerfilScreen> {
                     ElevatedButton(
                       onPressed: () {
                         _cargarDatosUsuario(); // Recargar datos al regresar
-                        Navigator.pop(context);
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                PrincipalScreen(), // Redirige a ModulosPage
+                          ),
+                        );
                       },
                       child: const Text('Regresar a Principal'),
                     ),

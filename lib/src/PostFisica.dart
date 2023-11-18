@@ -97,6 +97,10 @@ class _primeroItemState extends State<primero> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -109,50 +113,51 @@ class _primeroItemState extends State<primero> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
-            children: [
-              const Text(
-                'Ejercicio regular',
-                style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
-                  color: Colors.black,
-                ),
+        child: Expanded(
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  isExpanded ? whiteColor : customPinkColor,
+                  const Color.fromARGB(197, 255, 255, 255),
+                  const Color.fromARGB(121, 255, 255, 255),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Mantén una rutina de ejercicio que incluya actividades de resistencia, como caminar, nadar o levantar pesas. El ejercicio ayuda a mantener la densidad ósea, la fuerza muscular y el equilibrio, lo que puede prevenir caídas y fracturas.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
+              color: isExpanded ? customPinkColor : whiteColor,
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            padding: const EdgeInsets.all(16),
+            height: getContainerHeight(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Ejercicio regular',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
-            ],
+                if (isExpanded)
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(height: 10),
+                      Text(
+                        'Mantén una rutina de ejercicio que incluya actividades de resistencia, como caminar, nadar o levantar pesas. El ejercicio ayuda a mantener la densidad ósea, la fuerza muscular y el equilibrio, lo que puede prevenir caídas y fracturas.',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -174,6 +179,10 @@ class _segundoItemState extends State<segundo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 210 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -186,50 +195,51 @@ class _segundoItemState extends State<segundo> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 210 : 60, // Aumenta la altura
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
-            children: [
-              const Text(
-                'Dieta saludable',
-                style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
-                  color: Colors.black,
-                ),
+        child: Expanded(
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  isExpanded ? whiteColor : customPinkColor,
+                  const Color.fromARGB(197, 255, 255, 255),
+                  const Color.fromARGB(121, 255, 255, 255),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Consume una dieta rica en calcio y vitamina D para mantener la salud ósea. Los productos lácteos, los vegetales de hojas verdes y los pescados grasos son buenas fuentes de estos nutrientes. También, limita la ingesta de azúcar y alimentos procesados.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
+              color: isExpanded ? customPinkColor : whiteColor,
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            padding: const EdgeInsets.all(16),
+            height: getContainerHeight(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Dieta saludable',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
-            ],
+                if (isExpanded)
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(height: 10),
+                      Text(
+                        'Consume una dieta rica en calcio y vitamina D para mantener la salud ósea. Los productos lácteos, los vegetales de hojas verdes y los pescados grasos son buenas fuentes de estos nutrientes. También, limita la ingesta de azúcar y alimentos procesados.',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -251,6 +261,10 @@ class _terceroItemState extends State<tercero> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 180 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -263,50 +277,51 @@ class _terceroItemState extends State<tercero> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 180 : 60, // Aumenta la altura
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
-            children: [
-              const Text(
-                'Control de peso',
-                style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
-                  color: Colors.black,
-                ),
+        child: Expanded(
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  isExpanded ? whiteColor : customPinkColor,
+                  const Color.fromARGB(197, 255, 255, 255),
+                  const Color.fromARGB(121, 255, 255, 255),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Mantén un peso saludable para reducir la presión sobre las articulaciones y disminuir el riesgo de enfermedades como la diabetes tipo 2 y enfermedades cardiovasculares.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
+              color: isExpanded ? customPinkColor : whiteColor,
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            padding: const EdgeInsets.all(16),
+            height: getContainerHeight(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Control de peso',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
-            ],
+                if (isExpanded)
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(height: 10),
+                      Text(
+                        'Mantén un peso saludable para reducir la presión sobre las articulaciones y disminuir el riesgo de enfermedades como la diabetes tipo 2 y enfermedades cardiovasculares.',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -328,6 +343,10 @@ class _cuartoItemState extends State<cuarto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 190 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -340,50 +359,51 @@ class _cuartoItemState extends State<cuarto> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 190 : 60, // Aumenta la altura
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
-            children: [
-              const Text(
-                'Exámenes de salud regulares',
-                style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
-                  color: Colors.black,
-                ),
+        child: Expanded(
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  isExpanded ? whiteColor : customPinkColor,
+                  const Color.fromARGB(197, 255, 255, 255),
+                  const Color.fromARGB(121, 255, 255, 255),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Continúa con exámenes médicos regulares, que incluyan pruebas de densidad ósea, control de la presión arterial y análisis de sangre para asegurarte de que estás en buena salud.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
+              color: isExpanded ? customPinkColor : whiteColor,
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            padding: const EdgeInsets.all(16),
+            height: getContainerHeight(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Exámenes de salud regulares',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
-            ],
+                if (isExpanded)
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(height: 10),
+                      Text(
+                        'Continúa con exámenes médicos regulares, que incluyan pruebas de densidad ósea, control de la presión arterial y análisis de sangre para asegurarte de que estás en buena salud.',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -405,6 +425,10 @@ class _quintoItemState extends State<quinto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 190 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -417,50 +441,51 @@ class _quintoItemState extends State<quinto> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 190 : 60, // Aumenta la altura
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
-            children: [
-              const Text(
-                'Salud cardiovascular',
-                style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
-                  color: Colors.black,
-                ),
+        child: Expanded(
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  isExpanded ? whiteColor : customPinkColor,
+                  const Color.fromARGB(197, 255, 255, 255),
+                  const Color.fromARGB(121, 255, 255, 255),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Mantén un estilo de vida que promueva la salud cardiovascular. Esto incluye una dieta baja en grasas saturadas y trans, ejercicio regular y evitar el tabaco.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
+              color: isExpanded ? customPinkColor : whiteColor,
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            padding: const EdgeInsets.all(16),
+            height: getContainerHeight(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Salud cardiovascular',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
-            ],
+                if (isExpanded)
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(height: 10),
+                      Text(
+                        'Mantén un estilo de vida que promueva la salud cardiovascular. Esto incluye una dieta baja en grasas saturadas y trans, ejercicio regular y evitar el tabaco.',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -482,6 +507,10 @@ class _sextoItemState extends State<sexto> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 170 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -494,50 +523,51 @@ class _sextoItemState extends State<sexto> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: isExpanded ? 170 : 60, // Aumenta la altura
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
-            children: [
-              const Text(
-                'Dormir adecuadamente',
-                style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
-                  color: Colors.black,
-                ),
+        child: Expanded(
+          child: Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  isExpanded ? whiteColor : customPinkColor,
+                  const Color.fromARGB(197, 255, 255, 255),
+                  const Color.fromARGB(121, 255, 255, 255),
+                ],
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
               ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      ' La calidad del sueño es fundamental para la salud física y mental. Establece una rutina de sueño regular y crea un ambiente adecuado para el descanso.  ',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
+              color: isExpanded ? customPinkColor : whiteColor,
+              borderRadius: BorderRadius.circular(15.0),
+            ),
+            padding: const EdgeInsets.all(16),
+            height: getContainerHeight(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Dormir adecuadamente',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
                 ),
-            ],
+                if (isExpanded)
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(height: 10),
+                      Text(
+                        ' La calidad del sueño es fundamental para la salud física y mental. Establece una rutina de sueño regular y crea un ambiente adecuado para el descanso.  ',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+              ],
+            ),
           ),
         ),
       ),
@@ -559,6 +589,10 @@ class _septimoItemState extends State<septimo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 150 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -587,22 +621,21 @@ class _septimoItemState extends State<septimo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 150 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Hidratación',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -636,6 +669,10 @@ class _octavoItemState extends State<octavo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 170 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -664,22 +701,21 @@ class _octavoItemState extends State<octavo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 170 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Prevención de caídas',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -713,6 +749,10 @@ class _novenoItemState extends State<noveno> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 160 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -741,22 +781,21 @@ class _novenoItemState extends State<noveno> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 160 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Protección solar',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
@@ -790,6 +829,10 @@ class _decimoItemState extends State<decimo> {
       const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
   final whiteColor = Colors.white; // Color blanco
 
+  double getContainerHeight() {
+    return isExpanded ? 160 : 60;
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -818,22 +861,21 @@ class _decimoItemState extends State<decimo> {
             borderRadius: BorderRadius.circular(15.0),
           ),
           padding: const EdgeInsets.all(16),
-          height: isExpanded ? 160 : 60, // Aumenta la altura
+          height: getContainerHeight(),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
                 'Prevención de enfermedades',
                 style: TextStyle(
-                  fontSize: 22.0, // Aumenta el tamaño de la fuente
-                  fontWeight: FontWeight.bold, // Pone en negrita
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
               if (isExpanded)
                 const Column(
-                  mainAxisAlignment:
-                      MainAxisAlignment.center, // Centro verticalmente
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(height: 10),
                     Text(
