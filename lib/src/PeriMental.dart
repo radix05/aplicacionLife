@@ -146,7 +146,7 @@ class _primerItemState extends State<primer> {
                   children: const [
                     SizedBox(height: 10),
                     Text(
-                      'Aprender sobre los cambios hormonales y emocionales asociados con la perimenopausia puede ayudar a reducir la ansiedad y la confusión. La educación sobre lo que puedes esperar puede hacer que los síntomas sean menos abrumadores.',
+                      'Aprender sobre los cambios hormonales y emocionales puede ayudar a reducir la ansiedad y la confusión. La educación sobre lo que puedes esperar puede hacer que los síntomas sean menos abrumadores.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -362,7 +362,7 @@ class _cuartoItemState extends State<cuarto> {
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               Text(
-                'Técnicas de manejo del estrés',
+                'Manejo del estrés',
                 style: const TextStyle(
                   fontSize: 22.0, // Aumenta el tamaño de la fuente
                   fontWeight: FontWeight.bold, // Pone en negrita
@@ -376,7 +376,7 @@ class _cuartoItemState extends State<cuarto> {
                   children: const [
                     SizedBox(height: 10),
                     Text(
-                      'Practica técnicas de manejo del estrés, como la meditación, la respiración profunda, el yoga o el mindfulness. Estas técnicas pueden ayudar a reducir la ansiedad y mejorar la salud mental en general.',
+                      'Practica técnicas de manejo del estrés, como la meditación, la respiración profunda o yoga. Estas técnicas pueden ayudar a reducir la ansiedad y mejorar la salud mental en general.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -439,7 +439,7 @@ class _quintoItemState extends State<quinto> {
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               Text(
-                'Hábitos de sueño saludables',
+                'Sueño saludables',
                 style: const TextStyle(
                   fontSize: 22.0, // Aumenta el tamaño de la fuente
                   fontWeight: FontWeight.bold, // Pone en negrita
@@ -684,7 +684,7 @@ class _octavoItemState extends State<octavo> {
                   children: const [
                     SizedBox(height: 10),
                     Text(
-                      'Realiza chequeos regulares y cuida de tu salud física. Las preocupaciones sobre la salud pueden afectar tu bienestar emocional, así que asegúrate de abordar cualquier inquietud con un profesional de la salud.',
+                      'Realiza chequeos regulares y cuida de tu salud física.  así que asegúrate de abordar cualquier inquietud con un profesional de la salud.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,

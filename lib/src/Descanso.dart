@@ -152,7 +152,7 @@ class principal extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Habitos de Sueño Saludables',
+              'Habitos de Sueño',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -196,7 +196,7 @@ class principalcontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Por supuesto, aquí tienes hábitos de sueño específicos para la menopausia que pueden ayudarte a mejorar la calidad de tu descanso durante esta etapa de la vida',
+              'es importante tener hábitos de sueño saludables que pueden ayudarte a mejorar la calidad de tu descanso',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -283,7 +283,7 @@ class primercontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Establece un horario fijo para acostarte y despertarte todos los días, incluso los fines de semana. Mantener una rutina de sueño constante ayuda a regular tu reloj biológico y a mejorar la calidad del sueño',
+              'Establece un horario fijo para acostarte y despertarte, Mantener una rutina de sueño constante ayuda a regular tu reloj biológico y a mejorar la calidad del sueño',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -370,7 +370,7 @@ class segundocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Asegúrate de que tu dormitorio sea un lugar propicio para el sueño. Mantén la habitación oscura, tranquila y a una temperatura agradable. Además, invierte en un colchón y almohadas de calidad que te proporcionen el soporte necesario.',
+              'Asegúrate de que tu dormitorio sea buen lugar para el sueño. Mantén la habitación tranquila y a una temperatura agradable. invierte en un colchón y almohadas de calidad que te proporcionen el soporte necesario.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -457,7 +457,7 @@ class tercerocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Establece una rutina de relajación antes de dormir para ayudar a calmar la mente y preparar el cuerpo para el sueño. Puedes practicar ejercicios de respiración profunda, meditación o escuchar música suave. La relajación antes de dormir puede ser eficaz para reducir el estrés y la ansiedad',
+              'Establece una rutina de relajación antes de dormir para ayudar a calmar la mente y preparar el cuerpo para el sueño. practica ejercicios de respiración profunda, meditación o escuchar música. La relajación antes de dormir puede ser eficaz para reducir el estrés y la ansiedad',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -588,7 +588,7 @@ class primercontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Si sientes la necesidad de tomar una siesta, limita su duración a 20-30 minutos. Las siestas prolongadas durante el día pueden dificultar conciliar el sueño por la noche.',
+              'Si sientes la necesidad de tomar una siesta, limita su duración a 20-30 minutos. Las siestas prolongadas durante el día pueden dificultar dormir por la noche.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -675,7 +675,7 @@ class segundocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La actividad física regular puede mejorar la calidad del sueño. Realiza ejercicio durante el día, pero evita hacerlo justo antes de acostarte, ya que la estimulación física antes de dormir puede dificultar conciliar el sueño.',
+              'La actividad física regular puede mejorar la calidad del sueño. Realiza ejercicio solo durante el día, ya que la estimulación física antes de dormir puede dificultar dormir',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -762,7 +762,7 @@ class tercerocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Bebe suficiente agua durante el día, pero reduce la ingesta de líquidos antes de acostarte para minimizar las interrupciones nocturnas para ir al baño.',
+              'Bebe suficiente agua durante el día, pero reduce la ingesta de líquidos al dormir para minimizar las interrupciones nocturnas para ir al baño.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -849,7 +849,7 @@ class cuartocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Llevar un diario de sueño puede ayudarte a identificar patrones y problemas de sueño. Registra la hora de acostarte, la calidad del sueño, los desencadenantes y cualquier síntoma que afecte tu sueño. Esto puede proporcionarte información útil para ajustar tus hábitos de sueño.',
+              'Llevar un diario de sueño puede ayudarte a identificar problemas de sueño. Registra la hora de acostarte, los desencadenantes y cualquier síntoma que afecte tu sueño. Esto puede darte información útil para ajustar tus hábitos de sueño.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

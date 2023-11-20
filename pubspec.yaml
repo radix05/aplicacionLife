@@ -1,4 +1,4 @@
-name: aplicacion_principal
+name: LifeTransition
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -38,13 +38,13 @@ dependencies:
   http: ^0.13.3
   table_calendar: ^3.0.9
   fl_chart: ^0.40.0
- 
+  
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   path: ^1.8.3
-
+ 
 
 dev_dependencies:
   flutter_test:
@@ -62,9 +62,9 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter_launcher_icons:
-  android: "launcher_icon"
+  android: true
   ios: true
-  image_path: "images/icon/logo_png.png"
+  image_path: "images/icon.png"
 
 
 # For information on the generic Dart part of this file, see the
@@ -97,6 +97,7 @@ flutter:
      -  images/Sueño.png
      -  images/Face.png
      -  images/correo.png
+     -  images/icon.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

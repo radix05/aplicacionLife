@@ -134,7 +134,7 @@ class _primerItemState extends State<primer> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Mantener una dieta equilibrada',
+                'Dieta Equilibrada',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -688,7 +688,7 @@ class _septimoItemState extends State<septimo> {
                     ),
                     SizedBox(height: 10),
                     Text(
-                      'Se desaconseja el uso de prendas que ajusten la zona íntima. Recomendamos usar prendas sueltas que permitan la transpiración de la zona vaginal.',
+                      'Se desaconseja el uso de prendas que ajusten la zona íntima. Recomendamos usar prendas sueltas que permitan la transpiración de la zona intima.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -768,7 +768,7 @@ class _octavoItemState extends State<octavo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Consulta con tu médico sobre cualquier problema específico que puedas experimentar durante la menopausia, como la sequedad vaginal o problemas urinarios, y busca tratamientos adecuados.',
+                      'Consulta con tu médico sobre cualquier problema específico que puedas experimentar, como la sequedad o problemas urinarios, y busca tratamientos adecuados.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,

@@ -362,7 +362,7 @@ class Primer extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Las grasas saludables, también conocidas como grasas insaturadas, son esenciales para la salud en todas las etapas de la vida, Estas grasas se encuentran en alimentos naturales y tienen beneficios para la salud',
+              'Las grasas saludables, también conocidas como grasas insaturadas, son esenciales para la salud, Estas grasas se encuentran en alimentos naturales y tienen beneficios para la salud',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -493,7 +493,7 @@ class segundocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Las grasas saludables son fundamentales para la salud cardiovascular. Ayudan a reducir el colesterol LDL (colesterol "malo") y a aumentar el colesterol HDL (colesterol "bueno"). También pueden contribuir a la prevención de enfermedades cardíacas y la reducción de la inflamación en el cuerpo.',
+              'Las grasas saludables son fundamentales para la salud cardiovascular. Ayudan a reducir el colesterol. También pueden contribuir a la prevención de enfermedades cardíacas y la reducción de la inflamación en el cuerpo.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -667,7 +667,7 @@ class cuartocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Para aumentar la ingesta de grasas saludables, puedes utilizar aceite de oliva extra virgen en tus aderezos para ensaladas, cocinar con aceite de canola, comer aguacates, nueces, almendras y pescado graso regularmente. Además, considera la inclusión de aceite de linaza o chía en tu dieta para obtener ácidos grasos omega-3.',
+              'Utiliza aceite de oliva extra virgen, cocina con aceite de canola, comer aguacates, nueces, almendras y pescado graso regularmente. considera la inclusión de aceite de linaza o chía en tu dieta para obtener ácidos grasos omega-3.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -710,7 +710,7 @@ class quinto extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Modera las Grasas Saturadas y Trans',
+              'Modera las Grasas',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -754,7 +754,7 @@ class quintocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'A la par de aumentar las grasas saludables, es importante moderar el consumo de grasas saturadas y grasas trans, que se encuentran en alimentos procesados, carnes grasas y productos horneados. Estas grasas pueden aumentar el riesgo de enfermedades cardíacas.',
+              'A la par de aumentar las grasas saludables, es importante moderar el consumo de grasas saturadas. Estas grasas pueden aumentar el riesgo de enfermedades cardíacas.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -841,7 +841,7 @@ class Primer2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La hidratación es un aspecto vital de la salud en la perimenopausia. A medida que las mujeres atraviesan esta etapa de la vida, es esencial prestar especial atención a su ingesta de líquidos para mantener un bienestar óptimo. Aquí tienes un análisis más detallado sobre la hidratación en la perimenopausia  ',
+              'La hidratación es un aspecto vital de la salud. A medida que las mujeres atraviesan esta etapa de la vida, es esencial prestar especial atención a su ingesta de líquidos para mantener un bienestar óptimo.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -884,7 +884,7 @@ class segundo2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              ' Cambios Hormonales y Hidratación:',
+              'Cambios Hormonales',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -928,7 +928,7 @@ class segundocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Durante la perimenopausia, los cambios hormonales pueden influir en la regulación de la temperatura corporal y la respuesta al estrés. Esto puede aumentar la sudoración y la pérdida de líquidos, lo que hace que la hidratación sea aún más importante.',
+              'Los cambios hormonales pueden influir en la regulación de la temperatura y la respuesta al estrés. Esto puede aumentar la sudoración y la pérdida de líquidos, lo que hace que la hidratación sea aún más importante.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -971,7 +971,7 @@ class tercero2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Control de los Sofocos',
+              'Control de Sofocos',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -1015,7 +1015,7 @@ class tercerocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Muchas mujeres experimentan sofocos y sudoraciones nocturnas durante la perimenopausia. Mantenerse bien hidratada puede ayudar a reducir la gravedad de estos síntomas. Beber agua fresca y mantener una temperatura ambiente cómoda en la habitación puede contribuir a controlar los sofocos.',
+              'Muchas mujeres experimentan sofocos y sudoraciones nocturnas. Mantenerse bien hidratada puede ayudar a reducir la gravedad de estos síntomas. Beber agua y mantener una temperatura ambiente cómoda puede contribuir a controlar los sofocos.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1102,7 +1102,7 @@ class cuartocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La hidratación adecuada es esencial para mantener la salud de los huesos. La falta de hidratación puede aumentar el riesgo de osteoporosis y debilitar la densidad ósea. Consumir suficiente agua es fundamental para la absorción de minerales como el calcio y el magnesio, que son esenciales para los huesos.',
+              'La hidratación adecuada es esencial para mantener la salud de los huesos. La falta de hidratación puede aumentar el riesgo de osteoporosis y debilitar la densidad.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1189,7 +1189,7 @@ class quintocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Algunas mujeres pueden experimentar problemas urinarios durante la perimenopausia, como incontinencia urinaria. Mantenerse bien hidratada es importante para mantener una función saludable de la vejiga y prevenir infecciones urinarias',
+              'Algunas mujeres pueden experimentar problemas urinarios, como incontinencia urinaria. Mantenerse bien hidratada es importante para mantener una función saludable de la vejiga y prevenir infecciones urinarias',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1276,7 +1276,7 @@ class contenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los suplementos nutricionales pueden desempeñar un papel importante durante la perimenopausia al ayudar a compensar las posibles deficiencias nutricionales y apoyar la salud en general. Aquí tienes una descripción detallada sobre los suplementos nutricionales que pueden ser beneficiosos en esta etapa',
+              'Los suplementos nutricionales pueden desempeñar un papel importante al ayudar a compensar las posibles deficiencias nutricionales y apoyar la salud',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1363,7 +1363,7 @@ class primercontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La ingesta de calcio es esencial para mantener la salud ósea durante la perimenopausia, ya que puedes experimentar una disminución de la densidad ósea. Se recomienda un suplemento de calcio si no puedes obtener suficiente de tu dieta. Lo ideal es que el suplemento contenga vitamina D, ya que esta vitamina facilita la absorción del calcio.',
+              'La ingesta de calcio es esencial para mantener la salud ósea, ya que puedes experimentar una disminución de la densidad ósea. un suplemento de calcio si no puedes obtenerlo en tu dieta. Lo ideal es que el suplemento contenga vitamina D, ya que esta vitamina facilita la absorción del calcio.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1450,7 +1450,7 @@ class segundocontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Es esencial para mantener la salud ósea durante la perimenopausia, ya que puedes experimentar una disminución de la densidad ósea. Se recomienda un suplemento de calcio si no puedes obtener suficiente de tu dieta. Lo ideal es que el suplemento contenga vitamina D, ya que esta vitamina facilita la absorción del calcio.La vitamina D es crucial para la absorción de calcio y el mantenimiento de huesos y dientes saludables. Dado que muchas personas tienen deficiencia de vitamina D, especialmente en climas con poca luz solar, puede ser beneficioso tomar un suplemento de vitamina D.',
+              'Es esencial para mantener la salud ósea. Se recomienda un suplemento de Vitamina D si no puedes obtener suficiente de tu dieta.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1537,7 +1537,7 @@ class tercerocontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Las mujeres en la perimenopausia pueden experimentar una disminución en el hierro debido a la menor pérdida de sangre menstrual. Sin embargo, es importante evitar los suplementos de hierro a menos que tu médico confirme una deficiencia de hierro, ya que el exceso de hierro puede ser perjudicial',
+              'Se puede experimentar una disminución en el hierro debido a la menor pérdida de sangre. Sin embargo, es importante evitar los suplementos de hierro a menos que tu médico confirme una deficiencia de hierro, ya que el exceso de hierro puede ser perjudicial',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1624,7 +1624,7 @@ class cuartocontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Algunas hierbas y suplementos a base de plantas, como el cohosh negro, el aceite de onagra y la maca, se han utilizado tradicionalmente para aliviar los síntomas de la menopausia. Sin embargo, es importante hablar con un profesional de la salud antes de tomar cualquier suplemento a base de hierbas, ya que pueden tener interacciones con otros medicamentos o causar efectos secundarios.',
+              'Algunas hierbas y suplementos a base de plantas, se han utilizado tradicionalmente para aliviar síntomas. es importante hablar con un profesional de la salud antes de tomar cualquier suplemento, ya que pueden tener interacciones con otros medicamentos o causar efectos secundarios.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1667,7 +1667,7 @@ class finalc extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Es importante recordar que la toma de suplementos nutricionales debe estar respaldada por la orientación de un profesional de la salud. Cada persona tiene necesidades nutricionales individuales, y es esencial determinar si realmente necesitas suplementos y en qué dosis. Un médico o dietista registrado puede evaluar tu estado nutricional y proporcionarte recomendaciones específicas para tu situación. Además, es fundamental recordar que los suplementos no deben reemplazar una dieta equilibrada y variada. La base de una buena salud sigue siendo una alimentación saludable y un estilo de vida activo.',
+              'Es importante recordar que la toma de suplementos nutricionales debe estar respaldada por la orientación de un profesional de la salud.',
               style: TextStyle(
                 fontSize: 19.0,
                 color: Color.fromARGB(255, 186, 11, 11),

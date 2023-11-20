@@ -221,7 +221,7 @@ class principalcontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La nutrición juega un papel fundamental durante la menopausia, ya que puede ayudar a aliviar algunos de los síntomas asociados y promover la salud en general. Aquí tienes algunos consejos de nutrición para una mujer que está pasando por la menopausia',
+              'La nutrición juega un papel fundamental, ya que ayuda a aliviar algunos de los síntomas asociados y promover la salud en general.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -308,7 +308,7 @@ class primercontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Durante la menopausia, es importante mantener una ingesta adecuada de proteína magra en tu dieta. Las proteínas son esenciales para la salud muscular y la reparación de tejidos',
+              'Es importante mantener una ingesta adecuada de proteína magra en tu dieta. Las proteínas son esenciales para la salud muscular y la reparación de tejidos',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -481,7 +481,7 @@ class segundocontenidoextra extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Trata de incluir una variedad de alimentos ricos en fibra en tu dieta diaria. Esto no solo promoverá una digestión saludable, sino que también te ayudará a sentirte satisfecha por más tiempo, lo que puede ser beneficioso para controlar el apetito y el peso.',
+              'Incluir una variedad de alimentos ricos en fibra en tu dieta diaria, promoverá una digestión saludable,tambien te ayudará a sentirte satisfecha por más tiempo, lo que puede ser beneficioso para controlar el apetito y el peso.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -568,7 +568,7 @@ class tercerocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los flavonoides son compuestos antioxidantes que pueden ayudar a aliviar algunos de los síntomas de la menopausia, como los sofocos',
+              'Los flavonoides son compuestos antioxidantes que pueden ayudar a aliviar algunos de los síntomas, como los sofocos',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -611,7 +611,7 @@ class tercerocontenidoextra extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los flavonoides tienen propiedades antiinflamatorias y antioxidantes, y se ha observado que pueden reducir la frecuencia y la intensidad de los sofocos en algunas mujeres durante la menopausia',
+              'Los flavonoides tienen propiedades antiinflamatorias y antioxidantes, y se ha observado que pueden reducir la frecuencia y la intensidad de los sofocos en algunas mujeres',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -698,7 +698,7 @@ class cuartocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Reducir el consumo de azúcar y sal es esencial para mantener una buena salud durante la menopausia. El exceso de azúcar puede contribuir al aumento de peso y aumentar el riesgo de enfermedades como la diabetes tipo 2. El consumo excesivo de sal puede llevar a la retención de líquidos y aumentar la presión arterial, lo que puede ser perjudicial para la salud cardiovascular',
+              'Reducir el consumo de azúcar y sal es esencial para mantener una buena salud. El exceso de azúcar puede contribuir al aumento de peso y aumentar el riesgo de enfermedades como la diabetes. El consumo excesivo de sal puede llevar a la retención de líquidos y aumentar la presión arterial, lo que puede ser perjudicial para la salud',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -741,7 +741,7 @@ class cuartocontenidoextra extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Para reducir el azúcar, evita alimentos procesados y bebidas azucaradas, y opta por opciones más saludables como frutas frescas para satisfacer tu necesidad de dulce. Para reducir la sal, cocina en casa utilizando menos sal y condimenta tus comidas con hierbas y especias naturales',
+              'Para reducir el azúcar, evita alimentos procesados y bebidas azucaradas, opta por opciones más saludables como frutas para satisfacer tu necesidad de dulce. Para reducir la sal, cocina en casa utilizando menos sal y condimenta tus comidas con hierbas naturales',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -828,7 +828,7 @@ class quintocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El control de porciones es esencial para mantener un peso saludable durante la menopausia. Comer en porciones más pequeñas y escuchar las señales de saciedad de tu cuerpo puede ayudarte a evitar el aumento de peso no deseado. Intenta comer conscientemente, prestando atención a tus señales de hambre y saciedad, en lugar de comer en exceso.',
+              'El control de porciones es esencial para mantener un peso saludable. Comer en porciones más pequeñas y escuchar las señales de saciedad de tu cuerpo. Intenta comer conscientemente, prestando atención a tus señales de hambre, en lugar de comer en exceso.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -871,7 +871,7 @@ class quintocontenidoextra extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Una estrategia útil es utilizar platos más pequeños y servir porciones adecuadas para evitar tentaciones. Además, come lentamente y mastica bien los alimentos, lo que puede ayudarte a sentirte satisfecha con menos comida. Evitar comer frente al televisor o la computadora también puede mejorar la conciencia de las porciones y prevenir el exceso de calorías.',
+              'Una estrategia útil es utilizar platos más pequeños y servir porciones adecuadas para evitar tentaciones, come lentamente y mastica bien los alimentos, lo que puede ayudarte a sentirte satisfecha con menos comida.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -958,7 +958,7 @@ class principalcontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los suplementos pueden desempeñar un papel importante durante la menopausia para abordar las necesidades nutricionales específicas y aliviar algunos de los síntomas. Es importante mencionar que debes consultar a un profesional de la salud antes de comenzar cualquier suplemento',
+              'Los suplementos pueden abordar las necesidades nutricionales específicas y aliviar algunos de los síntomas. Es importante mencionar que debes consultar a un profesional de la salud antes de comenzar cualquier suplemento',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1045,7 +1045,7 @@ class primercontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Durante la menopausia, es importante mantener una ingesta adecuada de proteína magra en tu dieta. Las proteínas son esenciales para la salud muscular y la reparación de tejidos',
+              'Es importante mantener una ingesta adecuada de proteína magra en tu dieta. Las proteínas son esenciales para la salud muscular y la reparación de tejidos',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1219,7 +1219,7 @@ class tercerocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Algunas hierbas y productos naturales como el cohosh negro, el trébol rojo y el aceite de onagra se han utilizado tradicionalmente para aliviar los síntomas de la menopausia, como los sofocos y la sequedad vaginal. Sin embargo, la evidencia científica sobre su eficacia es mixta, por lo que es importante hablar con un profesional de la salud antes de usarlos.',
+              'Algunas hierbas y productos naturales como el cohosh negro, el trébol rojo y el aceite de onagra se han utilizado tradicionalmente para aliviarse, Sin embargo, es importante hablar con un profesional de la salud antes de usarlos.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1306,7 +1306,7 @@ class cuartocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Un suplemento multivitamínico puede ayudar a llenar posibles brechas nutricionales en tu dieta durante la menopausia. Asegúrate de que incluye calcio, vitamina D y otros nutrientes esenciales.',
+              'Un suplemento multivitamínico puede ayudar a llenar posibles brechas nutricionales en tu dieta. Asegúrate de que incluye calcio, vitamina D y otros nutrientes esenciales.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1393,7 +1393,7 @@ class quintocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los probióticos pueden ayudar a mantener un sistema digestivo saludable, lo que es beneficioso durante la menopausia, ya que algunos cambios hormonales pueden afectar la digestión.',
+              'Los probióticos pueden ayudar a mantener un sistema digestivo saludable, lo que es beneficioso, ya que algunos cambios hormonales pueden afectar la digestión.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1436,7 +1436,7 @@ class extra extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Recuerda que los suplementos no deben reemplazar una dieta equilibrada y saludable, pero pueden ser útiles para abordar necesidades específicas. Además, es importante que un profesional de la salud te aconseje sobre las dosis adecuadas y la idoneidad de los suplementos para tu situación individual.',
+              'Recuerda que los suplementos no deben reemplazar una dieta equilibrada y saludable, pero pueden ser útiles para abordar necesidades específicas.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1523,7 +1523,7 @@ class principalcontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Mantener una dieta equilibrada durante la menopausia es esencial para abordar los cambios hormonales y para promover una buena salud en general. Aquí tienes una descripción más detallada de cómo lograr una dieta equilibrada durante esta etapa',
+              'Mantener una dieta equilibrada es esencial para abordar los cambios hormonales y para promover una buena salud en general.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1610,7 +1610,7 @@ class primercontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Limita la ingesta de azúcar y sal en tu dieta. El exceso de azúcar puede contribuir al aumento de peso y aumentar el riesgo de enfermedades como la diabetes tipo 2. El consumo excesivo de sal puede llevar a la retención de líquidos y aumentar la presión arterial. Lee las etiquetas de los alimentos para controlar la cantidad de azúcar y sodio que consumes',
+              'Limita la ingesta de azúcar y sal. El exceso de azúcar puede contribuir al aumento de peso y aumentar el riesgo de enfermedades. El consumo excesivo de sal puede llevar a la retención de líquidos y aumentar la presión arterial. Lee las etiquetas de los alimentos para controlar la cantidad de azúcar y sal',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1740,7 +1740,7 @@ class extra3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Recuerda que cada persona es única y puede experimentar síntomas de la menopausia de manera diferente. Hablar con un profesional de la salud o un dietista registrado puede ser útil para desarrollar un plan de nutrición específico para tus necesidades individuales.',
+              'Recuerda que cada persona es única y puede experimentar síntomas de manera diferente. Hablar con un profesional de la salud o un dietista registrado puede ser útil para desarrollar un plan de nutrición específico para tus necesidades.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

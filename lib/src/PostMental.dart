@@ -64,18 +64,18 @@ class _PostMental extends State<PostMental> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const primero(),
-                const segundo(),
-                const tercero(),
-                const cuarto(),
-                const quinto(),
-                const sexto(),
-                const septimo(),
-                const octavo(),
-                const noveno(),
-                const decimo(),
-                const undecimo(),
-                const doceavo(),
+                const Primero(),
+                const Segundo(),
+                const Tercero(),
+                const Cuarto(),
+                const Quinto(),
+                const Sexto(),
+                const Septimo(),
+                const Octavo(),
+                const Noveno(),
+                const Decimo(),
+                const Undecimo(),
+                const Doceavo(),
               ],
             ),
           ),
@@ -85,19 +85,18 @@ class _PostMental extends State<PostMental> {
   }
 }
 
-class primero extends StatefulWidget {
-  const primero({Key? key});
+class Primero extends StatefulWidget {
+  const Primero({Key? key});
 
   @override
-  _primeroItemState createState() => _primeroItemState();
+  _PrimeroItemState createState() => _PrimeroItemState();
 }
 
-class _primeroItemState extends State<primero> {
+class _PrimeroItemState extends State<Primero> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 200 : 60;
@@ -165,19 +164,18 @@ class _primeroItemState extends State<primero> {
   }
 }
 
-class segundo extends StatefulWidget {
-  const segundo({Key? key});
+class Segundo extends StatefulWidget {
+  const Segundo({Key? key});
 
   @override
-  _segundoItemState createState() => _segundoItemState();
+  _SegundoItemState createState() => _SegundoItemState();
 }
 
-class _segundoItemState extends State<segundo> {
+class _SegundoItemState extends State<Segundo> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 300 : 60;
@@ -245,19 +243,18 @@ class _segundoItemState extends State<segundo> {
   }
 }
 
-class tercero extends StatefulWidget {
-  const tercero({Key? key});
+class Tercero extends StatefulWidget {
+  const Tercero({Key? key});
 
   @override
-  _terceroItemState createState() => _terceroItemState();
+  _TerceroItemState createState() => _TerceroItemState();
 }
 
-class _terceroItemState extends State<tercero> {
+class _TerceroItemState extends State<Tercero> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 200 : 60;
@@ -309,7 +306,7 @@ class _terceroItemState extends State<tercero> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Habla abierta y honestamente sobre tus emociones y preocupaciones con personas de confianza. La comunicación abierta puede aliviar la carga emocional y fortalecer las relaciones.',
+                      'Habla abierta y honestamente sobre tus emociones y preocupaciones con personas de confianza. La comunicación abierta puede aliviar la carga emocional y fortalecer las relaciones.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -325,19 +322,18 @@ class _terceroItemState extends State<tercero> {
   }
 }
 
-class cuarto extends StatefulWidget {
-  const cuarto({Key? key});
+class Cuarto extends StatefulWidget {
+  const Cuarto({Key? key});
 
   @override
-  _cuartoItemState createState() => _cuartoItemState();
+  _CuartoItemState createState() => _CuartoItemState();
 }
 
-class _cuartoItemState extends State<cuarto> {
+class _CuartoItemState extends State<Cuarto> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 200 : 60;
@@ -376,7 +372,7 @@ class _cuartoItemState extends State<cuarto> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Establece metas y propósitos',
+                'Establece metas',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -405,19 +401,18 @@ class _cuartoItemState extends State<cuarto> {
   }
 }
 
-class quinto extends StatefulWidget {
-  const quinto({Key? key});
+class Quinto extends StatefulWidget {
+  const Quinto({Key? key});
 
   @override
-  _quintoItemState createState() => _quintoItemState();
+  _QuintoItemState createState() => _QuintoItemState();
 }
 
-class _quintoItemState extends State<quinto> {
+class _QuintoItemState extends State<Quinto> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 200 : 60;
@@ -485,19 +480,18 @@ class _quintoItemState extends State<quinto> {
   }
 }
 
-class sexto extends StatefulWidget {
-  const sexto({Key? key});
+class Sexto extends StatefulWidget {
+  const Sexto({Key? key});
 
   @override
-  _sextoItemState createState() => _sextoItemState();
+  _SextoItemState createState() => _SextoItemState();
 }
 
-class _sextoItemState extends State<sexto> {
+class _SextoItemState extends State<Sexto> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 180 : 60;
@@ -565,19 +559,18 @@ class _sextoItemState extends State<sexto> {
   }
 }
 
-class septimo extends StatefulWidget {
-  const septimo({Key? key});
+class Septimo extends StatefulWidget {
+  const Septimo({Key? key});
 
   @override
-  _septimoItemState createState() => _septimoItemState();
+  _SeptimoItemState createState() => _SeptimoItemState();
 }
 
-class _septimoItemState extends State<septimo> {
+class _SeptimoItemState extends State<Septimo> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 170 : 60;
@@ -645,19 +638,18 @@ class _septimoItemState extends State<septimo> {
   }
 }
 
-class octavo extends StatefulWidget {
-  const octavo({Key? key});
+class Octavo extends StatefulWidget {
+  const Octavo({Key? key});
 
   @override
-  _octavoItemState createState() => _octavoItemState();
+  _OctavoItemState createState() => _OctavoItemState();
 }
 
-class _octavoItemState extends State<octavo> {
+class _OctavoItemState extends State<Octavo> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 170 : 60;
@@ -725,19 +717,18 @@ class _octavoItemState extends State<octavo> {
   }
 }
 
-class noveno extends StatefulWidget {
-  const noveno({Key? key});
+class Noveno extends StatefulWidget {
+  const Noveno({Key? key});
 
   @override
-  _novenoItemState createState() => _novenoItemState();
+  _NovenoItemState createState() => _NovenoItemState();
 }
 
-class _novenoItemState extends State<noveno> {
+class _NovenoItemState extends State<Noveno> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 170 : 60;
@@ -805,19 +796,18 @@ class _novenoItemState extends State<noveno> {
   }
 }
 
-class decimo extends StatefulWidget {
-  const decimo({Key? key});
+class Decimo extends StatefulWidget {
+  const Decimo({Key? key});
 
   @override
-  _decimoItemState createState() => _decimoItemState();
+  _DecimoItemState createState() => _DecimoItemState();
 }
 
-class _decimoItemState extends State<decimo> {
+class _DecimoItemState extends State<Decimo> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 185 : 60;
@@ -856,7 +846,7 @@ class _decimoItemState extends State<decimo> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Búsqueda de ayuda profesional',
+                'Ayuda profesional',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -885,19 +875,18 @@ class _decimoItemState extends State<decimo> {
   }
 }
 
-class undecimo extends StatefulWidget {
-  const undecimo({Key? key});
+class Undecimo extends StatefulWidget {
+  const Undecimo({Key? key});
 
   @override
-  _undecimoItemState createState() => _undecimoItemState();
+  _UndecimoItemState createState() => _UndecimoItemState();
 }
 
-class _undecimoItemState extends State<undecimo> {
+class _UndecimoItemState extends State<Undecimo> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 185 : 60;
@@ -965,19 +954,18 @@ class _undecimoItemState extends State<undecimo> {
   }
 }
 
-class doceavo extends StatefulWidget {
-  const doceavo({Key? key});
+class Doceavo extends StatefulWidget {
+  const Doceavo({Key? key});
 
   @override
-  _doceavoItemState createState() => _doceavoItemState();
+  _DoceavoItemState createState() => _DoceavoItemState();
 }
 
-class _doceavoItemState extends State<doceavo> {
+class _DoceavoItemState extends State<Doceavo> {
   bool isExpanded = false;
 
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
+  final customPinkColor = const Color.fromARGB(255, 250, 250, 250);
+  final whiteColor = Colors.white;
 
   double getContainerHeight() {
     return isExpanded ? 170 : 60;

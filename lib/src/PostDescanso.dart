@@ -283,7 +283,7 @@ class segundo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Crea un Entorno de Sueño Confortable',
+              'Entorno de Sueño Confortable',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -370,7 +370,7 @@ class tercero extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Relajación antes de Dormir',
+              'Relajación',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -457,7 +457,7 @@ class cuarto extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Evita Comidas Pesadas antes de Dormir',
+              'Evita Comidas Pesadas',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -544,7 +544,7 @@ class quinto extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Mantén una Actitud Positiva',
+              'Actitud Positiva',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -675,7 +675,7 @@ class principalcontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Una rutina de sueño adecuada es esencial durante la perimenopausia para promover un descanso reparador. Aquí tienes algunos consejos para establecer una rutina de sueño efectiva durante esta etapa',
+              'Una rutina de sueño adecuada es esencial durante la perimenopausia para promover un descanso reparador. Aquí tienes algunos consejos para establecer una rutina de sueño efectiva',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -762,7 +762,7 @@ class primercontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Mantener un horario de sueño constante es uno de los pilares fundamentales para mejorar la calidad del sueño durante la perimenopausia. Nuestro cuerpo tiene un reloj biológico interno que regula el ciclo sueño-vigilia, y mantener un horario regular lo ayuda a sincronizarse. Cuando te acuestas y te despiertas a la misma hora todos los días, incluso los fines de semana, ayudas a establecer un patrón de sueño más saludable. Esto significa que tu cuerpo comenzará a sentir sueño y a despertarse a las horas programadas, lo que a su vez te permitirá descansar mejor. La regularidad también ayuda a prevenir el insomnio y las interrupciones del sueño.',
+              'Mantener un horario de sueño constante es uno de los pilares fundamentales para mejorar la calidad del sueño. Esto significa que tu cuerpo comenzará a sentir sueño y a despertarse a las horas programadas, lo que a su vez te permitirá descansar mejor. La regularidad también ayuda a prevenir el insomnio y las interrupciones del sueño.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -805,7 +805,7 @@ class segundo2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Lleva un Diario de Sueño',
+              'Diario de Sueño',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -849,7 +849,7 @@ class segundocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Llevar un diario de sueño es una herramienta útil para identificar patrones y problemas relacionados con tu descanso. Anota la hora a la que te acuestas, cuánto tiempo te lleva conciliar el sueño, si te despiertas durante la noche y la duración total de tu sueño. Además, registra cualquier síntoma que pueda afectar tu sueño, como sofocos, sudoraciones nocturnas o inquietud. También es importante anotar tus hábitos antes de acostarte, como la ingesta de alimentos, ejercicio y el uso de dispositivos electrónicos. Llevar un registro puede ayudarte a identificar factores que contribuyen a problemas de sueño y a ajustar tu rutina de sueño en consecuencia. Esto te permitirá tomar decisiones más informadas para mejorar tu calidad de sueño.',
+              'Llevar un diario de sueño es una herramienta útil para identificar patrones y problemas. Anota la hora a la que te acuestas, cuánto tiempo te lleva conciliar el sueño, si despiertas durante la noche y la duración de tu sueño. registra cualquier síntoma que pueda afectar, como sofocos, sudoraciones nocturnas etc. Llevar un registro puede ayudarte a identificar factores que contribuyen a problemas de sueño y a ajustar tu rutina de sueño. Esto te permitirá tomar decisiones más informadas para mejorar tu sueño.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -892,7 +892,7 @@ class extra2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Recuerda que cada persona es única, por lo que es importante ajustar estos consejos según tus necesidades y preferencias. Si sigues teniendo problemas de sueño a pesar de seguir una rutina de sueño saludable, considera hablar con un profesional de la salud para explorar soluciones específicas para tu situación.',
+              'Recuerda que cada persona es única, por lo que es importante ajustar estos consejos según tus necesidades y preferencias.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

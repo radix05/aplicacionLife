@@ -123,7 +123,7 @@ class _PrimerItemState extends State<Primer> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Mantener una dieta equilibrada',
+                'Dieta equilibrada',
                 style: const TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -145,14 +145,6 @@ class _PrimerItemState extends State<Primer> {
                     SizedBox(height: 10),
                     Text(
                       'Asegúrate de obtener suficiente calcio y vitamina D para mantener la salud ósea.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    Text(
-                      'Limita la ingesta de azúcares refinados, grasas saturadas y alimentos procesados.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -294,7 +286,7 @@ class _TerceroState extends State<Tercero> {
           child: Column(
             children: [
               Text(
-                'Mantenimiento de un peso saludable',
+                'Peso saludable',
                 style: const TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -455,7 +447,7 @@ class _QuintoState extends State<Quinto> {
             children: [
               Center(
                 child: Text(
-                  'Presión arterial y el colesterol',
+                  'Salud Arterial',
                   style: const TextStyle(
                     fontSize: 22.0,
                     fontWeight: FontWeight.bold,

@@ -154,7 +154,7 @@ class principal extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Habitos de Sueño Saludables',
+              'Habitos de Sueño',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -242,7 +242,7 @@ class primercontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Un entorno de sueño adecuado es esencial para garantizar un buen descanso. Asegúrate de que tu habitación esté oscura, ya que la luz puede interferir con la producción de melatonina, la hormona del sueño. Usa cortinas opacas o una máscara para dormir si es necesario. Además, mantener la habitación tranquila y a una temperatura agradable (generalmente entre 18-20 grados Celsius) promueve un sueño reparador. Invertir en un buen colchón y almohadas que se adapten a tus necesidades es crucial para garantizar la comodidad durante la noche.',
+              'Un entorno de sueño adecuado es esencial para garantizar un buen descanso. Asegúrate de que tu habitación esté oscura, ya que la luz puede interferir con el sueño. Usa cortinas opacas o una máscara para dormir si es necesario. Además, mantener la habitación tranquila y a una temperatura agradable (generalmente entre 18-20 grados Celsius) promueve un sueño reparador. Invertir en un buen colchón y almohadas que se adapten a tus necesidades es crucial para garantizar la comodidad durante la noche.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -285,7 +285,7 @@ class segundo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Limita la Exposición a Pantallas',
+              'Limita la Exposición a luz',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -329,7 +329,7 @@ class segundocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La exposición a la luz azul de las pantallas de dispositivos electrónicos puede suprimir la producción de melatonina y perturbar el ritmo circadiano, lo que dificulta conciliar el sueño. Para mejorar la calidad del sueño, evita el uso de dispositivos electrónicos al menos una hora antes de acostarte. En su lugar, opta por actividades relajantes como la lectura de un libro impreso, escuchar música suave o practicar técnicas de relajación.',
+              'La exposición a la luz de las pantallas de puede suprimir la producción de melatonina y perturbar el sueño. Para mejorar la calidad del sueño, evita el uso de dispositivos electrónicos antes de acostarte. En su lugar, opta por actividades relajantes como la lectura o escuchar música suave.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -372,7 +372,7 @@ class tercero extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Relajación antes de Dormir',
+              'Relajación',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -416,7 +416,7 @@ class tercerocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Establecer una rutina de relajación antes de acostarte es una excelente manera de preparar tu mente y cuerpo para el sueño. Puedes probar actividades como la meditación, la atención plena o ejercicios de respiración profunda para reducir el estrés y la ansiedad. Leer un libro tranquilo o escuchar música suave también son opciones efectivas. La relajación te ayuda a dejar de lado las preocupaciones del día y a entrar en un estado de calma que facilita el sueño.',
+              'Establecer una rutina de relajación antes de acostarte es una excelente manera de preparar tu mente y cuerpo para el sueño. Puedes probar actividades como la meditación o ejercicios de respiración para reducir el estrés y la ansiedad. Leer un libro tranquilo o escuchar música suave. La relajación te ayuda a dejar de lado las preocupaciones.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -459,7 +459,7 @@ class cuarto extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Evita Comidas Pesadas antes de Dormir',
+              'Evita Comidas Pesadas',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -503,7 +503,7 @@ class cuartocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Cenar al menos dos horas antes de acostarte es importante para evitar la indigestión y el malestar. Evita comidas pesadas, picantes o ricas en grasas, ya que pueden causar acidez estomacal y perturbar tu sueño. Opta por cenas ligeras y saludables, como proteínas magras, verduras y granos enteros. Además, reduce la ingesta de líquidos antes de acostarte para minimizar las interrupciones nocturnas debido a visitas al baño.',
+              'Cenar al menos dos horas antes de acostarte es importante. Evita comidas pesadas, picantes o ricas en grasas, ya que pueden causar acidez estomacal y perturbar tu sueño. Opta por cenas ligeras y saludables.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -590,7 +590,7 @@ class quintocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Si los síntomas de la perimenopausia, como los sofocos o la incontinencia urinaria, están afectando significativamente tu sueño, no dudes en hablar con un profesional de la salud. Pueden recomendarte tratamientos específicos o ajustes en tu estilo de vida para mejorar la calidad del sueño. Identificar y tratar las causas subyacentes de los problemas de sueño es fundamental para descansar de manera efectiva.',
+              'Si los síntomas, como los sofocos o la incontinencia pueden afectar significativamente tu sueño, un profesional de la salud puede recomendarte tratamientos específicos o ajustes en tu estilo de vida para mejorar la calidad del sueño.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -677,7 +677,7 @@ class sextocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Las siestas largas durante el día pueden interferir con el sueño nocturno y provocar dificultades para conciliar el sueño. Si sientes la necesidad de tomar una siesta, limita su duración a 20-30 minutos y evita dormir durante largos períodos durante el día. Esto te ayudará a mantener un ritmo de sueño más regular y a dormir mejor por la noche.',
+              'Las siestas largas durante el día pueden interferir y provocar dificultades para conciliar el sueño. Si sientes la necesidad de tomar una siesta, limita su duración y evita dormir durante largos períodos durante el día. Esto te ayudará a mantener un ritmo de sueño más regular y a dormir mejor.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -720,7 +720,7 @@ class extra extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El descanso adecuado es esencial durante la perimenopausia para promover la salud física y emocional. Aquí tienes algunos hábitos de descanso que pueden ayudarte a dormir mejor y sentirte más descansada durante esta etapa de la vida',
+              'El descanso adecuado es esencial para promover la salud física y emocional.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -807,7 +807,7 @@ class principalcontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Una rutina de sueño adecuada es esencial durante la perimenopausia para promover un descanso reparador. Aquí tienes algunos consejos para establecer una rutina de sueño efectiva durante esta etapa',
+              'Una rutina de sueño adecuada es esencial',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -894,7 +894,7 @@ class primercontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Mantener un horario de sueño constante es uno de los pilares fundamentales para mejorar la calidad del sueño durante la perimenopausia. Nuestro cuerpo tiene un reloj biológico interno que regula el ciclo sueño-vigilia, y mantener un horario regular lo ayuda a sincronizarse. Cuando te acuestas y te despiertas a la misma hora todos los días, incluso los fines de semana, ayudas a establecer un patrón de sueño más saludable. Esto significa que tu cuerpo comenzará a sentir sueño y a despertarse a las horas programadas, lo que a su vez te permitirá descansar mejor. La regularidad también ayuda a prevenir el insomnio y las interrupciones del sueño.',
+              'Mantener un horario de sueño constante es fundamentalpara mejorar la calidad del sueño, Cuando te acuestas y te despiertas a la misma hora todos los días, incluso los fines de semana, ayudas a establecer un patrón de sueño más saludable.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -937,7 +937,7 @@ class segundo2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Lleva un Diario de Sueño',
+              'Lleva un Diario',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -981,7 +981,7 @@ class segundocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Llevar un diario de sueño es una herramienta útil para identificar patrones y problemas relacionados con tu descanso. Anota la hora a la que te acuestas, cuánto tiempo te lleva conciliar el sueño, si te despiertas durante la noche y la duración total de tu sueño. Además, registra cualquier síntoma que pueda afectar tu sueño, como sofocos, sudoraciones nocturnas o inquietud. También es importante anotar tus hábitos antes de acostarte, como la ingesta de alimentos, ejercicio y el uso de dispositivos electrónicos. Llevar un registro puede ayudarte a identificar factores que contribuyen a problemas de sueño y a ajustar tu rutina de sueño en consecuencia. Esto te permitirá tomar decisiones más informadas para mejorar tu calidad de sueño.',
+              'Llevar un diario es una herramienta útil para identificar patrones y problemas relacionados con tu sueño. Anota la hora a la que te acuestas, cuánto tiempo te lleva dormir, si te despiertas durante la noche y la duración total de tu sueño. También es importante anotar tus hábitos antes de acostarte, como la ingesta de alimentos, ejercicio y el uso de dispositivos electrónicos.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

@@ -64,7 +64,7 @@ class _PostFisica extends State<PostFisica> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const primero(),
+                const primer(),
                 const segundo(),
                 const tercero(),
                 const cuarto(),
@@ -72,8 +72,6 @@ class _PostFisica extends State<PostFisica> {
                 const sexto(),
                 const septimo(),
                 const octavo(),
-                const noveno(),
-                const decimo(),
               ],
             ),
           ),
@@ -83,14 +81,14 @@ class _PostFisica extends State<PostFisica> {
   }
 }
 
-class primero extends StatefulWidget {
-  const primero({Key? key});
+class primer extends StatefulWidget {
+  const primer({Key? key});
 
   @override
-  _primeroItemState createState() => _primeroItemState();
+  _primerItemState createState() => _primerItemState();
 }
 
-class _primeroItemState extends State<primero> {
+class _primerItemState extends State<primer> {
   bool isExpanded = false;
 
   final customPinkColor =
@@ -98,7 +96,9 @@ class _primeroItemState extends State<primero> {
   final whiteColor = Colors.white; // Color blanco
 
   double getContainerHeight() {
-    return isExpanded ? 210 : 60;
+    return isExpanded
+        ? 270
+        : 60; // Ajusta la altura según si está expandido o no
   }
 
   @override
@@ -113,51 +113,57 @@ class _primeroItemState extends State<primero> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Expanded(
-          child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  isExpanded ? whiteColor : customPinkColor,
-                  const Color.fromARGB(197, 255, 255, 255),
-                  const Color.fromARGB(121, 255, 255, 255),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-              color: isExpanded ? customPinkColor : whiteColor,
-              borderRadius: BorderRadius.circular(15.0),
-            ),
-            padding: const EdgeInsets.all(16),
-            height: getContainerHeight(),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Ejercicio regular',
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                ),
-                if (isExpanded)
-                  const Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(height: 10),
-                      Text(
-                        'Mantén una rutina de ejercicio que incluya actividades de resistencia, como caminar, nadar o levantar pesas. El ejercicio ayuda a mantener la densidad ósea, la fuerza muscular y el equilibrio, lo que puede prevenir caídas y fracturas.',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                isExpanded ? whiteColor : customPinkColor,
+                const Color.fromARGB(197, 255, 255, 255),
+                const Color.fromARGB(121, 255, 255, 255),
               ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
             ),
+            color: isExpanded ? customPinkColor : whiteColor,
+            borderRadius: BorderRadius.circular(15.0),
+          ),
+          padding: const EdgeInsets.all(16),
+          height: getContainerHeight(), // Usa la altura dinámica
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Dieta equilibrada',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              if (isExpanded)
+                const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(height: 10),
+                    Text(
+                      'Consume una dieta rica en frutas, verduras, granos enteros, proteínas magras y productos lácteos bajos en grasa.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Asegúrate de obtener suficiente calcio y vitamina D para mantener la salud ósea',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+            ],
           ),
         ),
       ),
@@ -180,7 +186,9 @@ class _segundoItemState extends State<segundo> {
   final whiteColor = Colors.white; // Color blanco
 
   double getContainerHeight() {
-    return isExpanded ? 210 : 60;
+    return isExpanded
+        ? 270
+        : 60; // Ajusta la altura según si está expandido o no
   }
 
   @override
@@ -195,51 +203,57 @@ class _segundoItemState extends State<segundo> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Expanded(
-          child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  isExpanded ? whiteColor : customPinkColor,
-                  const Color.fromARGB(197, 255, 255, 255),
-                  const Color.fromARGB(121, 255, 255, 255),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-              color: isExpanded ? customPinkColor : whiteColor,
-              borderRadius: BorderRadius.circular(15.0),
-            ),
-            padding: const EdgeInsets.all(16),
-            height: getContainerHeight(),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Dieta saludable',
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                ),
-                if (isExpanded)
-                  const Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(height: 10),
-                      Text(
-                        'Consume una dieta rica en calcio y vitamina D para mantener la salud ósea. Los productos lácteos, los vegetales de hojas verdes y los pescados grasos son buenas fuentes de estos nutrientes. También, limita la ingesta de azúcar y alimentos procesados.',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                isExpanded ? whiteColor : customPinkColor,
+                const Color.fromARGB(197, 255, 255, 255),
+                const Color.fromARGB(121, 255, 255, 255),
               ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
             ),
+            color: isExpanded ? customPinkColor : whiteColor,
+            borderRadius: BorderRadius.circular(15.0),
+          ),
+          padding: const EdgeInsets.all(16),
+          height: getContainerHeight(), // Usa la altura dinámica
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Ejercicio regular',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              if (isExpanded)
+                const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(height: 10),
+                    Text(
+                      'Incorpora actividades físicas como caminar, nadar, andar en bicicleta o ejercicios aeróbicos en tu rutina.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'También considera ejercicios de resistencia para fortalecer los músculos y mejorar la densidad ósea.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+            ],
           ),
         ),
       ),
@@ -262,7 +276,9 @@ class _terceroItemState extends State<tercero> {
   final whiteColor = Colors.white; // Color blanco
 
   double getContainerHeight() {
-    return isExpanded ? 180 : 60;
+    return isExpanded
+        ? 270
+        : 60; // Ajusta la altura según si está expandido o no
   }
 
   @override
@@ -277,51 +293,57 @@ class _terceroItemState extends State<tercero> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Expanded(
-          child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  isExpanded ? whiteColor : customPinkColor,
-                  const Color.fromARGB(197, 255, 255, 255),
-                  const Color.fromARGB(121, 255, 255, 255),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-              color: isExpanded ? customPinkColor : whiteColor,
-              borderRadius: BorderRadius.circular(15.0),
-            ),
-            padding: const EdgeInsets.all(16),
-            height: getContainerHeight(),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Control de peso',
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                ),
-                if (isExpanded)
-                  const Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(height: 10),
-                      Text(
-                        'Mantén un peso saludable para reducir la presión sobre las articulaciones y disminuir el riesgo de enfermedades como la diabetes tipo 2 y enfermedades cardiovasculares.',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                isExpanded ? whiteColor : customPinkColor,
+                const Color.fromARGB(197, 255, 255, 255),
+                const Color.fromARGB(121, 255, 255, 255),
               ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
             ),
+            color: isExpanded ? customPinkColor : whiteColor,
+            borderRadius: BorderRadius.circular(15.0),
+          ),
+          padding: const EdgeInsets.all(16),
+          height: getContainerHeight(), // Usa la altura dinámica
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Peso saludable',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              if (isExpanded)
+                const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(height: 10),
+                    Text(
+                      'Controla tu peso a través de una alimentación saludable y ejercicio regular.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Evita el aumento de peso excesivo, ya que esto puede aumentar la grasa abdominal y el riesgo de problemas de salud.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+            ],
           ),
         ),
       ),
@@ -344,7 +366,9 @@ class _cuartoItemState extends State<cuarto> {
   final whiteColor = Colors.white; // Color blanco
 
   double getContainerHeight() {
-    return isExpanded ? 190 : 60;
+    return isExpanded
+        ? 270
+        : 60; // Ajusta la altura según si está expandido o no
   }
 
   @override
@@ -359,51 +383,57 @@ class _cuartoItemState extends State<cuarto> {
         margin: const EdgeInsets.symmetric(
           vertical: 10,
         ),
-        child: Expanded(
-          child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  isExpanded ? whiteColor : customPinkColor,
-                  const Color.fromARGB(197, 255, 255, 255),
-                  const Color.fromARGB(121, 255, 255, 255),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-              color: isExpanded ? customPinkColor : whiteColor,
-              borderRadius: BorderRadius.circular(15.0),
-            ),
-            padding: const EdgeInsets.all(16),
-            height: getContainerHeight(),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Exámenes de salud regulares',
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                ),
-                if (isExpanded)
-                  const Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(height: 10),
-                      Text(
-                        'Continúa con exámenes médicos regulares, que incluyan pruebas de densidad ósea, control de la presión arterial y análisis de sangre para asegurarte de que estás en buena salud.',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                isExpanded ? whiteColor : customPinkColor,
+                const Color.fromARGB(197, 255, 255, 255),
+                const Color.fromARGB(121, 255, 255, 255),
               ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
             ),
+            color: isExpanded ? customPinkColor : whiteColor,
+            borderRadius: BorderRadius.circular(15.0),
+          ),
+          padding: const EdgeInsets.all(16),
+          height: getContainerHeight(), // Usa la altura dinámica
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Salud ósea',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              if (isExpanded)
+                const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(height: 10),
+                    Text(
+                      'Continúa con el seguimiento de la densidad ósea y las medidas preventivas contra la osteoporosis.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Asegúrate de obtener suficiente calcio y vitamina D, ya que la pérdida ósea puede ser un riesgo.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+            ],
           ),
         ),
       ),
@@ -426,171 +456,7 @@ class _quintoItemState extends State<quinto> {
   final whiteColor = Colors.white; // Color blanco
 
   double getContainerHeight() {
-    return isExpanded ? 190 : 60;
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isExpanded = !isExpanded;
-        });
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 10,
-        ),
-        child: Expanded(
-          child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  isExpanded ? whiteColor : customPinkColor,
-                  const Color.fromARGB(197, 255, 255, 255),
-                  const Color.fromARGB(121, 255, 255, 255),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-              color: isExpanded ? customPinkColor : whiteColor,
-              borderRadius: BorderRadius.circular(15.0),
-            ),
-            padding: const EdgeInsets.all(16),
-            height: getContainerHeight(),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Salud cardiovascular',
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                ),
-                if (isExpanded)
-                  const Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(height: 10),
-                      Text(
-                        'Mantén un estilo de vida que promueva la salud cardiovascular. Esto incluye una dieta baja en grasas saturadas y trans, ejercicio regular y evitar el tabaco.',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class sexto extends StatefulWidget {
-  const sexto({Key? key});
-
-  @override
-  _sextoItemState createState() => _sextoItemState();
-}
-
-class _sextoItemState extends State<sexto> {
-  bool isExpanded = false;
-
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
-
-  double getContainerHeight() {
-    return isExpanded ? 170 : 60;
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isExpanded = !isExpanded;
-        });
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 10,
-        ),
-        child: Expanded(
-          child: Container(
-            width: double.infinity,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  isExpanded ? whiteColor : customPinkColor,
-                  const Color.fromARGB(197, 255, 255, 255),
-                  const Color.fromARGB(121, 255, 255, 255),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              ),
-              color: isExpanded ? customPinkColor : whiteColor,
-              borderRadius: BorderRadius.circular(15.0),
-            ),
-            padding: const EdgeInsets.all(16),
-            height: getContainerHeight(),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Dormir adecuadamente',
-                  style: TextStyle(
-                    fontSize: 22.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
-                  ),
-                ),
-                if (isExpanded)
-                  const Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(height: 10),
-                      Text(
-                        ' La calidad del sueño es fundamental para la salud física y mental. Establece una rutina de sueño regular y crea un ambiente adecuado para el descanso.  ',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Colors.black,
-                        ),
-                      ),
-                    ],
-                  ),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class septimo extends StatefulWidget {
-  const septimo({Key? key});
-
-  @override
-  _septimoItemState createState() => _septimoItemState();
-}
-
-class _septimoItemState extends State<septimo> {
-  bool isExpanded = false;
-
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
-
-  double getContainerHeight() {
-    return isExpanded ? 150 : 60;
+    return isExpanded ? 200 : 60;
   }
 
   @override
@@ -626,7 +492,7 @@ class _septimoItemState extends State<septimo> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Hidratación',
+                'Presión arterial y el colesterol',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -639,7 +505,190 @@ class _septimoItemState extends State<septimo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Bebe suficiente agua para mantener la hidratación adecuada, lo que es esencial para la salud en general.',
+                      'Realiza exámenes médicos regulares para controlar tu presión arterial y tus niveles de colesterol.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Adopta un estilo de vida saludable, incluyendo una dieta baja en sodio y grasas saturadas.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class sexto extends StatefulWidget {
+  const sexto({Key? key});
+
+  @override
+  _sextoItemState createState() => _sextoItemState();
+}
+
+class _sextoItemState extends State<sexto> {
+  bool isExpanded = false;
+
+  final customPinkColor =
+      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
+  final whiteColor = Colors.white; // Color blanco
+
+  double getContainerHeight() {
+    return isExpanded ? 200 : 60;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          isExpanded = !isExpanded;
+        });
+      },
+      child: Container(
+        margin: const EdgeInsets.symmetric(
+          vertical: 10,
+        ),
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                isExpanded ? whiteColor : customPinkColor,
+                const Color.fromARGB(197, 255, 255, 255),
+                const Color.fromARGB(121, 255, 255, 255),
+              ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+            color: isExpanded ? customPinkColor : whiteColor,
+            borderRadius: BorderRadius.circular(15.0),
+          ),
+          padding: const EdgeInsets.all(16),
+          height: getContainerHeight(),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Hábitos saludables',
+                style: TextStyle(
+                  fontSize: 22.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+              if (isExpanded)
+                const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(height: 10),
+                    Text(
+                      'Evita el consumo de tabaco y reduce el consumo de alcohol si es necesario.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Limita el estrés a través de técnicas de relajación como la meditación o el yoga.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class septimo extends StatefulWidget {
+  const septimo({Key? key});
+
+  @override
+  _septimoItemState createState() => _septimoItemState();
+}
+
+class _septimoItemState extends State<septimo> {
+  bool isExpanded = false;
+
+  final customPinkColor =
+      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
+  final whiteColor = Colors.white; // Color blanco
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          isExpanded = !isExpanded;
+        });
+      },
+      child: Container(
+        margin: const EdgeInsets.symmetric(
+          vertical: 10,
+        ),
+        child: Container(
+          width: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                isExpanded ? whiteColor : customPinkColor,
+                const Color.fromARGB(197, 255, 255, 255),
+                const Color.fromARGB(121, 255, 255, 255),
+              ],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+            ),
+            color: isExpanded ? customPinkColor : whiteColor,
+            borderRadius: BorderRadius.circular(15.0),
+          ),
+          padding: const EdgeInsets.all(16),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Center(
+                child: Text(
+                  'Higiene ginecológica',
+                  style: TextStyle(
+                    fontSize: 22.0,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+              if (isExpanded)
+                const Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(height: 10),
+                    Text(
+                      'Continúa con las visitas ginecológicas regulares y discute las necesidades de salud reproductiva con tu médico.',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 10),
+                    Text(
+                      'Se desaconseja el uso de prendas que ajusten la zona íntima. Recomendamos usar prendas sueltas que permitan la transpiración.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -670,7 +719,7 @@ class _octavoItemState extends State<octavo> {
   final whiteColor = Colors.white; // Color blanco
 
   double getContainerHeight() {
-    return isExpanded ? 170 : 60;
+    return isExpanded ? 200 : 60;
   }
 
   @override
@@ -706,7 +755,7 @@ class _octavoItemState extends State<octavo> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Prevención de caídas',
+                'Cuidados Adicionales',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -719,167 +768,7 @@ class _octavoItemState extends State<octavo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Asegura tu hogar para prevenir caídas. Elimina obstáculos, usa alfombras antideslizantes y considera la instalación de barras de apoyo en el baño si es necesario.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class noveno extends StatefulWidget {
-  const noveno({Key? key});
-
-  @override
-  _novenoItemState createState() => _novenoItemState();
-}
-
-class _novenoItemState extends State<noveno> {
-  bool isExpanded = false;
-
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
-
-  double getContainerHeight() {
-    return isExpanded ? 160 : 60;
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isExpanded = !isExpanded;
-        });
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 10,
-        ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: getContainerHeight(),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Protección solar',
-                style: TextStyle(
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Protege tu piel de los daños del sol usando protector solar y ropa protectora para prevenir el envejecimiento prematuro y el riesgo de cáncer de piel.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class decimo extends StatefulWidget {
-  const decimo({Key? key});
-
-  @override
-  _decimoItemState createState() => _decimoItemState();
-}
-
-class _decimoItemState extends State<decimo> {
-  bool isExpanded = false;
-
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
-
-  double getContainerHeight() {
-    return isExpanded ? 160 : 60;
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isExpanded = !isExpanded;
-        });
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 10,
-        ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          height: getContainerHeight(),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Prevención de enfermedades',
-                style: TextStyle(
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Mantén al día tus vacunas y sigue las recomendaciones médicas para la prevención de enfermedades específicas, como la osteoporosis y el cáncer.  ',
+                      'Consulta con tu médico sobre cualquier problema específico que puedas experimentar, como la sequedad o problemas urinarios, y busca tratamientos adecuados.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,

@@ -1,4 +1,4 @@
-import 'package:aplicacion_principal/src/Informacion.dart';
+import 'package:LifeTransition/src/Informacion.dart';
 import 'package:flutter/material.dart';
 import 'perfil.dart';
 import 'botchat.dart';

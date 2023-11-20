@@ -147,7 +147,7 @@ class _primeroItemState extends State<primero> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Únete a grupos de apoyo específicos para mujeres en la postmenopausia para compartir experiencias y consejos sobre cómo abordar los cambios emocionales en esta etapa.',
+                      'Únete a grupos de apoyo específicos para mujeres en la postmenopausia para compartir experiencias y consejos sobre cómo abordar los cambios emocionales en esta etapa.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -294,7 +294,7 @@ class _terceroItemState extends State<tercero> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Desarrollo de nuevas habilidades ',
+                'Desarrollar nuevas habilidades ',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -374,7 +374,7 @@ class _cuartoItemState extends State<cuarto> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Aceptación y autoaceptación',
+                'Autoaceptación',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -854,7 +854,7 @@ class _decimoItemState extends State<decimo> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Reconexión con la espiritualidad',
+                'Reconexión contigo misma',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -862,10 +862,10 @@ class _decimoItemState extends State<decimo> {
                 ),
               ),
               if (isExpanded)
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
                     Text(
                       'Explora prácticas espirituales o religiosas que te brinden consuelo y una sensación de propósito.',
                       style: TextStyle(

@@ -158,7 +158,7 @@ class principal extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Incorporación del Ejercicio',
+              'Incorporarlo',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -202,7 +202,7 @@ class principalcontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Incorporar el ejercicio en la vida de una persona en la postmenopausia es fundamental para mantener la salud y el bienestar. Aquí tienes información sobre cómo hacerlo y algunas sugerencias de ejercicios adecuados',
+              'Incorporar el ejercicio es fundamental para mantener la salud y el bienestar.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -376,7 +376,7 @@ class segundocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Conocer y respetar tus límites es fundamental para evitar lesiones y asegurarte de que el ejercicio sea una experiencia segura y beneficiosa. Recuerda que la meta principal es mejorar tu salud y bienestar en la postmenopausia, y esto se logra de manera más efectiva cuando te cuidas a ti misma y te ejercitas de manera responsable',
+              'Conocer y respetar tus límites es fundamental para evitar lesiones y asegurarte de que el ejercicio sea una experiencia segura y beneficiosa. la meta principal es mejorar tu salud y bienestar, y esto se logra de manera más efectiva cuando te cuidas a ti misma y te ejercitas de manera responsable',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -463,7 +463,7 @@ class tercerocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Define tus objetivos de ejercicio. ¿Quieres mejorar la salud cardiovascular, fortalecer los músculos, aumentar la flexibilidad o aliviar el estrés? Establecer metas claras te ayudará a planificar un programa de ejercicios adecuado.',
+              'Define tus objetivos de ejercicio. Establecer metas claras te ayudará a planificar un programa de ejercicios adecuado.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -724,7 +724,7 @@ class primercontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La caminata es un ejercicio de bajo impacto que tiene numerosos beneficios para la salud. Ayuda a fortalecer el sistema cardiovascular, reducir el riesgo de enfermedades cardíacas, mejorar la circulación sanguínea y mantener un peso saludable. Además, caminar regularmente puede fortalecer los músculos de las piernas, mejorar la salud mental al liberar endorfinas y aumentar la sensación de bienestar',
+              'La caminata es un ejercicio de bajo impacto que tiene numerosos beneficios para la salud. Ayuda a fortalecer el sistema cardiovascular, reducir el riesgo de enfermedades cardíacas, mejorar la circulación sanguínea y mantener un peso saludable. Además, caminar regularmente puede fortalecer los músculos de las piernas',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -898,7 +898,7 @@ class tercerocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El yoga combina movimientos suaves con técnicas de respiración y relajación. Ayuda a mejorar la flexibilidad, el equilibrio y la coordinación. El yoga también es eficaz para reducir el estrés, la ansiedad y mejorar el bienestar emocional. Practicar yoga puede aliviar la rigidez muscular y mantener la movilidad de las articulaciones.',
+              'El yoga combina movimientos suaves con técnicas de respiración y relajación. Ayuda a mejorar la flexibilidad, el equilibrio y la coordinación. Practicar yoga puede aliviar la rigidez muscular y mantener la movilidad de las articulaciones.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -941,7 +941,7 @@ class cuarto2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Ejercicios de Respiración',
+              'Respiraciónes',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -985,7 +985,7 @@ class cuartocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los ejercicios de respiración profunda pueden mejorar la función pulmonar y ayudar a aliviar el estrés. Practicar la respiración consciente mejora la oxigenación del cuerpo y calma la mente. Puedes utilizar técnicas de respiración para mantener la calma en situaciones estresantes y mejorar la concentración.',
+              'Los ejercicios de respiración profunda pueden mejorar la función pulmonar y ayudar a aliviar el estrés. Practicar la respiración consciente mejora la oxigenación del cuerpo y calmae la mente.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1028,7 +1028,7 @@ class quinto2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Ejercicios de Relajación',
+              'Relajación',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -1072,7 +1072,7 @@ class quintocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los ejercicios de relajación, como la meditación y la atención plena, son esenciales para reducir el estrés y mejorar el bienestar emocional. La meditación, en particular, ayuda a calmar la mente, reducir la ansiedad y promover la relajación profunda. Estas prácticas también pueden mejorar la calidad del sueño y aumentar la sensación de tranquilidad en la vida diaria.',
+              'Los ejercicios de relajación, como la meditación y la atención plena, son esenciales para reducir el estrés y mejorar el bienestar. La meditación, ayuda a calmar la mente, reducir la ansiedad y promover la relajación profunda.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1115,7 +1115,7 @@ class extra extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Es importante hablar con un médico antes de comenzar cualquier programa de ejercicios, especialmente si tienes condiciones médicas preexistentes. Además, considera trabajar con un entrenador de fitness o fisioterapeuta para asegurarte de que estás realizando los ejercicios de manera segura y efectiva. Mantenerse activo a medida que envejeces es esencial para mantener la salud y la calidad de vida',
+              'Es importante hablar con un médico antes de comenzar cualquier programa de ejercicios, especialmente si tienes condiciones médicas preexistentes.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

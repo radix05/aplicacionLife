@@ -451,7 +451,7 @@ class segundocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El apoyo social es invaluable durante la perimenopausia. Hablar con amigos y familiares sobre tus preocupaciones y experiencias brinda una red de apoyo emocional. Puedes compartir tus inquietudes, buscar consejos y sentirte comprendida. El apoyo social puede reducir la sensación de aislamiento y proporcionar un espacio seguro para expresar tus emociones',
+              'El apoyo social es invaluable. Hablar con amigos y familiares sobre tus preocupaciones y experiencias brinda una red de apoyo emocional. Puedes compartir tus inquietudes, buscar consejos y sentirte comprendida.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -538,7 +538,7 @@ class tercerocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La terapia o consejería proporciona un espacio confidencial para explorar tus preocupaciones, estrés y emociones con la guía de un profesional de la salud mental. Un terapeuta puede ayudarte a desarrollar estrategias para manejar el estrés, mejorar tu bienestar emocional y abordar cualquier problema de salud mental que puedas estar experimentando',
+              'La terapia o consejería proporciona un espacio confidencial para explorar tus preocupaciones, estrés y emociones con la guía de un profesional de la salud mental. Un terapeuta puede ayudarte a desarrollar estrategias para manejar el estrés',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -581,7 +581,7 @@ class cuarto extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Evita Estresores Conocidos',
+              'Evita Estresores',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -625,7 +625,7 @@ class cuartocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Identificar las fuentes de estrés en tu vida es el primer paso para reducirlos o evitarlos. Esto puede incluir hacer cambios en tu entorno laboral, establecer límites personales saludables en relaciones conflictivas o eliminar actividades que te resulten abrumadoras. La reducción de las fuentes de estrés puede ayudar a aliviar la carga emocional',
+              'Identificar las fuentes de estrés en tu vida es el primer paso para reducirlos o evitarlos. Esto puede incluir hacer cambios en tu entorno laboral, establecer límites personales saludables en relaciones conflictivas o eliminar actividades que te resulten abrumadoras',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -712,7 +712,7 @@ class quintocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La educación sobre la perimenopausia es empoderadora. Cuanto más sepas sobre los cambios hormonales y físicos que ocurren durante esta etapa, mejor podrás entender tus síntomas y emociones. La conciencia te permite reconocer que lo que estás experimentando es normal y compartido por muchas otras mujeres.',
+              'La educación sobre la perimenopausia es empoderadora. Cuanto más sepas sobre los cambios hormonales y físicos que ocurren durante esta etapa, mejor podrás entender tus síntomas y emociones.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

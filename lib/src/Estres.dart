@@ -181,7 +181,7 @@ class principalcontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El manejo del estrés durante la menopausia es esencial, ya que esta etapa de la vida puede venir acompañada de cambios emocionales y físicos que pueden aumentar la sensación de estrés. Aquí tienes algunos consejos para manejar el estrés durante la menopausia',
+              'El manejo del estrés es esencial, ya que los cambios emocionales y físicos que pueden aumentar la sensación de estrés.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -268,7 +268,7 @@ class primercontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El apoyo social es una parte fundamental para el manejo del estrés. Mantener conexiones con amigos y familiares puede proporcionar un sistema de apoyo que te ayude a enfrentar los desafíos emocionales de la menopausia. Hablar sobre tus experiencias, preocupaciones y emociones con personas de confianza puede aliviar la carga emocional y proporcionar una sensación de respaldo. Las relaciones sólidas pueden brindarte un espacio seguro para expresarte y obtener consejos útiles.',
+              'El apoyo social es una parte fundamental para el manejo del estrés. Mantener conexiones con amigos y familiares puede proporcionar un sistema de apoyo que te ayude a enfrentar los desafíos, Hablar sobre tus experiencias, preocupaciones y emociones con personas de confianza puede aliviar la carga emocional y proporcionar una sensación de respaldo.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -311,7 +311,7 @@ class segundo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Evita Estresores Conocidos',
+              'Evita Estresores',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -355,7 +355,7 @@ class segundocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Identificar las fuentes de estrés en tu vida y tomar medidas para evitarlas o reducirlas es fundamental. Esto podría incluir reducir la carga de trabajo, establecer límites en las relaciones personales o eliminar actividades que te resulten abrumadoras. Al reducir la exposición a factores de estrés conocidos, puedes experimentar una disminución significativa en los niveles de estrés y una mejora en tu bienestar general.',
+              'Identificar las fuentes de estrés en tu vida y tomar medidas para evitarlas o reducirlas es fundamental. Esto podría incluir la carga de trabajo, establecer límites en las relaciones personales o eliminar actividades que te resulten abrumadoras..',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -442,7 +442,7 @@ class tercerocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Mantener un estilo de vida saludable es esencial para el manejo del estrés. Esto incluye una alimentación equilibrada, ejercicio regular y descanso adecuado. Una dieta saludable proporciona los nutrientes necesarios para el funcionamiento óptimo del cuerpo y puede ayudar a estabilizar el estado de ánimo. El ejercicio regular libera endorfinas, lo que mejora el estado de ánimo y reduce el estrés. Un buen descanso permite que el cuerpo y la mente se recuperen del estrés diario.',
+              'Mantener un estilo de vida saludable es esencial para el manejo del estrés. Esto incluye una alimentación equilibrada, ejercicio regular y descanso adecuado.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -529,7 +529,7 @@ class cuartocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Dedicar tiempo a actividades que disfrutes puede ser una estrategia efectiva para reducir el estrés. Los pasatiempos y actividades recreativas ofrecen una distracción saludable de las preocupaciones diarias y pueden generar una sensación de logro y satisfacción. Ya sea la lectura, la jardinería, la artesanía, la música o cualquier otra actividad que te guste, encontrar tiempo para tu pasatiempo favorito puede ser una valiosa forma de relajación y liberación de estrés.',
+              'Dedicar tiempo a actividades que disfrutes puede ser una estrategia efectiva para reducir el estrés. Los pasatiempos y actividades recreativas ofrecen una distracción saludable de las preocupaciones diarias y pueden generar una sensación de logro y satisfacción. Ya sea la lectura, la jardinería, la artesanía, la música o cualquier otra actividad que te guste.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -572,7 +572,7 @@ class extra extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El manejo del estrés durante la menopausia es una parte importante del cuidado de tu bienestar físico y emocional. Experimentar estrés en esta etapa de la vida es normal, pero con las estrategias adecuadas, puedes minimizar su impacto en tu salud y calidad de vida. Si el estrés se vuelve abrumador, considera buscar apoyo profesional para ayudarte a afrontar los desafíos emocionales de la menopausia',
+              'El manejo del estrés es una parte importante del cuidado de tu bienestar físico y emocional. pero con las estrategias adecuadas, puedes minimizar su impacto en tu salud y calidad de vida. Si el estrés se vuelve abrumador, considera buscar apoyo profesional para ayudarte a afrontar los desafíos emocionales',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

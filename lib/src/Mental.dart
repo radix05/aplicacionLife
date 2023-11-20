@@ -132,7 +132,7 @@ class _primerItemState extends State<primer> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Mantener una red de apoyo social',
+                'Mantener una red de apoyo',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -225,7 +225,7 @@ class _segundoItemState extends State<segundo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'La actividad física regular no solo beneficia el cuerpo, sino también la mente. El ejercicio libera endorfinas, neurotransmisores que mejoran el estado de ánimo, reducen el estrés y la ansiedad, y pueden aliviar síntomas de depresión.',
+                      'La actividad física regular no solo beneficia el cuerpo, sino también la mente. El ejercicio mejora el estado de ánimo, reducen el estrés y pueden aliviar síntomas de depresión.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -305,7 +305,7 @@ class _terceroItemState extends State<tercero> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Una dieta rica en alimentos frescos y nutritivos proporciona a tu cerebro los nutrientes necesarios para mantener la salud mental. Los alimentos ricos en antioxidantes, grasas saludables y proteínas pueden favorecer el bienestar emocional.',
+                      'Una dieta rica en alimentos frescos y nutritivos proporciona a tu cerebro los nutrientes necesarios para mantener la salud. Los alimentos ricos en antioxidantes, grasas saludables y proteínas favorecen el bienestar emocional.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -465,7 +465,7 @@ class _quintoItemState extends State<quinto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Aprender a gestionar el estrés es clave para la salud mental. Las técnicas como la meditación y la respiración profunda pueden ayudar a reducir los niveles de cortisol, una hormona del estrés.',
+                      'Aprender a gestionar el estrés es clave para la salud mental. Las técnicas como la meditación y la respiración profunda ayudan a reducir los niveles de cortisol, una hormona del estrés.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -545,7 +545,7 @@ class _sextoItemState extends State<sexto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Hablar sobre tus emociones es una forma efectiva de liberar la tensión emocional y buscar apoyo. La comunicación abierta con amigos, familiares o profesionales de la salud puede ayudarte a comprender y afrontar desafíos emocionales.',
+                      'Hablar es una forma efectiva de liberar la tensión emocional y buscar apoyo. La comunicación abierta en confianza de la salud puede ayudarte a comprender y afrontar desafíos emocionales.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -625,7 +625,7 @@ class _septimaItemState extends State<septima> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Reservar tiempo para actividades que te relajan y te hacen feliz es esencial para reducir el estrés y recargar la energía. El autocuidado promueve un equilibrio emocional y una sensación de bienestar.',
+                      'Reservar tiempo para actividades que te relajan y te hacen feliz es esencial para reducir el estrés y recargar la energía. El autocuidado promueve un equilibrio emocional y una sensación de bienestar.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -705,7 +705,7 @@ class _octavoItemState extends State<octavo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Cuando los síntomas de ansiedad, depresión u otras condiciones de salud mental son graves o persistentes, buscar ayuda de un profesional de la salud mental es crucial para recibir tratamiento y apoyo especializado',
+                      'Cuando los síntomas de ansiedad, depresión u otras condiciones de salud mental son graves o persistentes, buscar ayuda de un profesional es crucial para recibir tratamiento y apoyo especializado',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,

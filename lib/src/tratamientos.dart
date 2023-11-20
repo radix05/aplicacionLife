@@ -129,7 +129,6 @@ class _TratamientosScreenState extends State<TratamientosScreen> {
 }
 
 //---------------------------
-
 class Principal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -138,7 +137,6 @@ class Principal extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 280,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -150,22 +148,19 @@ class Principal extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'La menopausia puede ser una epoca dificil para varias mujeres, el cuerpo experimenta cambios e inconvenientes, varios sintomas pueden resultar en un problema para el dia a dia o incluso para la salud, por eso a continuacion te muestro los tratamientos mas comunes para varios sintomas que puedes estar atravesando',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            'esta puede ser una época difícil, el cuerpo experimenta cambios e inconvenientes, varios síntomas pueden resultar en un problema para el día a día o incluso para la salud, por eso a continuación te muestro los tratamientos más comunes para varios síntomas que puedes estar atravesando',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
+            textAlign: TextAlign.center,
           ),
         ],
       ),
@@ -181,7 +176,6 @@ class Principal2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 380,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -193,22 +187,19 @@ class Principal2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              '!! Recuerda que acudir a tu médico de confianza es esencial para recibir atención médica especializada y personalizada durante la perimenopausia, la menopausia y la postmenopausia. Esto te ayudará a abordar tus síntomas, prevenir enfermedades y mantener una buena calidad de vida en estas etapas de la vida. No dudes en buscar el apoyo y la orientación de un profesional de la salud en tu viaje a través de la menopausia y más allá.!!',
-              style: TextStyle(
-                fontSize: 22.0,
-                color: Colors.black,
-              ),
+          Text(
+            '!! Recuerda que acudir a tu médico de confianza es esencial para recibir atención médica especializada y personalizada durante este périodo. Esto te ayudará a abordar tus síntomas, prevenir enfermedades y mantener una buena calidad de vida en estas etapas de la vida. No dudes en buscar el apoyo y la orientación de un profesional de la salud en tu viaje a través de la menopausia y más allá.!!',
+            style: TextStyle(
+              fontSize: 22.0,
+              color: Colors.black,
             ),
+            textAlign: TextAlign.center,
           ),
         ],
       ),
@@ -236,22 +227,18 @@ class SofocoTitulo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Sofoco',
-              style: TextStyle(
-                fontSize: 30.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Sofoco',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -280,22 +267,18 @@ class SofocoPyM extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Perimenopausia y Menopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Perimenopausia y Menopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -324,22 +307,18 @@ class SofocoPyM1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Terapia de Reemplazo Hormona',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Terapia de Reemplazo Hormonal',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -356,7 +335,6 @@ class SofocoPyMcontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -368,21 +346,17 @@ class SofocoPyMcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'La TRH es un tratamiento común para los sofocos. Implica la administración de hormonas como el estrógeno y la progesterona para equilibrar los niveles hormonales. Sin embargo, la TRH conlleva algunos riesgos y no es adecuada para todas las mujeres. Debe ser discutida con un médico.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'La TRH es un tratamiento común para los sofocos. Implica la administración de hormonas como el estrógeno y la progesterona para equilibrar los niveles hormonales. Sin embargo, la TRH conlleva algunos riesgos y no es adecuada para todas las mujeres. Debe ser discutida con un médico.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -399,7 +373,6 @@ class SofocoPyM2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -411,22 +384,18 @@ class SofocoPyM2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Medicamentos No Hormonales',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Medicamentos No Hormonales',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -443,7 +412,6 @@ class SofocoPyMcontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -455,21 +423,17 @@ class SofocoPyMcontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Algunos medicamentos, como los antidepresivos, como los ISRS (inhibidores selectivos de la recaptación de serotonina), o los ISRSN (inhibidores selectivos de la recaptación de serotonina y noradrenalina), pueden ayudar a aliviar los sofocos. También existen medicamentos específicos para tratar los sofocos, como la venlafaxina.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Algunos medicamentos, como los antidepresivos, pueden ayudar a aliviar los sofocos. También existen medicamentos específicos para tratar los sofocos, como la venlafaxina.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -486,7 +450,6 @@ class SofocoPyM3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -498,22 +461,18 @@ class SofocoPyM3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Cambios en el Estilo de Vida',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios en el Estilo de Vida',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -530,7 +489,6 @@ class SofocoPyMcontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -542,21 +500,17 @@ class SofocoPyMcontenido3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'La adopción de un estilo de vida saludable puede reducir la frecuencia e intensidad de los sofocos. Esto incluye evitar alimentos y bebidas desencadenantes, como el alcohol y alimentos picantes, mantener un peso saludable y practicar la relajación.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'La adopción de un estilo de vida saludable puede reducir la frecuencia e intensidad de los sofocos. Esto incluye evitar alimentos y bebidas desencadenantes, como el alcohol y alimentos picantes, mantener un peso saludable y practicar la relajación.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -573,7 +527,6 @@ class SofocoPo extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -585,22 +538,18 @@ class SofocoPo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Postmenopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Postmenopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -617,7 +566,6 @@ class SofocoPo1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -629,22 +577,18 @@ class SofocoPo1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Suplementos de Fitoestrógenos',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Suplementos de Fitoestrógenos',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -704,7 +648,6 @@ class SofocoPo2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -716,22 +659,18 @@ class SofocoPo2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Acupuntura',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Acupuntura',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -748,7 +687,6 @@ class SofocoPocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -760,21 +698,17 @@ class SofocoPocontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              ' Algunas mujeres encuentran alivio de los sofocos a través de la acupuntura, una terapia alternativa que implica la inserción de agujas finas en puntos específicos del cuerpo.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Algunas mujeres encuentran alivio de los sofocos a través de la acupuntura, una terapia alternativa que implica la inserción de agujas finas en puntos específicos del cuerpo.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -791,7 +725,6 @@ class SofocoPocontenido2_1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -803,21 +736,17 @@ class SofocoPocontenido2_1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Es importante destacar que la elección del tratamiento debe basarse en la evaluación individual de la paciente y en la discusión con un profesional de la salud',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Es importante destacar que la elección del tratamiento debe basarse en la evaluación individual de la paciente y en la discusión con un profesional de la salud',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -846,8 +775,7 @@ class CicloTitulo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -856,7 +784,7 @@ class CicloTitulo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Cambios en el ciclo menstrual ',
+              'Cambios en el ciclo ',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -878,7 +806,6 @@ class CicloPyM extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -890,22 +817,18 @@ class CicloPyM extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Perimenopausia y Menopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Perimenopausia y Menopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -922,7 +845,6 @@ class CicloPyM1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -934,22 +856,18 @@ class CicloPyM1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Terapia de Reemplazo Hormona',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Terapia de Reemplazo Hormona',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -966,7 +884,6 @@ class CicloPyMcontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -978,21 +895,17 @@ class CicloPyMcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'La TRH puede ayudar a regular los ciclos menstruales y aliviar los síntomas asociados, como el sangrado irregular. Se administra estrógeno y, en algunos casos, progesterona. Sin embargo, se deben sopesar los riesgos y beneficios de la TRH, y su uso debe ser supervisado por un profesional de la salud.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'La TRH puede ayudar a regular los ciclos menstruales y aliviar los síntomas asociados, como el sangrado irregular. Se administra estrógeno y, en algunos casos, progesterona. Sin embargo, se deben sopesar los riesgos y beneficios de la TRH, y su uso debe ser supervisado por un profesional de la salud.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1009,7 +922,6 @@ class CicloPyM2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1021,22 +933,18 @@ class CicloPyM2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Medicamentos para el Control del Ciclo',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Medicamentos para el Control',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1053,7 +961,6 @@ class CicloPyMcontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1065,21 +972,17 @@ class CicloPyMcontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Algunos medicamentos, como los anticonceptivos orales de baja dosis, pueden ayudar a regular los ciclos menstruales y reducir la intensidad del sangrado.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Algunos medicamentos, como los anticonceptivos orales de baja dosis, pueden ayudar a regular los ciclos menstruales y reducir la intensidad del sangrado.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1096,7 +999,6 @@ class CicloPo extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1108,22 +1010,18 @@ class CicloPo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Postmenopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Postmenopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1140,7 +1038,6 @@ class CicloPo1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1152,22 +1049,18 @@ class CicloPo1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Evaluación Médica',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Evaluación Médica',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1184,7 +1077,6 @@ class CicloPocontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1196,21 +1088,17 @@ class CicloPocontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Cualquier sangrado vaginal que ocurra después de la menopausia debe ser evaluado por un médico. Podría ser un signo de afecciones médicas como pólipos uterinos, cáncer de endometrio o infecciones.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Cualquier sangrado debe ser evaluado por un médico. Podría ser un signo de afecciones médicas como pólipos uterinos, cáncer de endometrio o infecciones.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1239,22 +1127,18 @@ class AnimoTitulo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Cambios en el estado de ánimo ',
-              style: TextStyle(
-                fontSize: 30.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios de ánimo ',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1263,7 +1147,7 @@ class AnimoTitulo extends StatelessWidget {
   }
 }
 
-class animoPyM extends StatelessWidget {
+class AnimoPyM extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -1271,7 +1155,6 @@ class animoPyM extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1283,22 +1166,18 @@ class animoPyM extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Perimenopausia y Menopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Perimenopausia y Menopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1315,7 +1194,6 @@ class AnimoPyM1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1327,22 +1205,18 @@ class AnimoPyM1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Suplementos de Hierbas',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Suplementos de Hierbas',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1359,7 +1233,6 @@ class AnimoPyMcontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1371,21 +1244,17 @@ class AnimoPyMcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Algunas hierbas como el trébol rojo y la cimicífuga (black cohosh) se han utilizado tradicionalmente para aliviar los síntomas de la perimenopausia, incluyendo cambios en el estado de ánimo. Consulta a un profesional de la salud antes de tomar suplementos herbales',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Algunas hierbas como el trébol rojo se han utilizado tradicionalmente para aliviar los síntomas, incluyendo cambios en el estado de ánimo. Consulta a un profesional de la salud antes de tomar suplementos herbales',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1402,7 +1271,6 @@ class AnimoPyM2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1414,22 +1282,18 @@ class AnimoPyM2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Medicamentos Antidepresivos Selectivos',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Medicamentos Antidepresivos',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1446,7 +1310,6 @@ class AnimoPyMcontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1458,21 +1321,17 @@ class AnimoPyMcontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Estos medicamentos se utilizan para tratar la depresión y la ansiedad relacionadas con la menopausia. Pueden ser recetados por un médico.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Estos medicamentos se utilizan para tratar la depresión y la ansiedad relacionadas con la menopausia. Pueden ser recetados por un médico.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1481,7 +1340,7 @@ class AnimoPyMcontenido2 extends StatelessWidget {
   }
 }
 
-class animoPo extends StatelessWidget {
+class AnimoPo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -1489,7 +1348,6 @@ class animoPo extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1501,22 +1359,18 @@ class animoPo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'PostMenopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'PostMenopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1533,7 +1387,6 @@ class AnimoPo1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1545,22 +1398,18 @@ class AnimoPo1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Programas de Ejercicio Específicos',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Programas de Ejercicio Específicos',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1577,7 +1426,6 @@ class AnimoPocontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1589,21 +1437,17 @@ class AnimoPocontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'El ejercicio regular, como el entrenamiento de fuerza y el yoga, puede ser beneficioso para mejorar el estado de ánimo y reducir la ansiedad en la postmenopausia.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'El ejercicio regular, como el entrenamiento de fuerza y el yoga, puede ser beneficioso para mejorar el estado de ánimo y reducir la ansiedad.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1620,7 +1464,6 @@ class AnimoPo2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1632,22 +1475,18 @@ class AnimoPo2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Terapia de Grupo o Apoyo Psicológico',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Terapia de Grupo',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1664,7 +1503,6 @@ class AnimoPocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1676,21 +1514,17 @@ class AnimoPocontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Participar en grupos de apoyo o terapia grupal puede brindar un espacio seguro para compartir experiencias y estrategias para manejar los cambios en el estado de ánimo.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Participar en grupos de apoyo o terapia grupal puede brindar un espacio seguro para compartir experiencias y estrategias para manejar los cambios en el estado de ánimo.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1707,7 +1541,6 @@ class AnimoPo3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1719,22 +1552,18 @@ class AnimoPo3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Medicina Complementaria y Alternativa',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Medicina Alternativa',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1751,7 +1580,6 @@ class AnimoPocontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1763,21 +1591,17 @@ class AnimoPocontenido3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Algunas personas exploran la acupuntura, la homeopatía o la medicina funcional como enfoques complementarios para abordar los cambios en el estado de ánimo. Siempre consulta a un profesional de la salud antes de probar estos métodos.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Algunas personas exploran la acupuntura, la homeopatía o la medicina funcional como enfoques complementarios para abordar los cambios en el estado de ánimo. Siempre consulta a un profesional de la salud antes de probar estos métodos.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1806,8 +1630,7 @@ class DormirTitulo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -1838,7 +1661,6 @@ class DormirPyM extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1850,22 +1672,18 @@ class DormirPyM extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Perimenopausia y Menopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Perimenopausia y Menopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1882,7 +1700,6 @@ class DormirPyM1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1894,22 +1711,18 @@ class DormirPyM1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Gestión del Estrés y Relajación',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Gestión del Estrés y Relajación',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1926,7 +1739,6 @@ class DormirPyMcontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 140,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1938,21 +1750,17 @@ class DormirPyMcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'La práctica de técnicas de relajación, como la meditación, la respiración profunda y el yoga, puede reducir el estrés y mejorar la calidad del sueño.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'La práctica de técnicas de relajación, como la meditación, la respiración profunda y el yoga, puede reducir el estrés y mejorar la calidad del sueño.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -1969,7 +1777,6 @@ class DormirPyM2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1981,22 +1788,18 @@ class DormirPyM2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Suplementos Naturales',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Suplementos Naturales',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2013,7 +1816,6 @@ class DormirPyMcontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2025,21 +1827,17 @@ class DormirPyMcontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Algunos suplementos naturales, como la valeriana y la melatonina, se utilizan para promover el sueño. Consulta a un profesional de la salud antes de tomar suplementos.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Algunos suplementos naturales, como la valeriana y la melatonina, se utilizan para promover el sueño. Consulta a un profesional de la salud antes de tomar suplementos.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2056,7 +1854,6 @@ class DormirPo extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2068,22 +1865,18 @@ class DormirPo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'PostMenopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'PostMenopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2100,7 +1893,6 @@ class DormirPo1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2112,22 +1904,18 @@ class DormirPo1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Higiene del Sueño',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Higiene del Sueño',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2144,7 +1932,6 @@ class DormirPocontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2156,21 +1943,17 @@ class DormirPocontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Adoptar hábitos de sueño saludables, como mantener un horario regular de acostarse y despertarse, crear un ambiente de sueño relajante y evitar estimulantes antes de acostarse, puede mejorar la calidad del sueño',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Adoptar hábitos de sueño saludables, como mantener un horario de acostarse, crear un ambiente de sueño relajante y evitar estimulantes antes de acostarse, puede mejorar la calidad del sueño',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2187,7 +1970,6 @@ class DormirPo2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2199,22 +1981,18 @@ class DormirPo2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Terapia para el insomnio',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Terapia para el insomnio',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2231,7 +2009,6 @@ class DormirPocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2243,21 +2020,17 @@ class DormirPocontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Esta terapia se enfoca en cambiar patrones de pensamiento y comportamiento que contribuyen al insomnio. Puede ser eficaz para abordar problemas crónicos de sueño.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Esta terapia se enfoca en cambiar patrones de pensamiento y comportamiento que contribuyen al insomnio. Puede ser eficaz para abordar problemas crónicos de sueño.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2274,7 +2047,6 @@ class DormirPo3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2286,22 +2058,18 @@ class DormirPo3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Medicamentos para el Sueño',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Medicamentos para el Sueño',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2318,7 +2086,6 @@ class DormirPocontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2330,21 +2097,17 @@ class DormirPocontenido3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'En casos de insomnio grave y resistente a otros tratamientos, un médico puede recetar medicamentos para dormir. Estos deben ser utilizados bajo supervisión médica y solo a corto plazo.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'En casos de insomnio grave y resistente a otros tratamientos, un médico puede recetar medicamentos para dormir. Estos deben ser utilizados bajo supervisión médica y solo a corto plazo.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2361,7 +2124,6 @@ class DormirPo4 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2373,22 +2135,18 @@ class DormirPo4 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Ejercicio Regular',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Ejercicio Regular',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2405,7 +2163,6 @@ class DormirPocontenido4 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 120,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2417,21 +2174,17 @@ class DormirPocontenido4 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Mantenerse activa con ejercicio regular puede mejorar la calidad del sueño en la postmenopausia',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Mantenerse activa con ejercicio regular puede mejorar la calidad del sueño',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2448,7 +2201,6 @@ class DormirPo5 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2460,22 +2212,18 @@ class DormirPo5 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Evitar Estimulantes antes de Acostarse',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Evitar Estimulantes antes de Acostarse',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2492,7 +2240,6 @@ class DormirPocontenido5 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 120,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2504,21 +2251,17 @@ class DormirPocontenido5 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Reducir la ingesta de cafeína, alcohol y alimentos picantes antes de dormir puede ayudar a prevenir los despertares nocturnos.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Reducir la ingesta de cafeína, alcohol y alimentos picantes antes de dormir puede ayudar a prevenir los despertares nocturnos.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2535,7 +2278,6 @@ class SexualTitulo extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 70,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2547,22 +2289,18 @@ class SexualTitulo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Cambios en el deseo sexual',
-              style: TextStyle(
-                fontSize: 30.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios en el deseo sexual',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2579,7 +2317,6 @@ class SexualPyM extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2591,22 +2328,18 @@ class SexualPyM extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Perimenopausia y Menopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Perimenopausia y Menopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2623,7 +2356,6 @@ class SexualPyM1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2635,22 +2367,18 @@ class SexualPyM1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Lubricantes y Humectantes',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Lubricantes y Humectantes',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2667,7 +2395,6 @@ class SexualPyMcontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2679,21 +2406,17 @@ class SexualPyMcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'La sequedad vaginal es común en la menopausia y puede afectar la satisfacción sexual. El uso de lubricantes y humectantes vaginales puede ayudar a aliviar la incomodidad durante las relaciones sexuales.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'La sequedad vaginal es común y puede afectar la satisfacción sexual. El uso de lubricantes y humectantes vaginales puede ayudar a aliviar la incomodidad durante las relaciones.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2710,7 +2433,6 @@ class SexualPo extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2722,22 +2444,18 @@ class SexualPo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'PostMenopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'PostMenopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2754,7 +2472,6 @@ class SexualPo1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2766,22 +2483,18 @@ class SexualPo1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Terapia de Conversación',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Terapia de Conversación',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2798,7 +2511,6 @@ class SexualPocontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 140,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2810,21 +2522,17 @@ class SexualPocontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'La terapia con un terapeuta sexual o de pareja puede ser beneficiosa para abordar problemas emocionales o de comunicación que pueden afectar la intimidad.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'La terapia con un terapeuta sexual o de pareja puede ser beneficiosa para abordar problemas emocionales o de comunicación que pueden afectar la intimidad.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2841,7 +2549,6 @@ class SexualPo2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2853,22 +2560,18 @@ class SexualPo2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Ejercicio y Estilo de Vida Saludable',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Estilo de Vida Saludable',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2885,7 +2588,6 @@ class SexualPocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 140,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2897,21 +2599,17 @@ class SexualPocontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Mantenerse activa, llevar una dieta equilibrada y reducir el estrés pueden mejorar la salud general y, en consecuencia, el deseo sexual.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Mantenerse activa, llevar una dieta equilibrada y reducir el estrés pueden mejorar la salud general y, en consecuencia, el deseo.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2928,7 +2626,6 @@ class SexualPo3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2940,22 +2637,18 @@ class SexualPo3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Educación Sexual y Comunicación',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Educación Sexual y Comunicación',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -2972,7 +2665,6 @@ class SexualPocontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -2984,21 +2676,17 @@ class SexualPocontenido3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              ' Aprender más sobre la respuesta sexual, las fantasías y las preferencias sexuales, así como comunicarse abierta y sinceramente con la pareja, puede ayudar a mejorar la intimidad.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            ' Aprender más sobre la respuesta sexual, las fantasías y las preferencias sexuales, así como comunicarse abierta y sinceramente con la pareja, puede ayudar a mejorar la intimidad.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3015,7 +2703,6 @@ class SexualPo4 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 60,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -3027,22 +2714,18 @@ class SexualPo4 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Suplementos Naturales',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Suplementos Naturales',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3059,7 +2742,6 @@ class SexualPocontenido4 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -3071,21 +2753,17 @@ class SexualPocontenido4 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Algunas mujeres recurren a suplementos como el ginseng, el ginkgo biloba o el maca como un enfoque natural para aumentar el deseo sexual. Consulta a un profesional de la salud antes de tomar suplementos.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Algunas mujeres recurren a suplementos, como un enfoque natural para aumentar el deseo. Consulta a un profesional de la salud antes de tomar suplementos.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3114,22 +2792,18 @@ class SequedadTitulo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Cambios vaginales',
-              style: TextStyle(
-                fontSize: 30.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Cambios intomos',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3158,22 +2832,18 @@ class SequedadPyM extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Perimenopausia y Menopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Perimenopausia y Menopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3202,22 +2872,18 @@ class SequedadPyM1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Hidratantes',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Hidratantes',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3246,21 +2912,17 @@ class SequedadPyMcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'El uso de hidratantes vaginales de venta libre puede ayudar a aliviar la sequedad vaginal y mejorar la comodidad durante las relaciones sexuales.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'El uso de hidratantes vaginales de venta libre puede ayudar a aliviar la sequedad y mejorar la comodidad durante las relaciones.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3289,22 +2951,18 @@ class SequedadPyM2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Lubricantes',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Lubricantes',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3333,21 +2991,17 @@ class SequedadPyMcontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'El uso de lubricantes durante las relaciones sexuales puede reducir la fricción y la incomodidad asociada con la sequedad vaginal.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'El uso de lubricantes durante las relaciones puede reducir la fricción y la incomodidad asociada con la sequedad.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3376,22 +3030,18 @@ class SequedadPo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'PostMenopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'PostMenopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3420,22 +3070,18 @@ class SequedadlPo1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Ejercicio Kegel',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Ejercicio Kegel',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3464,21 +3110,17 @@ class SequedadPocontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Los ejercicios de Kegel pueden fortalecer los músculos del suelo pélvico y mejorar la función vaginal.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Los ejercicios de Kegel pueden fortalecer los músculos del suelo pélvico y mejorar la función.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3507,22 +3149,18 @@ class PesoTitulo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Aumento de peso',
-              style: TextStyle(
-                fontSize: 30.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Aumento de peso',
+            style: TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3551,22 +3189,18 @@ class PesoP extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Perimenopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Perimenopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3595,22 +3229,18 @@ class PesoP1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Dieta Equilibrada',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Dieta Equilibrada',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3639,21 +3269,17 @@ class PesoPcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Adoptar una dieta rica en frutas, verduras, proteínas magras y granos enteros puede ayudar a controlar el aumento de peso al mantener una dieta mas saludable que regule el peso',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Adoptar una dieta rica en frutas, verduras, proteínas magras y granos enteros puede ayudar a controlar el aumento de peso al mantener una dieta más saludable que regule el peso.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3682,22 +3308,18 @@ class PesoP2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Ejercicio Regular',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Ejercicio Regular',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3726,21 +3348,17 @@ class PesoPcontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Mantenerse activa es fundamental. Incorpora ejercicios cardiovasculares y de resistencia para quemar calorías y mantener la masa muscular.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Mantenerse activa es fundamental. Incorpora ejercicios cardiovasculares y de resistencia para quemar calorías y mantener la masa muscular.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3769,22 +3387,18 @@ class PesoM extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Menopausia',
-              style: TextStyle(
-                fontSize: 22.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Menopausia',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3813,22 +3427,18 @@ class PesoM1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Terapia Hormonal',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Terapia Hormonal',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3857,21 +3467,17 @@ class PesoMcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Algunas mujeres pueden considerar la terapia de reemplazo hormonal (TRH) para abordar los síntomas de la menopausia, incluido el aumento de peso. La TRH debe ser recetada y supervisada por un médico.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Algunas mujeres pueden considerar la terapia de reemplazo hormonal para abordar los síntomas de la menopausia, incluido el aumento de peso. debe ser recetada y supervisada por un médico.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3900,22 +3506,18 @@ class PesoM2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Control de Porciones',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Control de Porciones',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3944,21 +3546,17 @@ class PesoMcontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              ' Controlar las porciones de las comidas puede ayudar a evitar el exceso de calorías..',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Controlar las porciones de las comidas puede ayudar a evitar el exceso de calorías.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -3987,22 +3585,18 @@ class PesoM3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Ejercicio Físico',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+          Text(
+            'Ejercicio Físico',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.black,
             ),
           ),
         ],
@@ -4031,21 +3625,17 @@ class PesoMcontenido3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
-      child: const Row(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Flexible(
-            flex: 3,
-            child: Text(
-              'Mantén o aumenta la actividad física. El ejercicio ayuda a mantener un peso saludable y mejorar la salud cardiovascular.',
-              style: TextStyle(
-                fontSize: 20.0,
-                color: Colors.black,
-              ),
+          Text(
+            'Mantén o aumenta la actividad física. El ejercicio ayuda a mantener un peso saludable y mejorar la salud cardiovascular.',
+            style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
             ),
           ),
         ],
@@ -4074,8 +3664,7 @@ class PesoPo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4118,8 +3707,7 @@ class PesoPO1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4162,8 +3750,7 @@ class PesoPOcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4205,8 +3792,7 @@ class PesoPO2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4249,8 +3835,7 @@ class PesoPOcontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4259,7 +3844,7 @@ class PesoPOcontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El ejercicio sigue siendo crucial en la postmenopausia para controlar el peso y mantener la salud ósea y muscular.',
+              'El ejercicio sigue siendo crucial para controlar el peso y mantener la salud ósea y muscular.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -4292,8 +3877,7 @@ class PesoPO3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4336,8 +3920,7 @@ class PesoPOcontenido3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4346,7 +3929,7 @@ class PesoPOcontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              ' Habla con un profesional de la salud o un nutricionista para recibir orientación sobre la dieta y el ejercicio específicos para tu situación.',
+              'Habla con un profesional de la salud o un nutricionista para recibir orientación sobre la dieta y el ejercicio específicos para tu situación.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -4379,8 +3962,7 @@ class PesoPO4 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4423,8 +4005,7 @@ class PesoPOcontenido4 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4466,8 +4047,7 @@ class OrinarTitulo extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4510,8 +4090,7 @@ class Orinar1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4554,8 +4133,7 @@ class Orinarcontenido1 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4597,8 +4175,7 @@ class Orinar2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4641,8 +4218,7 @@ class Orinarcontenido2 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4684,8 +4260,7 @@ class Orinar3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4728,8 +4303,7 @@ class Orinarcontenido3 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4771,8 +4345,7 @@ class Orinar4 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -4815,8 +4388,7 @@ class Orinarcontenido4 extends StatelessWidget {
           end: Alignment.centerRight,
         ),
         color: Colors.white,
-        borderRadius:
-            BorderRadius.circular(15), // Establece el radio del borde en 15
+        borderRadius: BorderRadius.circular(15),
       ),
       padding: const EdgeInsets.all(16),
       child: const Row(
@@ -5042,7 +4614,7 @@ class SequedadPielTitulo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Sequedad en la piel',
+              'Sequedad de piel',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -5130,7 +4702,7 @@ class SequedadPielcontenido1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El uso de cremas hidratantes y lubricantes específicos para la piel y mucosas puede proporcionar alivio inmediato. Para la sequedad vaginal, existen lubricantes diseñados para mejorar la comodidad durante las relaciones sexuales.',
+              'El uso de cremas hidratantes y lubricantes específicos para la piel y mucosas puede proporcionar alivio inmediato. Para la sequedad, existen lubricantes diseñados para mejorar la comodidad durante las relaciones.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -5347,7 +4919,7 @@ class SequedadPiel4 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Consulta a un Dermatólogo o Ginecólogo',
+              'Consulta a un Medico',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -5826,7 +5398,7 @@ class Sudores5 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Mantén un Diario de los Síntomas',
+              'Diario de Síntomas',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -6001,7 +5573,7 @@ class Fatigacontenido1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La fatiga puede estar relacionada con deficiencias nutricionales. Consulta a un profesional de la salud para determinar si necesitas suplementos, como hierro, vitamina D o vitaminas del grupo B. Estos pueden ser beneficiosos para aumentar tus niveles de energía.',
+              'La fatiga puede estar relacionada con deficiencias nutricionales. Consulta a un profesional de la salud para determinar si necesitas suplementos. Estos pueden ser beneficiosos para aumentar tus niveles de energía.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -6306,7 +5878,7 @@ class Vellocontenido1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Para tratar el vello no deseado, las opciones de depilación incluyen la depilación con cera, el afeitado, la depilación láser y la electrólisis. Estos métodos pueden proporcionar resultados temporales o permanentes, dependiendo de la técnica utilizada. La elección dependerá de tus preferencias personales y presupuesto.',
+              'Para tratar el vello no deseado, las opciones de depilación incluyen la depilación con cera, el afeitado, la depilación láser y la electrólisis, dependiendo de la técnica utilizada. La elección dependerá de tus preferencias personales y presupuesto.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -6436,7 +6008,7 @@ class Vello3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Medicamentos Tópicos con Supervicion',
+              'Medicamentos con Supervicion',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -6480,7 +6052,7 @@ class Vellocontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'En algunos casos, los médicos pueden recetar cremas con medicamentos tópicos que ayudan a reducir el crecimiento del vello no deseado,  es importante consultar a un médico para descartar condiciones médicas subyacentes, como el síndrome de ovario poliquístico, que pueden requerir tratamiento específico.',
+              'En algunos casos, los médicos pueden recetar cremas con medicamentos tópicos que ayudan a reducir el crecimiento del vello no deseado,  es importante consultar a un médico para descartar condiciones médicas subyacentes.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -6523,7 +6095,7 @@ class Vello4 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Estilo de Vida Saludable',
+              'Vida Saludable',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -6697,7 +6269,7 @@ class GustoTitulo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Cambios en el sentido del gusto',
+              'Cambios en el gusto',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -6785,7 +6357,7 @@ class Gustocontenido1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Un enfoque clave es asegurarse de que estás obteniendo una nutrición adecuada. Un dietista o nutricionista puede ayudarte a planificar una dieta equilibrada que incluya una variedad de alimentos ricos en nutrientes esenciales. Esto es especialmente importante durante la menopausia y la postmenopausia, ya que el cuerpo experimenta cambios en la absorción de nutrientes.',
+              'Un enfoque clave es asegurarse de que estás obteniendo una nutrición adecuada. Un dietista o nutricionista puede ayudarte a planificar una dieta equilibrada que incluya una variedad de alimentos ricos en nutrientes esenciales. ya que el cuerpo experimenta cambios en la absorción de nutrientes.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -6872,7 +6444,7 @@ class Gustocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'En casos en los que se identifican deficiencias nutricionales específicas, se pueden recomendar suplementos de vitaminas y minerales para garantizar una ingesta adecuada. Por ejemplo, la vitamina B12 y el zinc son nutrientes clave relacionados con la percepción del gusto',
+              'En casos en los que se identifican deficiencias nutricionales específicas, se pueden recomendar suplementos de vitaminas y minerales para garantizar una ingesta adecuada.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -7046,7 +6618,7 @@ class Gustocontenido4 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Mantén una comunicación abierta con tu médico y otros profesionales de la salud. Informa cualquier cambio en tus síntomas y sigue sus recomendaciones para el manejo de la salud durante la perimenopausia, la menopausia y la postmenopausia.',
+              'Mantén una comunicación abierta con tu médico y otros profesionales de la salud. Informa cualquier cambio en tus síntomas y sigue sus recomendaciones para el manejo de la salud.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -7525,7 +7097,7 @@ class Arterial1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Evaluación Médica Regular',
+              'Evaluación Regular',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -7569,7 +7141,7 @@ class Arterialcontenido1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Durante la menopausia y la postmenopausia, es fundamental someterse a controles médicos regulares. Tu médico controlará tu presión arterial y realizará evaluaciones de salud para detectar cualquier cambio significativo. Esto permite una detección temprana de problemas de presión arterial y una intervención oportuna.',
+              'Es fundamental someterse a controles regulares. Tu médico controlará tu presión arterial y realizará evaluaciones de salud para detectar cualquier cambio significativo. Esto permite una detección temprana de problemas de presión arterial y una intervención oportuna.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -8004,7 +7576,7 @@ class Dental1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Mantén una Higiene Oral Rigurosa',
+              'Mantén una Higiene Oral',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -8135,7 +7707,7 @@ class Dentalcontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Algunas mujeres experimentan boca seca durante la menopausia. Beber agua regularmente y chupar caramelos sin azúcar o chicle sin azúcar sin duda ayudará. También puedes hablar con tu dentista sobre enjuagues bucales y geles diseñados para combatir la sequedad bucal.',
+              'Algunas mujeres experimentan boca seca. Beber agua regularmente y chupar caramelos sin azúcar o chicle sin azúcar sin duda ayudará. También puedes hablar con tu dentista sobre enjuagues bucales y geles diseñados para combatir la sequedad bucal.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -8178,7 +7750,7 @@ class Dental3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Prevención de Salud en la Mandíbula',
+              'Salud en la Mandíbula',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -8222,7 +7794,7 @@ class Dentalcontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La disminución de los niveles de estrógeno puede contribuir a la pérdida de densidad ósea en la mandíbula, lo que a veces lleva a la pérdida de dientes. Mantener una ingesta adecuada de calcio y vitamina D es esencial para la salud ósea.',
+              'La disminución de los niveles de estrógeno puede contribuir a la pérdida de densidad ósea en la mandíbula, Mantener una ingesta adecuada de calcio y vitamina D es esencial para la salud ósea.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -8831,7 +8403,7 @@ class TiroTitulo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Cambios en la función de la tiroides',
+              'Cambios en la tiroides',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -8919,7 +8491,7 @@ class Tirocontenido1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Debido a la relación entre los cambios hormonales en la menopausia y la función tiroidea, es importante someterse a pruebas regulares de la función tiroidea, como análisis de sangre que miden los niveles de hormonas tiroideas (TSH, T3, T4). Esto ayuda a identificar cualquier disfunción tiroidea y permite el inicio temprano del tratamiento.',
+              'Debido a la relación entre los cambios hormonales en la menopausia y la función tiroidea, es importante someterse a pruebas regulares de la función tiroidea, como análisis de sangre que miden los niveles de hormonas tiroideas. Esto ayuda a identificar cualquier disfunción tiroidea y permite el inicio temprano del tratamiento.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -9006,7 +8578,7 @@ class Tirocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              ' Si experimentas síntomas que podrían estar relacionados con problemas de tiroides, como fatiga extrema, cambios de peso inexplicables o problemas de temperatura corporal, busca la opinión de un médico. Un diagnóstico y tratamiento temprano son clave para manejar eficazmente los trastornos tiroideos.',
+              'Si experimentas síntomas que podrían estar relacionados con problemas de tiroides, como fatiga extrema, cambios de peso inexplicables o problemas de temperatura corporal, busca la opinión de un médico. Un diagnóstico y tratamiento temprano son clave para manejar eficazmente los trastornos tiroideos.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -9093,7 +8665,7 @@ class Tirocontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Una dieta equilibrada con suficiente yodo, selenio y otros nutrientes esenciales es fundamental para mantener la salud de la tiroides. El yodo es un componente esencial de las hormonas tiroideas, por lo que asegurarse de que tu dieta lo contenga en cantidades adecuadas es importante.',
+              'Una dieta equilibrada con suficiente yodo, selenio y otros nutrientes esenciales es fundamental para mantener la salud de la tiroides, por lo que asegurarse de que tu dieta lo contenga en cantidades adecuadas es importante.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -9136,7 +8708,7 @@ class MuscuTitulo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Dolores articulares y musculares',
+              'Dolores articulares',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -9180,7 +8752,7 @@ class Muscu1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Dolores articulares y musculares',
+              'Dolores musculares',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -9224,7 +8796,7 @@ class Muscucontenido1 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              ' Mantenerse físicamente activa es fundamental para reducir los dolores articulares y musculares. Los ejercicios de bajo impacto, como caminar, nadar, andar en bicicleta y estiramientos, pueden ayudar a mantener la flexibilidad y la fuerza muscular. También es importante incorporar ejercicios de fortalecimiento muscular para mantener la salud de las articulaciones',
+              ' Mantenerse físicamente activa es fundamental para reducir los dolores articulares y musculares. Los ejercicios de bajo impacto, como caminar, nadar, andar en bicicleta y estiramientos, pueden ayudar a mantener la flexibilidad y la fuerza muscular.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -9833,7 +9405,7 @@ class Migra3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Evita Estímulos Visuales y Sonoros',
+              'Evita Estímulos',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -10182,7 +9754,7 @@ class Mareoscontenido3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Beber suficiente agua es crucial. La deshidratación puede causar mareos, por lo que asegúrate de mantenerte bien hidratada ademas hacer ejercicio puede ser bueno ya que puede ayudar a prevenir los mareos. La caminata y el yoga son actividades especialmente beneficiosas.',
+              'Beber suficiente agua es crucial. La deshidratación puede causar mareos, por lo que asegúrate de mantenerte bien hidratada ademas hacer ejercicio puede ser bueno ya que puede ayudar a prevenir los mareos.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -10443,7 +10015,7 @@ class Apetito2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Mantén una Dieta Equilibrada',
+              'Dieta Equilibrada',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -10530,7 +10102,7 @@ class Apetito3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Limitación de Comidas Procesadas',
+              'Limitación de Comidas',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -10617,7 +10189,7 @@ class Apetito4 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Adaptación a las Nuevas Preferencias',
+              'Adaptación',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -10922,7 +10494,7 @@ class Sueno3 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Relajación antes de Dormi',
+              'Relajación',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -11102,12 +10674,12 @@ final List<SymptomInfo> symptomWidgets = [
   ]),
   SymptomInfo('Cambios en el Estado de Animo', [
     AnimoTitulo(),
-    animoPyM(),
+    AnimoPyM(),
     AnimoPyM1(),
     AnimoPyMcontenido1(),
     AnimoPyM2(),
     AnimoPyMcontenido2(),
-    animoPo(),
+    AnimoPo(),
     AnimoPo1(),
     AnimoPocontenido1(),
     AnimoPo2(),

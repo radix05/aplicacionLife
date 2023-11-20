@@ -307,7 +307,7 @@ class _tercerItemState extends State<tercero> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Considera la terapia individual o de grupo para abordar los cambios emocionales. Un terapeuta puede proporcionarte herramientas y estrategias para lidiar con la ansiedad, la depresión u otros desafíos emocionales.',
+                      'Un terapeuta puede proporcionarte herramientas y estrategias para lidiar con la ansiedad, la depresión u otros desafíos emocionales.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -389,7 +389,7 @@ class _cuartoItemState extends State<cuarto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Practica técnicas de manejo del estrés, como la meditación, la respiración profunda, el yoga o el mindfulness. Estas técnicas pueden ayudar a reducir la ansiedad y mejorar la salud mental en general.',
+                      'Practica técnicas de manejo del estrés, como la meditación, la respiración profunda, el yoga. Estas técnicas pueden ayudar a reducir la ansiedad y mejorar la salud mental en general.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -704,7 +704,7 @@ class _octavoItemState extends State<octavo> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Cuidado de la salud reproductiva',
+                'Salud reproductiva',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,

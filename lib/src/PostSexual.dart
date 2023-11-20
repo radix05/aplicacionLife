@@ -71,8 +71,6 @@ class _PostSexual extends State<PostSexual> {
                 const quinto(),
                 const sexto(),
                 const septimo(),
-                const octavo(),
-                const noveno(),
               ],
             ),
           ),
@@ -144,7 +142,7 @@ class _primeroItemState extends State<primero> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Mantén una comunicación abierta y honesta con tu pareja sobre tus deseos, necesidades y preocupaciones sexuales. La comunicación es fundamental para una vida sexual saludable en la postmenopausia.',
+                      'Mantén una comunicación abierta y honesta con tu pareja sobre tus deseos, necesidades y preocupaciones sexuales. La comunicación es fundamental para una vida sexual saludable.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -222,7 +220,7 @@ class _segundoItemState extends State<segundo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'La sequedad vaginal es común en la postmenopausia. Considera el uso de lubricantes o humectantes vaginales para aliviar la sequedad y facilitar la intimidad sexual.',
+                      'La sequedad es común en la adultez. Considera el uso de lubricantes o humectantes vaginales para aliviar la sequedad.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -456,7 +454,7 @@ class _quintoItemState extends State<quinto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Continúa programando exámenes ginecológicos regulares para monitorear tu salud vaginal y discutir cualquier problema sexual con tu médico.',
+                      'Continúa programando exámenes ginecológicos regulares para monitorear tu salud y discutir cualquier problema con tu médico.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -534,7 +532,7 @@ class _sextoItemState extends State<sexto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Dedica tiempo para relajarte antes de la actividad sexual. La relajación puede mejorar la excitación y el disfrute sexual.',
+                      'Dedica tiempo para relajarte antes de la actividad sexual. La relajación puede mejorar la salud en este aspecto.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -599,7 +597,7 @@ class _septimoItemState extends State<septimo> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Conversa con un terapeuta sexual',
+                'Conversa con un terapeuta',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -612,163 +610,7 @@ class _septimoItemState extends State<septimo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Si experimentas cambios significativos en la libido, la satisfacción sexual o disfunción sexual en la postmenopausia, considera buscar la ayuda de un terapeuta sexual o consejería de pareja para abordar estos desafíos.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class octavo extends StatefulWidget {
-  const octavo({Key? key});
-
-  @override
-  _octavoItemState createState() => _octavoItemState();
-}
-
-class _octavoItemState extends State<octavo> {
-  bool isExpanded = false;
-
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isExpanded = !isExpanded;
-        });
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 10,
-        ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          constraints: BoxConstraints(
-            minHeight: isExpanded ? 120 : 60,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Prevención de infecciones',
-                style: TextStyle(
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Continúa practicando relaciones sexuales seguras y usa condones si tienes múltiples parejas sexuales para prevenir infecciones de transmisión sexual.',
-                      style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class noveno extends StatefulWidget {
-  const noveno({Key? key});
-
-  @override
-  _novenoItemState createState() => _novenoItemState();
-}
-
-class _novenoItemState extends State<noveno> {
-  bool isExpanded = false;
-
-  final customPinkColor =
-      const Color.fromARGB(255, 250, 250, 250); // Color rosa personalizado
-  final whiteColor = Colors.white; // Color blanco
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          isExpanded = !isExpanded;
-        });
-      },
-      child: Container(
-        margin: const EdgeInsets.symmetric(
-          vertical: 10,
-        ),
-        child: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                isExpanded ? whiteColor : customPinkColor,
-                const Color.fromARGB(197, 255, 255, 255),
-                const Color.fromARGB(121, 255, 255, 255),
-              ],
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-            ),
-            color: isExpanded ? customPinkColor : whiteColor,
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          padding: const EdgeInsets.all(16),
-          constraints: BoxConstraints(
-            minHeight: isExpanded ? 120 : 60,
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Nombre de la sección',
-                style: TextStyle(
-                  fontSize: 22.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.black,
-                ),
-              ),
-              if (isExpanded)
-                const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SizedBox(height: 10),
-                    Text(
-                      'Texto de la sección que se expande y contrae',
+                      ' Si experimentas cambios significativos, la satisfacción sexual o disfunción sexual en la postmenopausia, considera buscar la ayuda de un terapeuta o consejería de pareja para abordar estos desafíos.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,

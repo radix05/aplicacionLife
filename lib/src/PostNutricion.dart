@@ -297,7 +297,7 @@ class calcio extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El calcio es esencial para la salud ósea. Durante la postmenopausia, cuando los niveles de estrógeno disminuyen, las mujeres corren un mayor riesgo de pérdida ósea. Para mantener huesos fuertes, es importante obtener suficiente calcio. Las fuentes de calcio incluyen productos lácteos bajos en grasa (leche, yogur, queso), verduras de hojas verdes (kale, espinacas), almendras, sardinas con huesos comestibles y tofu enriquecido con calcio. La ingesta diaria recomendada de calcio varía según la edad y la actividad física, pero generalmente se encuentra en el rango de 1000-1300 mg por día',
+              'El calcio es esencial para la salud ósea, cuando los niveles de estrógeno disminuyen, las mujeres corren un mayor riesgo de pérdida ósea. Para mantener huesos fuertes, es importante obtener suficiente calcio. Las fuentes de calcio incluyen productos lácteos bajos en grasa (leche, yogur, queso), verduras de hojas verdes (kale, espinacas), almendras, sardinas con huesos comestibles y tofu enriquecido con calcio.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -383,7 +383,7 @@ class vitamina extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La vitamina D es crucial para la absorción del calcio en el cuerpo. La principal fuente de vitamina D es la exposición al sol. Sin embargo, a medida que envejecemos, la capacidad de la piel para producir vitamina D disminuye. Por lo tanto, es importante obtener vitamina D a través de la dieta y, en algunos casos, a través de suplementos. Los alimentos ricos en vitamina D incluyen pescado graso (salmón, atún, caballa), yema de huevo y alimentos fortificados, como la leche. La dosis recomendada de vitamina D puede variar, pero suele ser de 600-800 UI al día',
+              'La vitamina D es crucial para la absorción del calcio en el cuerpo. La principal fuente de vitamina D es la exposición al sol. Sin embargo, a medida que envejecemos, la capacidad de la piel para producir vitamina D disminuye. Por lo tanto, es importante obtener vitamina D a través de la dieta y, en algunos casos, a través de suplementos. Los alimentos ricos en vitamina D incluyen varios pero se recomienda un balance nutricional',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -513,7 +513,7 @@ class fibras extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Las fibras son fundamentales para la salud digestiva y pueden ayudar a prevenir el estreñimiento, un problema que a veces afecta a las mujeres en la postmenopausia. También son beneficiosas para el control de peso y la regulación de los niveles de azúcar en sangre. Las fuentes de fibras incluyen frutas, verduras, legumbres, granos enteros y frutos secos. Se recomienda un consumo diario de al menos 25 gramos de fibra para las mujeres',
+              'Las fibras son fundamentales para la salud digestiva y pueden ayudar a prevenir el estreñimiento, un problema que a veces afecta a las mujeres en la postmenopausia. También son beneficiosas para el control de peso y la regulación de los niveles de azúcar en sangre.. Se recomienda un consumo diario de al menos 25 gramos de fibra para las mujeres',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -599,7 +599,7 @@ class granos extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los granos enteros son una excelente fuente de fibra y nutrientes. En lugar de optar por granos refinados (como el pan blanco o el arroz blanco), elige granos enteros, como la avena, la quinua, el arroz integral, el pan integral y la pasta de trigo integral. Los granos enteros proporcionan una liberación de energía más estable y pueden ayudar a mantener los niveles de azúcar en sangre equilibrados',
+              'Los granos enteros son una excelente fuente de fibra y nutrientes. En lugar de optar por granos refinados, elige granos enteros, como la avena, la quinua, el arroz integral, el pan integral y la pasta de trigo integral. Los granos enteros proporcionan una liberación de energía más estable y pueden ayudar a mantener los niveles de azúcar en sangre equilibrados',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -686,7 +686,7 @@ class AG extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Acidos Grasos Omega-3',
+              'Acidos Grasos',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -729,7 +729,7 @@ class AGC extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los ácidos grasos omega-3, que se encuentran en pescados grasos como el salmón, las nueces y el aceite de linaza, son conocidos por sus beneficios para la salud cardiovascular. Consumir estos ácidos grasos puede ayudar a reducir el riesgo de enfermedades cardíacas y mejorar la salud cerebral.',
+              'Los ácidos grasos omega-3, que se encuentran en pescados grasos como el salmón, son conocidos por sus beneficios para la salud cardiovascular. Consumir estos ácidos grasos puede ayudar a reducir el riesgo de enfermedades cardíacas y mejorar la salud cerebral.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -988,7 +988,7 @@ class RAS extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Reduccion de Azucar y Sal',
+              'Reducir Azucar y Sal',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -1075,7 +1075,7 @@ class azucar extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Reducir el consumo de azúcares añadidos es esencial para controlar el peso y mantener niveles de azúcar en sangre saludables. Esto implica limitar la ingesta de dulces, refrescos azucarados, productos de repostería y alimentos procesados ricos en azúcares añadidos. Opta por edulcorantes naturales como la miel o el jarabe de arce en lugar de azúcares refinados',
+              'Reducir el consumo de azúcares añadidos es esencial para controlar el peso y mantener niveles de azúcar en sangre saludables. Esto implica limitar la ingesta de alimentos azucarados. Opta por edulcorantes naturales como la miel o el jarabe de arce en lugar de azúcares refinados',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1161,7 +1161,7 @@ class sal extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Reducir la ingesta de sal es fundamental para mantener la presión arterial bajo control y reducir el riesgo de enfermedades cardiovasculares. Limita el consumo de alimentos procesados, que a menudo contienen grandes cantidades de sal, y utiliza hierbas y especias para sazonar tus comidas en lugar de sal',
+              'Reducir la ingesta de sal es fundamental para mantener y reducir el riesgo de enfermedades cardiovasculares. Limita el consumo de alimentos procesados, que a menudo contienen grandes cantidades de sal, y utiliza hierbas y especias para sazonar tus comidas en lugar de sal',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1291,7 +1291,7 @@ class cvc extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Durante la postmenopausia, es común que las mujeres necesiten suplementos de calcio y vitamina D para mantener la salud ósea. Consulta con un profesional de la salud para determinar tus necesidades específicas y la dosis adecuada de estos nutrientes',
+              'Es común que necesites suplementos de calcio y vitamina D para mantener la salud ósea. Consulta con un profesional de la salud para determinar tus necesidades específicas y la dosis adecuada de estos nutrientes',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1377,7 +1377,7 @@ class vb12 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Reducir la ingesta de sal es fundamental para mantener la presión arterial bajo control y reducir el riesgo de enfermedades cardiovasculares. Limita el consumo de alimentos procesados, que a menudo contienen grandes cantidades de sal, y utiliza hierbas y especias para sazonar tus comidas en lugar de sal',
+              'Reducir la ingesta de sal es fundamental para mantener la presión arterial bajo control y reducir el riesgo de enfermedades cardiovasculares, utiliza hierbas y especias para sazonar tus comidas en lugar de sal',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1464,7 +1464,7 @@ class pc extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Planificar tus comidas con anticipación te permite controlar mejor lo que comes y asegurarte de que estén equilibradas. Incluye alimentos ricos en nutrientes en tu dieta diaria y evita las comidas rápidas o poco saludables. Opta por alimentos frescos y preparados en casa siempre que sea posible',
+              'Planificar tus comidas con anticipación te permite controlar mejor lo que comes y asegurarte de que estén equilibradas. Incluye alimentos ricos en nutrientes en tu dieta diaria. Opta por alimentos frescos y preparados en casa siempre que sea posible',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

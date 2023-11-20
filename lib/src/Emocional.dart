@@ -130,7 +130,7 @@ class _PrimeroItemState extends State<primero> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'Mindfulness y meditación',
+              'Meditación',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -206,7 +206,7 @@ class _SegundoItemState extends State<Segundo> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'Apoyo de grupos de menopausia',
+              'Apoyo de Grupos',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -434,7 +434,7 @@ class _QuintoItemState extends State<Quinto> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text(
-              'Psicoterapia cognitivo-conductual',
+              'Terapia cognitiva',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,

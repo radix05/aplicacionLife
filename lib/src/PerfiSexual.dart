@@ -216,7 +216,7 @@ class _segundoItemState extends State<segundo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'La sequedad vaginal es común durante la perimenopausia. Utiliza lubricantes o humectantes vaginales de venta libre para aliviar la incomodidad durante las relaciones sexuales.',
+                      'La sequedad es común en esta etapa. Utiliza lubricantes o humectantes para aliviar la incomodidad durante las relaciones.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -291,7 +291,7 @@ class _terceroItemState extends State<tercero> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Consulta a tu médico sobre la posibilidad de utilizar terapia hormonal local, como cremas o anillos vaginales, para abordar la sequedad vaginal y mejorar la comodidad.',
+                      'Consulta a tu médico sobre la posibilidad de utilizar terapia hormonal local, como cremas, para abordar la sequedad y mejorar la comodidad.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -354,7 +354,7 @@ class _cuartoItemState extends State<cuarto> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const Text(
-                'Practicar el sexo regularmente',
+                'Practicar relaciones regularmente',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -366,7 +366,7 @@ class _cuartoItemState extends State<cuarto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Mantener relaciones sexuales regularmente puede ayudar a mantener la salud sexual y prevenir la atrofia vaginal. La actividad sexual puede aumentar el flujo sanguíneo y mejorar la lubricación.',
+                      ' Mantener relaciones regularmente puede ayudar a mantener la salud sexual y prevenir la atrofia. La actividad sexual puede aumentar el flujo sanguíneo y mejorar la lubricación.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -429,7 +429,7 @@ class _quintoItemState extends State<quinto> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const Text(
-                'Terapia sexual o consejería',
+                'Terapia o consejería',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -441,7 +441,7 @@ class _quintoItemState extends State<quinto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Si experimentas dificultades sexuales significativas, considera la terapia sexual o la consejería con un terapeuta sexual. Esto puede ayudarte a abordar problemas de deseo sexual, dolor durante el sexo o cualquier otro problema sexual.',
+                      'Si experimentas dificultades significativas, considera la terapia o la consejería con un terapeuta. Esto puede ayudarte a abordar problemas de deseo, dolor durante relaciones o cualquier otro problema.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -516,7 +516,7 @@ class _sextoItemState extends State<sexto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Si no deseas un embarazo durante la perimenopausia, asegúrate de utilizar un método anticonceptivo adecuado, ya que la menstruación puede volverse irregular.',
+                      'Si no deseas un embarazo, asegúrate de utilizar un método anticonceptivo adecuado, ya que la menstruación puede volverse irregular.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -579,7 +579,7 @@ class _septimoItemState extends State<septimo> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const Text(
-                'Mantener una mentalidad positiva',
+                'Mentalidad positiva',
                 style: TextStyle(
                   fontSize: 22.0,
                   fontWeight: FontWeight.bold,
@@ -591,7 +591,7 @@ class _septimoItemState extends State<septimo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Mantener una actitud positiva hacia la sexualidad y el envejecimiento puede contribuir a una vida sexual más satisfactoria. Aprecia y celebra la conexión emocional y la intimidad en cada etapa de la vida.',
+                      'Mantener una actitud positiva puede contribuir a una vida sexual más agradable. Aprecia y celebra la conexión emocional y la intimidad.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -666,7 +666,7 @@ class _octavoItemState extends State<octavo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Los ejercicios de Kegel pueden ayudar a fortalecer los músculos del suelo pélvico, lo que puede mejorar la salud sexual y prevenir problemas como la incontinencia urinaria. Pregunta a tu médico sobre cómo realizar correctamente estos ejercicios.',
+                      'Los ejercicios de Kegel pueden ayudar a fortalecer los músculos del suelo pélvico, lo que puede mejorar la salud y prevenir problemas como la incontinencia. Pregunta a tu médico sobre cómo realizar correctamente.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -741,7 +741,7 @@ class _novenoItemState extends State<noveno> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Tómate el tiempo para explorar tu propio cuerpo y comprender lo que te brinda placer. El autoconocimiento puede mejorar la experiencia sexual y permitirte comunicarte mejor con tu pareja sobre tus deseos y necesidades.',
+                      'Tómate el tiempo para explorar tu propio cuerpo y comprender lo que te brinda placer. El autoconocimiento puede mejorar la experiencia y permitirte comunicarte mejor con tu pareja sobre tus necesidades.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,

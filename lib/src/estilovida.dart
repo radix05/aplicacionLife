@@ -1,4 +1,4 @@
-import 'package:aplicacion_principal/src/PostNutricion.dart';
+import 'package:LifeTransition/src/PostNutricion.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'PeriDescanso.dart';

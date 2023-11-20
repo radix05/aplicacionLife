@@ -203,7 +203,7 @@ class principalcontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El ejercicio es fundamental durante la menopausia para mantener una buena salud, controlar el peso y aliviar algunos de los síntomas asociados. Aquí tienes algunos consejos de ejercicio para una mujer que está pasando por la menopausia',
+              'El ejercicio es fundamental para mantener una buena salud, controlar el peso y aliviar algunos problemas. mira algunos consejos de ejercicio utiles',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -290,7 +290,7 @@ class primercontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los ejercicios aeróbicos, también conocidos como cardio, son esenciales para mejorar la salud cardiovascular, controlar el peso y mantener la resistencia. Durante la menopausia, los ejercicios aeróbicos pueden ayudar a reducir la probabilidad de aumentar de peso y mantener un corazón saludable. Algunas opciones incluyen caminar, nadar, andar en bicicleta, correr o bailar. Intenta realizar al menos 150 minutos de ejercicio aeróbico de intensidad moderada, como caminar rápido, cada semana o 75 minutos de ejercicio vigoroso, como correr o nadar.',
+              'Los ejercicios aeróbicos o de cardio, son esenciales para mejorar la salud cardiovascular, controlar el peso y mantener la resistencia. los ejercicios aeróbicos pueden ayudar a reducir la probabilidad de aumentar de peso y mantener un corazón saludable prueba caminar, bicicleta o correr. Intenta realizar al menos 150 minutos de ejercicio',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -377,7 +377,7 @@ class segundocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              ' Los ejercicios de resistencia, como el levantamiento de pesas o el entrenamiento con bandas de resistencia, son fundamentales para mantener la masa muscular y la densidad ósea. La pérdida de masa muscular y la disminución de la densidad ósea son preocupaciones comunes durante la menopausia. Realizar ejercicios de resistencia puede ayudar a prevenir estos problemas y mantener un metabolismo saludable.',
+              'Los ejercicios de resistencia, son fundamentales0 para mantener la masa muscular y la densidad ósea. estas ósea son preocupaciones serias. Realizar ejercicios de resistencia puede ayudar a prevenir estos problemas y mantenerse saludable.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -464,7 +464,7 @@ class tercerocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los estiramientos y ejercicios de flexibilidad son importantes para mantener la amplitud de movimiento en las articulaciones, prevenir la rigidez muscular y reducir el riesgo de lesiones. Practicar yoga o pilates son excelentes formas de mejorar la flexibilidad y aliviar la tensión muscular. Estos ejercicios también pueden ayudar a reducir el estrés y mejorar la postura.',
+              'Los estiramientos y ejercicios de flexibilidad son importantes para mantener la salud en las articulaciones, prevenir la rigidez muscular y reducir el riesgo de lesiones. Practicar yoga o pilates son excelentes formas de mejorar la flexibilidad y aliviar la tensión muscular.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -551,7 +551,7 @@ class cuartocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los ejercicios que mejoran el equilibrio son particularmente importantes durante la menopausia, ya que pueden ayudar a prevenir caídas y lesiones. El tai chi y el yoga son ejemplos de actividades que enfatizan el equilibrio y la coordinación. Estos ejercicios pueden ser beneficiosos para mantener la estabilidad a medida que envejeces.',
+              'Los ejercicios que mejoran el equilibrio ayudan a prevenir caídas y lesiones. El tai chi y el yoga son actividades que enfatizan el equilibrio y la coordinación. Estos pueden ser beneficiosos para mantener la estabilidad a medida que envejeces.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -638,7 +638,7 @@ class quintocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La variación en tu rutina de ejercicios es clave para evitar el aburrimiento y evitar lesiones por sobreuso. Cambiar de actividad regularmente también puede ayudar a trabajar diferentes grupos musculares y mejorar la eficacia del entrenamiento. Por ejemplo, puedes alternar entre ejercicios aeróbicos, de resistencia, de flexibilidad y de equilibrio a lo largo de la semana.',
+              'La variación en tu rutina es clave para evitar lesiones por sobreuso. Cambiar de actividad regularmente también ayuda a trabajar diferentes grupos musculares y mejorar la eficacia del entrenamiento. puedes alternar entre ejercicios aeróbicos, de resistencia, de flexibilidad y de equilibrio a lo largo de la semana.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -681,7 +681,7 @@ class sexto extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Escoge Actividades que Disfrutes',
+              'Actividades que Disfrutes',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -725,7 +725,7 @@ class sextocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La clave para mantener la consistencia en el ejercicio durante la menopausia es encontrar actividades que te gusten. Cuando disfrutas del ejercicio, es más probable que lo integres de manera regular en tu rutina. Puedes probar diferentes actividades, como baile, senderismo, ciclismo o clases grupales, para descubrir cuáles son tus favoritas.',
+              'La clave para mantener la consistencia en el ejercicio durante la menopausia es encontrar actividades que te gusten. Cuando disfrutas del ejercicio, es más probable que lo integres de manera regular en tu rutina.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -768,7 +768,7 @@ class extra extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Recuerda que la seguridad es fundamental. Siempre consulta a un profesional de la salud o un entrenador personal antes de comenzar un nuevo programa de ejercicios, especialmente si tienes afecciones médicas preexistentes. Además, escucha a tu cuerpo y adapta tu rutina de ejercicios según tus necesidades y límites individuales',
+              'Recuerda que la seguridad es fundamental, especialmente si tienes afecciones médicas preexistentes. Además, escucha a tu cuerpo y adapta tu rutina de ejercicios según tus necesidades y límites',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -855,7 +855,7 @@ class principalcontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              ' Esta es una recomendación crítica cuando se trata de ejercicios durante la menopausia. Consultar a un profesional de la salud o un entrenador personal que tenga experiencia en trabajar con mujeres en esta etapa de la vida puede marcar una gran diferencia en tu éxito y seguridad en tu rutina de ejercicios. Aquí hay algunas razones por las cuales la consulta con un profesional es valiosa',
+              'cuando se trata de ejercicios. Consultar a un profesional o un entrenador que tenga experiencia puede marcar diferencia en tu éxito y seguridad en tu rutina de ejercicios.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -985,7 +985,7 @@ class segundo2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Diseño de Programa Personalizado',
+              'Programa Personalizado',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -1029,7 +1029,7 @@ class segundocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Basándose en la evaluación, un profesional puede diseñar un programa de ejercicios personalizado que sea seguro y efectivo para ti. Esto puede incluir recomendaciones específicas sobre ejercicios de aeróbicos, resistencia, flexibilidad y equilibrio.',
+              'Basándose en la evaluación, un profesional puede diseñar un programa de ejercicios personalizado que sea seguro y efectivo para ti.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

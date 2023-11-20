@@ -154,7 +154,7 @@ class principal extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Cómo Incorporar el Ejercicio',
+              'Incorporar Ejercicio',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -198,7 +198,7 @@ class primer extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Elige Actividades que Disfrutes',
+              'Actividades que Disfrutes',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -285,7 +285,7 @@ class segundo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Establece Objetivos Realistas',
+              'Objetivos Realistas',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -416,7 +416,7 @@ class tercerocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Incorpora una variedad de ejercicios en tu rutina para trabajar diferentes grupos musculares y evitar el aburrimiento además de tratar de hacer ejercicio al menos 150 minutos a la semana de actividad moderada o 75 minutos de actividad vigorosa, según las recomendaciones de la Organización Mundial de la Salud.',
+              'Incorpora una variedad de ejercicios en tu rutina trata de hacer ejercicio al menos 150 minutos a la semana de actividad moderada o 75 minutos de actividad vigorosa.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -721,7 +721,7 @@ class primercontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los estiramientos son fundamentales para mantener la flexibilidad y prevenir la rigidez muscular. Realizar estiramientos suaves antes y después del ejercicio ayuda a preparar los músculos y prevenir lesiones. Los estiramientos pueden mejorar la amplitud de movimiento, reducir la tensión muscular y aliviar la rigidez. Además, son una excelente manera de relajarse y reducir el estrés. Puedes realizar estiramientos estáticos, dinámicos o de yoga para mantener tus músculos flexibles y mantener un rango de movimiento óptimo.',
+              'Los estiramientos son fundamentales para mantener la flexibilidad y prevenir la rigidez muscular. Realizar estiramientos suaves antes y después del ejercicio ayuda a preparar los músculos y prevenir lesiones, reducir la tensión muscular y aliviar la rigidez.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -808,7 +808,7 @@ class segundocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Los ejercicios de respiración profunda y las técnicas de relajación, como el control de la respiración, son esenciales para reducir el estrés y mejorar la función pulmonar. La respiración profunda promueve la relajación al reducir la frecuencia cardíaca y la presión arterial. Puedes practicar ejercicios de respiración durante momentos de estrés o como parte de una rutina de relajación antes de dormir. La respiración consciente también puede ayudar a aliviar los síntomas menopáusicos, como los sofocos.',
+              'Los ejercicios de respiración profunda y las técnicas de relajación, como la respiración, son esenciales para reducir el estrés y mejorar la función pulmonar. La respiración profunda promueve la relajación al reducir la frecuencia cardíaca y la presión arterial.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -895,7 +895,7 @@ class tercerocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'La caminata es una forma de ejercicio cardiovascular suave que es excelente para las articulaciones y quema calorías. Al caminar a un ritmo constante durante al menos 30 minutos al día, puedes mejorar la resistencia cardiovascular y mantener un peso saludable. La caminata al aire libre también te brinda la oportunidad de disfrutar de la naturaleza y reducir el estrés. Además, es una actividad que se adapta a diferentes niveles de condición física, por lo que es accesible para muchas personas.',
+              'La caminata es una forma de ejercicio cardiovascular suave que es excelente para las articulaciones y quemar calorías. Al caminar a un ritmo constante durante al menos 30 minutos al día, puedes mejorar la resistencia cardiovascular y mantener un peso saludable.0 Además, es una actividad que se adapta a diferentes niveles de condición física.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -982,7 +982,7 @@ class cuartocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El yoga es una disciplina que combina posturas, respiración y meditación para mejorar la flexibilidad, el equilibrio y la relajación. Las clases de yoga proporcionan un ambiente de apoyo y fomentan la conexión entre el cuerpo y la mente. El yoga puede ayudar a reducir la rigidez muscular, mejorar la postura y aliviar el estrés, que son preocupaciones comunes en la menopausia',
+              'El yoga es una disciplina clave. Las clases de yoga proporcionan un ambiente de apoyo y fomentan la conexión entre el cuerpo y la mente. El yoga puede ayudar a reducir la rigidez muscular, mejorar la postura y aliviar el estrés',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -1069,7 +1069,7 @@ class quintocontenido2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El pilates se centra en el fortalecimiento de los músculos centrales, que incluyen los músculos abdominales, la espalda baja y los músculos pélvicos. Mejora la postura y la alineación del cuerpo, lo que puede reducir el dolor de espalda común en la menopausia. Además, el pilates es beneficioso para mejorar la flexibilidad y la fuerza muscular de manera equilibrada. Las clases de pilates suelen ser guiadas por instructores certificados que adaptarán los ejercicios a tus necesidades y habilidades individuales.',
+              'El pilates se centra en el fortalecimiento de los músculos centrales, que incluyen los músculos abdominales, la espalda baja y los músculos pélvicos. Mejora la postura y la alineación del cuerpoLas clases de pilates suelen ser guiadas por instructores certificados que adaptarán los ejercicios a tus necesidades y habilidades individuales.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

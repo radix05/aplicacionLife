@@ -146,7 +146,7 @@ class _primeroItemState extends State<primero> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Habla con tu pareja sobre los cambios en tu cuerpo y tus necesidades sexuales. La comunicación abierta es clave para mantener una vida sexual saludable durante la menopausia.',
+                      'Habla con tu pareja sobre los cambios en tu cuerpo y tus necesidades sexuales. La comunicación abierta es clave para mantener una vida sexual saludable.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -227,7 +227,7 @@ class _segundaItemState extends State<segunda> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'La sequedad vaginal es común durante la menopausia. Considera el uso de lubricantes o humectantes vaginales para aliviar la sequedad y facilitar la intimidad sexual.',
+                      'La sequedad suele ser comun. Considera el uso de lubricantes o humectantes para aliviar la sequedad y facilitar la intimidad.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -375,7 +375,7 @@ class _cuartoItemState extends State<cuarto> {
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               const Text(
-                'Estimulación sexual',
+                'Estimulación',
                 style: TextStyle(
                   fontSize: 22.0, // Aumenta el tamaño de la fuente
                   fontWeight: FontWeight.bold, // Pone en negrita
@@ -389,7 +389,7 @@ class _cuartoItemState extends State<cuarto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Explora diferentes formas de estimulación y fantasías sexuales para mantener el interés y la satisfacción sexual.',
+                      ' Explora diferentes formas de estimulaciónes para mantener el interés y la satisfacción.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -538,7 +538,7 @@ class _sextoItemState extends State<sexto> {
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               const Text(
-                'Prevención de infecciones',
+                'Prevención',
                 style: TextStyle(
                   fontSize: 22.0, // Aumenta el tamaño de la fuente
                   fontWeight: FontWeight.bold, // Pone en negrita
@@ -552,7 +552,7 @@ class _sextoItemState extends State<sexto> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Si tienes múltiples parejas sexuales, sigue practicando relaciones sexuales seguras y considera el uso de condones para prevenir infecciones de transmisión sexual.',
+                      'Recuerda siempre seguir practicando relaciones seguras y considera el uso de condones para prevenir infecciones de transmisión.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
@@ -626,7 +626,7 @@ class _septimoItemState extends State<septimo> {
                 children: [
                   SizedBox(height: 10),
                   Text(
-                    ' Si experimentas cambios significativos en la libido, disfunción sexual u otros problemas relacionados con la menopausia, considera la consulta con un ginecólogo, terapeuta sexual o consejero de pareja especializado en salud sexual en la menopausia.',
+                    ' Si experimentas cambios significativos en la libido considera la consulta con un ginecólogo, terapeuta sexual o consejero de pareja especializado en salud.',
                     style: TextStyle(
                       fontSize: 20.0,
                       color: Colors.black,
@@ -688,7 +688,7 @@ class _novenoItemState extends State<noveno> {
             mainAxisAlignment: MainAxisAlignment.center, // Centro verticalmente
             children: [
               const Text(
-                'Control de los síntomas menopáusicos:',
+                'Control de los síntomas',
                 style: TextStyle(
                   fontSize: 22.0, // Aumenta el tamaño de la fuente
                   fontWeight: FontWeight.bold, // Pone en negrita
@@ -702,7 +702,7 @@ class _novenoItemState extends State<noveno> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      ' Si experimentas síntomas incómodos, como sofocos o sudoración nocturna, busca tratamientos que puedan aliviar estos síntomas, ya que pueden afectar tu bienestar sexual.',
+                      ' Si experimentas síntomas incómodos, como sofocos o sudoración nocturna, busca tratamientos que puedan aliviar estos síntomas, ya que pueden afectar tu bienestar.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,
