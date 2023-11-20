@@ -920,7 +920,7 @@ class primercontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1094,7 +1094,7 @@ class tercerocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

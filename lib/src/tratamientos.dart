@@ -2606,7 +2606,7 @@ class SexualPocontenido2 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'Mantenerse activa, llevar una dieta equilibrada y reducir el estrés pueden mejorar la salud general y, en consecuencia, el deseo.',
+            'Mantenerse activa, llevar una dieta equilibrada y reducir el estrés pueden mejorar la salud general y en consecuencia, el deseo.',
             style: TextStyle(
               fontSize: 20.0,
               color: Colors.black,
@@ -2799,7 +2799,7 @@ class SequedadTitulo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            'Cambios intomos',
+            'Cambios intimos',
             style: TextStyle(
               fontSize: 30.0,
               fontWeight: FontWeight.bold,
@@ -4121,7 +4121,7 @@ class Orinarcontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -4484,7 +4484,7 @@ class Orinarcontenido5 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              ' Algunas mujeres pueden beneficiarse de la terapia de comportamiento, que implica aprender técnicas para reducir la urgencia urinaria y mejorar el control de la vejiga.',
+              'Algunas mujeres pueden beneficiarse de la terapia de comportamiento, que implica aprender técnicas para reducir la urgencia urinaria y mejorar el control de la vejiga.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -4549,7 +4549,7 @@ class Orinarcontenido6 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
+      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -4767,7 +4767,7 @@ class SequedadPielcontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -5333,7 +5333,7 @@ class Sudorescontenido4 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -5420,7 +5420,7 @@ class Sudorescontenido5 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -5442,7 +5442,7 @@ class Sudorescontenido5 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              ' Llevar un registro de los episodios de sudoración nocturna puede ayudar a identificar patrones y factores desencadenantes, lo que puede ser útil al discutir el tratamiento con un médico.',
+              'Llevar un registro de los episodios de sudoración nocturna puede ayudar a identificar patrones y factores desencadenantes, lo que puede ser útil al discutir el tratamiento con un médico.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -5725,7 +5725,7 @@ class Fatigacontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -5943,7 +5943,7 @@ class Vellocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 200,
+      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -7293,7 +7293,7 @@ class Arterialcontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
+      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -7380,7 +7380,7 @@ class Arterialcontenido4 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 200,
+      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -7924,7 +7924,7 @@ class EquiTitulo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Cambios en la Cordinacion',
+              'Cambios de Cordinacion',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -8077,7 +8077,7 @@ class Equicontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
+      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

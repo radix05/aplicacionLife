@@ -577,7 +577,7 @@ class granos extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 240,
+      height: 260,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -707,7 +707,7 @@ class AGC extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 200,
+      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -793,7 +793,7 @@ class AOC extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -879,7 +879,7 @@ class AFFC extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

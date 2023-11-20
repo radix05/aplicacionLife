@@ -416,7 +416,7 @@ class segundocontenido extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -698,7 +698,7 @@ class cuartocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Reducir el consumo de azúcar y sal es esencial para mantener una buena salud. El exceso de azúcar puede contribuir al aumento de peso y aumentar el riesgo de enfermedades como la diabetes. El consumo excesivo de sal puede llevar a la retención de líquidos y aumentar la presión arterial, lo que puede ser perjudicial para la salud',
+              'Reducir el consumo de azúcar y sal es esencial para mantener una buena salud. El exceso de azúcar puede contribuir al aumento de peso y aumentar el riesgo de enfermedades como la diabetes. El consumo excesivo de sal puede llevar a la retención de líquidos y aumentar la presión arterial',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -719,7 +719,7 @@ class cuartocontenidoextra extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 200,
+      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1110,7 +1110,7 @@ class segundocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
+      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1675,7 +1675,7 @@ class segundocontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 140,
+      height: 150,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1718,7 +1718,7 @@ class extra3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
+      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

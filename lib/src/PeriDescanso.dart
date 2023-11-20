@@ -242,7 +242,7 @@ class primercontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Un entorno de sueño adecuado es esencial para garantizar un buen descanso. Asegúrate de que tu habitación esté oscura, ya que la luz puede interferir con el sueño. Usa cortinas opacas o una máscara para dormir si es necesario. Además, mantener la habitación tranquila y a una temperatura agradable (generalmente entre 18-20 grados Celsius) promueve un sueño reparador. Invertir en un buen colchón y almohadas que se adapten a tus necesidades es crucial para garantizar la comodidad durante la noche.',
+              'Un entorno de sueño adecuado es esencial para garantizar un buen descanso. Asegúrate de que tu habitación esté oscura, ya que la luz puede interferir con el sueño. Usa cortinas opacas o una máscara para dormir si es necesario. Además, mantener la habitación tranquila y a una temperatura agradable promueve un sueño reparador. Invertir en un buen colchón y almohadas que se adapten a tus necesidades es crucial para garantizar la comodidad durante la noche.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -872,7 +872,7 @@ class primercontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 400,
+      height: 350,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -959,7 +959,7 @@ class segundocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 420,
+      height: 400,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

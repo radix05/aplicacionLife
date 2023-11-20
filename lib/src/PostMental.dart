@@ -859,7 +859,7 @@ class _DecimoItemState extends State<Decimo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Si experimentas problemas emocionales graves o persistentes, busca apoyo de un profesional de la salud mental. La terapia puede proporcionarte herramientas efectivas para afrontar desafíos emocionales.',
+                      'Si experimentas problemas emocionales graves o persistentes, busca apoyo de un profesional. La terapia puede proporcionarte herramientas efectivas para afrontar desafíos emocionales.',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,

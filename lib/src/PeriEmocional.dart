@@ -635,7 +635,7 @@ class _septimoItemState extends State<septimo> {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      'Una dieta equilibrada rica en alimentos ricos en nutrientes puede respaldar la salud mental. Evita el exceso de azúcares refinados y cafeína, ya que pueden afectar negativamente el estado de ánimo.s',
+                      'Una dieta equilibrada rica en alimentos ricos en nutrientes puede respaldar la salud mental. Evita el exceso de azúcares refinados y cafeína, ya que pueden afectar negativamente el estado de ánimo',
                       style: TextStyle(
                         fontSize: 20.0,
                         color: Colors.black,

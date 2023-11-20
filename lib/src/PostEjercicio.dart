@@ -376,7 +376,7 @@ class segundocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Conocer y respetar tus límites es fundamental para evitar lesiones y asegurarte de que el ejercicio sea una experiencia segura y beneficiosa. la meta principal es mejorar tu salud y bienestar, y esto se logra de manera más efectiva cuando te cuidas a ti misma y te ejercitas de manera responsable',
+              'Conocer y respetar tus límites es fundamental para evitar lesiones y asegurarte de que el ejercicio sea una experiencia segura. la meta principal es mejorar tu salud y bienestar, y esto se logra de manera más efectiva y te ejercitas de manera responsable',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -789,7 +789,7 @@ class segundocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 270,
+      height: 300,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

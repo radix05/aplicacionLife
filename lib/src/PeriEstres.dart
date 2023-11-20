@@ -113,7 +113,7 @@ class _PeriEstres extends State<PeriEstres> {
                             ),
                             padding: const EdgeInsets.all(16),
                             child: const Text(
-                              'Respiracion Profunda',
+                              'Respiracion',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
@@ -165,7 +165,7 @@ class _PeriEstres extends State<PeriEstres> {
                           child: Container(
                             margin: const EdgeInsets.only(
                                 right: 8), // Agrega margen a la derecha
-                            height: 350,
+                            height: 400,
                             decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
@@ -197,7 +197,7 @@ class _PeriEstres extends State<PeriEstres> {
                         Expanded(
                           child: Container(
                             margin: const EdgeInsets.only(left: 8),
-                            height: 350,
+                            height: 400,
                             decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
@@ -218,7 +218,7 @@ class _PeriEstres extends State<PeriEstres> {
                             ),
                             padding: const EdgeInsets.all(16),
                             child: const Text(
-                              '                                 La meditación implica centrar la atención en un objeto, palabra, o en la propia respiración. Esto ayuda a calmar la mente y a reducir la rumiación de pensamientos negativos.',
+                              'La meditación implica centrar la atención en un objeto, palabra, o en la propia respiración. Esto ayuda a calmar la mente y a reducir la rumiación de pensamientos negativos.',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 color: Colors.black,
@@ -320,7 +320,7 @@ class principalcontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El manejo del estrés es fundamental durante la perimenopausia para promover el bienestar emocional y físico. La perimenopausia puede estar acompañada de síntomas físicos y emocionales que pueden aumentar el estrés, como sofocos, cambios en el ciclo menstrual, alteraciones del sueño y fluctuaciones hormonales. ',
+              'El manejo del estrés es fundamental durante la perimenopausia para promover el bienestar emocional y físico. puede estar acompañada de síntomas físicos y emocionales que pueden aumentar el estrés, como sofocos, alteraciones del sueño y fluctuaciones hormonales. ',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

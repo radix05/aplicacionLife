@@ -114,7 +114,7 @@ class _PeriNutricion extends State<PeriNutricion> {
                               ),
                               padding: const EdgeInsets.all(16),
                               child: const Text(
-                                'Grasas Saturadas',
+                                'Saturadas',
                                 style: TextStyle(
                                   fontSize: 20.0,
                                   fontWeight: FontWeight.bold,
@@ -148,7 +148,7 @@ class _PeriNutricion extends State<PeriNutricion> {
                               ),
                               padding: const EdgeInsets.all(16),
                               child: const Text(
-                                'Grasas Trans',
+                                'Trans',
                                 style: TextStyle(
                                   fontSize: 20.0,
                                   fontWeight: FontWeight.bold,
@@ -187,7 +187,7 @@ class _PeriNutricion extends State<PeriNutricion> {
                               ),
                               padding: const EdgeInsets.all(16),
                               child: const Text(
-                                'Estas grasas se encuentran principalmente en alimentos de origen animal y en algunos aceites vegetales entre otros.',
+                                'Estas grasas se encuentran principalmente en alimentos de origen animal y en aceites vegetales.',
                                 style: TextStyle(
                                   fontSize: 20.0,
                                   color: Colors.black,
@@ -219,7 +219,7 @@ class _PeriNutricion extends State<PeriNutricion> {
                               ),
                               padding: const EdgeInsets.all(16),
                               child: const Text(
-                                'Se encuentran comúnmente en alimentos procesados, así como en margarinas y productos comerciales',
+                                'Se encuentran en alimentos procesados,como en margarinas y productos comerciales',
                                 style: TextStyle(
                                   fontSize: 20.0,
                                   color: Colors.black,
@@ -580,7 +580,7 @@ class tercerocontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Aunque las grasas son más densas en calorías que los carbohidratos y las proteínas, las grasas saludables pueden ser beneficiosas para el control del peso. Estas grasas ayudan a mantener la sensación de saciedad, lo que puede reducir la ingesta total de calorías. Además, una dieta equilibrada que incluya grasas saludables puede ayudar a evitar los atracones de alimentos poco saludables.',
+              'Aunque las grasas son más densas en calorías que los carbohidratos y las proteínas, las grasas saludables pueden ser beneficiosas para el control del peso. Estas grasas ayudan a mantener la sensación de saciedad, lo que puede reducir la ingesta total de calorías',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
@@ -623,7 +623,7 @@ class cuarto extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Incorporación en la Dieta:',
+              'Incorporación en la Dieta',
               style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
@@ -1341,7 +1341,7 @@ class primercontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 220,
+      height: 250,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -1515,7 +1515,7 @@ class tercerocontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 200,
+      height: 240,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
