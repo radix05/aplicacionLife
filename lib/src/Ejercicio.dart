@@ -1181,7 +1181,7 @@ class cuartocontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 170,
+      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

@@ -242,7 +242,7 @@ class primercontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Un entorno de sueño adecuado es esencial para garantizar un buen descanso. Asegúrate de que tu habitación esté oscura, ya que la luz puede interferir con el sueño. Usa cortinas opacas o una máscara para dormir si es necesario. Además, mantener la habitación tranquila y a una temperatura agradable promueve un sueño reparador. Invertir en un buen colchón y almohadas que se adapten a tus necesidades es crucial para garantizar la comodidad durante la noche.',
+              'Un entorno de sueño adecuado es esencial para un buen descanso. Asegúrate de que tu habitación esté oscura, ya que la luz puede interferir con el sueño. Usa cortinas opacas o una máscara para dormir si es necesario. Además, mantener la habitación tranquila y a una temperatura agradable promueve un sueño reparador. Invertir en un buen colchón y almohadas que se adapten a tus necesidades es crucial para garantizar la comodidad durante la noche.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,

@@ -4767,7 +4767,7 @@ class SequedadPielcontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
+      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -5137,7 +5137,7 @@ class Sudores2 extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Evita Comidas y Bebidas Desencadenantes',
+              'Evita Comidas Desencadenantes',
               style: TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
@@ -5790,7 +5790,7 @@ class VelloTitulo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Cambios en el vello corporal',
+              'Cambios de vello corporal',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -6509,7 +6509,7 @@ class Gustocontenido3 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 180,
+      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -7206,7 +7206,7 @@ class Arterialcontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 200,
+      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -7532,7 +7532,7 @@ class DentalTitulo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Cambios en la Salud Dental',
+              'la Salud Dental',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -7924,7 +7924,7 @@ class EquiTitulo extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'Cambios de Cordinacion',
+              'Cambios de Equilibrio',
               style: TextStyle(
                 fontSize: 30.0,
                 fontWeight: FontWeight.bold,
@@ -9122,7 +9122,7 @@ class Muscucontenido5 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 220,
+      height: 240,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -9253,7 +9253,7 @@ class Migracontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 200,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -9645,7 +9645,7 @@ class Mareoscontenido2 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -9819,7 +9819,7 @@ class Mareoscontenido4 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 220,
+      height: 240,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [
@@ -10342,7 +10342,7 @@ class Suenocontenido1 extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 160,
+      height: 180,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

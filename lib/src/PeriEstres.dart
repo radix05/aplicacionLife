@@ -186,7 +186,7 @@ class _PeriEstres extends State<PeriEstres> {
                             ),
                             padding: const EdgeInsets.all(16),
                             child: const Text(
-                              'La respiración profunda implica inhalar lentamente a través de la nariz, llenando los pulmones de aire, y luego exhalar lentamente por la boca. Puedes practicar esto durante unos minutos para reducir la respuesta de lucha o huida del cuerpo',
+                              'implica inhalar lentamente a través de la nariz, llenando los pulmones de aire, y luego exhalar lentamente por la boca. Puedes practicar esto durante unos minutos para reducir la respuesta de lucha o huida del cuerpo',
                               style: TextStyle(
                                 fontSize: 20.0,
                                 color: Colors.black,
@@ -299,7 +299,7 @@ class principalcontenido extends StatelessWidget {
         vertical: 10,
       ),
       width: double.infinity,
-      height: 190,
+      height: 220,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           colors: [

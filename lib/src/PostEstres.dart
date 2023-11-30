@@ -268,7 +268,7 @@ class primercontenido extends StatelessWidget {
           Flexible(
             flex: 3,
             child: Text(
-              'El apoyo social es una parte fundamental para el manejo del estrés. Mantener conexiones con amigos y familiares puede proporcionar un sistema de apoyo que te ayude a enfrentar los desafíos emocionales de la menopausia. Hablar sobre tus experiencias, preocupaciones y emociones con personas de confianza puede aliviar la carga emocional y proporcionar una sensación de respaldo. Las relaciones sólidas pueden brindarte un espacio seguro para expresarte y obtener consejos útiles.',
+              'Mantener conexiones con amigos y familiares puede proporcionar un sistema de apoyo que te ayude a enfrentar los desafíos emocionales de la menopausia. Hablar sobre tus experiencias, preocupaciones y emociones con personas de confianza puede aliviar la carga emocional y proporcionar una sensación de respaldo. Las relaciones sólidas pueden brindarte un espacio seguro para expresarte y obtener consejos útiles.',
               style: TextStyle(
                 fontSize: 20.0,
                 color: Colors.black,
